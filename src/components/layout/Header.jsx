@@ -1,9 +1,23 @@
 import React from 'react';
-import { Search, Github, Linkedin, Trophy, Menu, X } from 'lucide-react';
+import { Search, Github, Linkedin, Trophy, Menu, X, ArrowRight } from 'lucide-react';
 import { cn } from '../../lib/utils';
+import { AnimatePresence, motion } from 'framer-motion';
 
-const Header = ({ search, setSearch, activeTab, setActiveTab }) => {
+const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSelect }) => {
     const tabs = ['Home', 'Top Developers'];
+
+    // Filter logic for dropdown
+    const searchTerms = search?.toLowerCase().split(' ').filter(Boolean) || [];
+    const searchResults = searchTerms.length > 0 ? developers.filter(dev => {
+        return searchTerms.every(term => {
+            return (
+                dev.name.toLowerCase().includes(term) ||
+                dev.role.join(' ').toLowerCase().includes(term) ||
+                dev.bio.toLowerCase().includes(term) ||
+                dev.achievements.some(a => a.title.toLowerCase().includes(term) || a.description.toLowerCase().includes(term))
+            );
+        });
+    }).slice(0, 5) : []; // Limit to 5 results in dropdown
 
     return (
         <header className="sticky top-0 z-50 w-full glassmorphism border-b border-white/10 px-4 py-3">
@@ -17,15 +31,56 @@ const Header = ({ search, setSearch, activeTab, setActiveTab }) => {
                     </span>
                 </div>
 
-                <div className="flex-1 max-w-md relative hidden md:block">
+                <div className="flex-1 max-w-md relative hidden md:block z-50">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
                     <input
                         type="text"
-                        placeholder="Search developers or achievements..."
+                        placeholder="Search developers, roles, or achievements..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="w-full bg-white/5 border border-white/10 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-secondary/50 focus:ring-1 focus:ring-secondary/50 transition-all font-mono"
+                        className="w-full bg-white/5 border border-white/10 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-white/50 focus:ring-1 focus:ring-white/50 transition-all font-mono"
                     />
+
+                    {/* Search Results Dropdown */}
+                    <AnimatePresence>
+                        {searchTerms.length > 0 && (
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 10 }}
+                                className="absolute top-full left-0 right-0 mt-2 bg-background border border-white/10 rounded-2xl shadow-2xl overflow-hidden glassmorphism"
+                            >
+                                {searchResults.length > 0 ? (
+                                    <div className="max-h-[70vh] overflow-y-auto p-2">
+                                        <p className="text-xs text-text-muted px-3 mt-2 mb-3 font-mono">Found {searchResults.length} developers</p>
+                                        <div className="space-y-1">
+                                            {searchResults.map(dev => (
+                                                <button
+                                                    key={dev.id}
+                                                    onClick={() => {
+                                                        onSelect(dev);
+                                                        setSearch('');
+                                                    }}
+                                                    className="w-full text-left flex items-center gap-3 p-3 hover:bg-white/10 rounded-xl transition-colors group"
+                                                >
+                                                    <img src={dev.avatar} alt={dev.name} className="w-10 h-10 rounded-full object-cover border border-white/20 grayscale group-hover:grayscale-0 transition-all" />
+                                                    <div className="flex-1 min-w-0">
+                                                        <p className="font-bold text-white text-sm truncate">{dev.name}</p>
+                                                        <p className="text-xs text-text-muted truncate font-mono">{dev.role.join(' • ')}</p>
+                                                    </div>
+                                                    <ArrowRight className="w-4 h-4 text-white/30 group-hover:text-white transition-colors flex-shrink-0" />
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="p-6 text-center text-text-muted text-sm font-mono">
+                                        No developers found matching "{search}"
+                                    </div>
+                                )}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
 
                 {/* Tabs */}

@@ -19,8 +19,20 @@ function App() {
 
   const filteredDevs = developers.filter(dev => {
     const matchesFilter = filter === 'All' || dev.achievements.some(a => a.type.toLowerCase() === filter.toLowerCase());
-    const matchesSearch = dev.name.toLowerCase().includes(search.toLowerCase()) ||
-      dev.role.join(' ').toLowerCase().includes(search.toLowerCase());
+
+    // Improved Advanced Search Algorithm
+    const searchTerms = search.toLowerCase().split(' ').filter(Boolean);
+    if (searchTerms.length === 0) return matchesFilter;
+
+    const matchesSearch = searchTerms.every(term => {
+      return (
+        dev.name.toLowerCase().includes(term) ||
+        dev.role.join(' ').toLowerCase().includes(term) ||
+        dev.bio.toLowerCase().includes(term) ||
+        dev.achievements.some(a => a.title.toLowerCase().includes(term) || a.description.toLowerCase().includes(term))
+      );
+    });
+
     return matchesFilter && matchesSearch;
   });
 
@@ -28,7 +40,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-text-main">
-      <Header search={search} setSearch={setSearch} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Header
+        search={search}
+        setSearch={setSearch}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        developers={developers}
+        onSelect={setSelectedDev}
+      />
 
       <main className="container mx-auto px-4 py-8 space-y-16">
         {activeTab === 'Home' ? (

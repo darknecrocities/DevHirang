@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Award } from 'lucide-react';
 import { cn } from '../../lib/utils';
+import { getDeveloperBadges } from '../../utils/badgeUtils';
 
 const DevCard = ({ developer, onClick }) => {
+    const badges = getDeveloperBadges(developer);
+
     return (
         <motion.div
             whileHover={{ y: -10, scale: 1.02 }}
@@ -19,11 +22,26 @@ const DevCard = ({ developer, onClick }) => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                    {developer.featured && (
-                        <div className="absolute top-3 right-3 p-1.5 bg-secondary text-background rounded-lg glow-secondary">
-                            <Award className="w-4 h-4" />
-                        </div>
-                    )}
+                    <div className="absolute top-3 right-3 flex flex-col gap-2">
+                        {developer.featured && (
+                            <div className="p-1.5 bg-secondary text-background rounded-lg glow-secondary">
+                                <Award className="w-4 h-4" />
+                            </div>
+                        )}
+                        {badges.slice(0, 3).map((badge, i) => (
+                            <div
+                                key={badge.id}
+                                className={cn(
+                                    "p-1.5 rounded-lg border backdrop-blur-md transition-all",
+                                    badge.bgColor,
+                                    badge.borderColor
+                                )}
+                                title={badge.label}
+                            >
+                                <badge.icon className={cn("w-4 h-4", badge.color)} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 

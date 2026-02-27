@@ -99,234 +99,235 @@
             "hackathons_won": 15,
             "projects_contributed": 170
         },
-    "certifications": [
-        {
-        "title": "Introduction to AI",
-        "issuer": "Google",
-        "year": 2026
-        },
-        {
-        "title": "AI & LLM Engineering Mastery: GenAI and RAG",
-        "issuer": "Udemy",
-        "year": 2025
-        },
-        {
-        "title": "API Testing Learning Path - Completion Certificate",
-        "issuer": "Postman",
-        "year": 2025
-        },
-        {
-        "title": "Postman API Fundamentals Student Expert",
-        "issuer": "Postman",
-        "year": 2025
-        },
-        {
-        "title": "Microsoft Azure Fundamentals: Describe Azure architecture and services",
-        "issuer": "Microsoft",
-        "year": 2025
-        },
-        {
-        "title": "Microsoft Azure Fundamentals: Describe Azure management and governance",
-        "issuer": "Microsoft",
-        "year": 2025
-        },
-        {
-        "title": "Data Science Foundations - Level 2 (V2)",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Data Science Tools",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Data Science Methodologies",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "GitHub Foundations",
-        "issuer": "GitHub",
-        "year": 2025
-        },
-        {
-        "title": "AWS Educate Machine Learning Foundations",
-        "issuer": "Amazon Web Services",
-        "year": 2025
-        },
-        {
-        "title": "Machine Learning with Python",
-        "issuer": "freeCodeCamp",
-        "year": 2025
-        },
-        {
-        "title": "Relational Database",
-        "issuer": "freeCodeCamp",
-        "year": 2025
-        },
-        {
-        "title": "MS-900 Microsoft 365 Fundamentals: Describe Microsoft 365 apps and services",
-        "issuer": "Microsoft",
-        "year": 2025
-        },
-        {
-        "title": "Python Project for AI and Application Development",
-        "issuer": "Coursera",
-        "year": 2025
-        },
-        {
-        "title": "Python for Data Science and AI",
-        "issuer": "Coursera",
-        "year": 2025
-        },
-        {
-        "title": "Developing Front-End Apps with React",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Introduction to Cloud Computing",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Introduction to HTML, CSS, & JavaScript",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Introduction to Software Engineering",
-        "issuer": "IBM",
-        "year": 2025
-        },
-        {
-        "title": "Python Essentials 2",
-        "issuer": "Cisco",
-        "year": 2024
-        },
-        {
-        "title": "Python Essentials 1",
-        "issuer": "Cisco",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to ChatGPT",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to Git",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to Deep Learning with Keras",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Joining Data with pandas",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Intermediate Python",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Introduction to TensorFlow in Python",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Advanced Deep Learning with Keras",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Software Engineering Principles in Python",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Large Language Models (LLMs) Concepts",
-        "issuer": "DataCamp",
-        "year": 2023
-        },
-        {
-        "title": "Data Manipulation with pandas",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Working with the OpenAI API",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "JavaScript Essentials 1",
-        "issuer": "Cisco",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to Machine Learning on AWS",
-        "issuer": "Amazon Web Services",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to Figma course",
-        "issuer": "Simplilearn",
-        "year": 2024
-        },
-        {
-        "title": "Developing Applications with Cloud Run on Google Cloud: Fundamentals",
-        "issuer": "Coursera",
-        "year": 2024
-        },
-        {
-        "title": "Responsive Web Design",
-        "issuer": "freeCodeCamp",
-        "year": 2024
-        },
-        {
-        "title": "Cybersecurity for Everyone",
-        "issuer": "University of Maryland",
-        "year": 2024
-        },
-        {
-        "title": "Data Scientist Associate",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Data Literacy",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "AI Fundamentals",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Introduction to Cybersecurity",
-        "issuer": "Cisco",
-        "year": 2024
-        },
-        {
-        "title": "SQL Associate",
-        "issuer": "DataCamp",
-        "year": 2024
-        },
-        {
-        "title": "Data Analyst Associate",
-        "issuer": "DataCamp",
-        "year": 2024
-        }
-    ],
+        "certifications": [
+            {
+                "title": "Introduction to AI",
+                "issuer": "Google",
+                "year": 2026
+            },
+            {
+                "title": "AI & LLM Engineering Mastery: GenAI and RAG",
+                "issuer": "Udemy",
+                "year": 2025
+            },
+            {
+                "title": "API Testing Learning Path - Completion Certificate",
+                "issuer": "Postman",
+                "year": 2025
+            },
+            {
+                "title": "Postman API Fundamentals Student Expert",
+                "issuer": "Postman",
+                "year": 2025
+            },
+            {
+                "title": "Microsoft Azure Fundamentals: Describe Azure architecture and services",
+                "issuer": "Microsoft",
+                "year": 2025
+            },
+            {
+                "title": "Microsoft Azure Fundamentals: Describe Azure management and governance",
+                "issuer": "Microsoft",
+                "year": 2025
+            },
+            {
+                "title": "Data Science Foundations - Level 2 (V2)",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Data Science Tools",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Data Science Methodologies",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "GitHub Foundations",
+                "issuer": "GitHub",
+                "year": 2025
+            },
+            {
+                "title": "AWS Educate Machine Learning Foundations",
+                "issuer": "Amazon Web Services",
+                "year": 2025
+            },
+            {
+                "title": "Machine Learning with Python",
+                "issuer": "freeCodeCamp",
+                "year": 2025
+            },
+            {
+                "title": "Relational Database",
+                "issuer": "freeCodeCamp",
+                "year": 2025
+            },
+            {
+                "title": "MS-900 Microsoft 365 Fundamentals: Describe Microsoft 365 apps and services",
+                "issuer": "Microsoft",
+                "year": 2025
+            },
+            {
+                "title": "Python Project for AI and Application Development",
+                "issuer": "Coursera",
+                "year": 2025
+            },
+            {
+                "title": "Python for Data Science and AI",
+                "issuer": "Coursera",
+                "year": 2025
+            },
+            {
+                "title": "Developing Front-End Apps with React",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Introduction to Cloud Computing",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Introduction to HTML, CSS, & JavaScript",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Introduction to Software Engineering",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Python Essentials 2",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "Python Essentials 1",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to ChatGPT",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to Git",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to Deep Learning with Keras",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Joining Data with pandas",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Intermediate Python",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Introduction to TensorFlow in Python",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Advanced Deep Learning with Keras",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Software Engineering Principles in Python",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Large Language Models (LLMs) Concepts",
+                "issuer": "DataCamp",
+                "year": 2023
+            },
+            {
+                "title": "Data Manipulation with pandas",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Working with the OpenAI API",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "JavaScript Essentials 1",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to Machine Learning on AWS",
+                "issuer": "Amazon Web Services",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to Figma course",
+                "issuer": "Simplilearn",
+                "year": 2024
+            },
+            {
+                "title": "Developing Applications with Cloud Run on Google Cloud: Fundamentals",
+                "issuer": "Coursera",
+                "year": 2024
+            },
+            {
+                "title": "Responsive Web Design",
+                "issuer": "freeCodeCamp",
+                "year": 2024
+            },
+            {
+                "title": "Cybersecurity for Everyone",
+                "issuer": "University of Maryland",
+                "year": 2024
+            },
+            {
+                "title": "Data Scientist Associate",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Data Literacy",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "AI Fundamentals",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Introduction to Cybersecurity",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "SQL Associate",
+                "issuer": "DataCamp",
+                "year": 2024
+            },
+            {
+                "title": "Data Analyst Associate",
+                "issuer": "DataCamp",
+                "year": 2024
+            }
+        ],
         "points": 5250,
+        "isAdmin": true,
         "featured": true
     },
     {

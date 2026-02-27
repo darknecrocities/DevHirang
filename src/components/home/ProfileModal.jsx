@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route } from 'lucide-react';
+import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp } from 'lucide-react';
 import { cn } from '../../lib/utils';
+import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
 
 const ProfileModal = ({ developer, isOpen, onClose }) => {
+    const [showBadgeGuide, setShowBadgeGuide] = useState(false);
     if (!developer) return null;
 
     const statItems = [
@@ -89,6 +91,32 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                         </motion.div>
                                     ))}
                                 </div>
+
+                                {/* Earned Badges Tray */}
+                                <div className="space-y-4">
+                                    <h4 className="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2">
+                                        <Award className="w-3 h-3" />
+                                        Earned Badges
+                                    </h4>
+                                    <div className="flex flex-wrap gap-3">
+                                        {getDeveloperBadges(developer).map((badge) => (
+                                            <motion.div
+                                                key={badge.id}
+                                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                                className={cn(
+                                                    "p-3 rounded-2xl border flex items-center justify-center relative group/badge",
+                                                    badge.bgColor,
+                                                    badge.borderColor
+                                                )}
+                                            >
+                                                <badge.icon className={cn("w-6 h-6", badge.color)} />
+                                                <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-white text-black text-[10px] font-bold rounded opacity-0 group-hover/badge:opacity-100 transition-opacity whitespace-nowrap z-20">
+                                                    {badge.label}
+                                                </div>
+                                            </motion.div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
 
                             {/* Right Column - Achievements Timeline */}
@@ -172,6 +200,64 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                         </div>
                                     </section>
                                 )}
+
+                                {/* Badge Guide Section - Expandable */}
+                                <section className="pt-6 border-t border-white/5">
+                                    <button
+                                        onClick={() => setShowBadgeGuide(!showBadgeGuide)}
+                                        className="w-full flex items-center justify-between p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group/guide"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <div className="p-2 bg-secondary/10 rounded-lg">
+                                                <Trophy className="w-5 h-5 text-secondary" />
+                                            </div>
+                                            <div className="text-left">
+                                                <h3 className="text-lg font-bold text-white group-hover/guide:text-secondary transition-colors">Badge Achievement Guide</h3>
+                                                <p className="text-xs text-text-muted">Learn how to earn exclusive community badges</p>
+                                            </div>
+                                        </div>
+                                        {showBadgeGuide ? <ChevronUp className="w-5 h-5 text-text-muted" /> : <ChevronDown className="w-5 h-5 text-text-muted" />}
+                                    </button>
+
+                                    <AnimatePresence>
+                                        {showBadgeGuide && (
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: 'auto', opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                                className="overflow-hidden"
+                                            >
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+                                                    {BADGE_CRITERIA.map((badge, i) => {
+                                                        const isEarned = getDeveloperBadges(developer).some(b => b.id === badge.id);
+                                                        return (
+                                                            <div
+                                                                key={badge.id}
+                                                                className={cn(
+                                                                    "p-4 rounded-2xl border transition-all flex items-start gap-3",
+                                                                    isEarned ? "bg-white/5 border-secondary/30" : "bg-black/20 border-white/5 opacity-60"
+                                                                )}
+                                                            >
+                                                                <div className={cn("p-2 rounded-lg shrink-0", badge.bgColor, badge.borderColor)}>
+                                                                    <badge.icon className={cn("w-5 h-5", badge.color)} />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="flex items-center gap-2">
+                                                                        <h5 className="font-bold text-sm text-white">{badge.label}</h5>
+                                                                        {isEarned && <span className="text-[10px] bg-secondary text-background px-1.5 py-0.5 rounded-md font-black">EARNED</span>}
+                                                                    </div>
+                                                                    <p className="text-[10px] text-text-muted mt-1 leading-tight">{badge.description}</p>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </section>
+
 
                                 <div className="p-8 rounded-xl bg-background border border-dashed border-white/20 font-mono">
                                     <h4 className="font-bold mb-2 text-white">Want to work with {developer.name.split(' ')[0]}?</h4>

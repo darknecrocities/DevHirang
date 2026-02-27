@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/darknecrocities/DevHirang/blob/main/banner.png?raw=true" width="580" height="380" alt="DevHirang Logo" />
+  <img src="https://github.com/darknecrocities/DevHirang/blob/main/banner.png?raw=true" width="880" height="580" alt="DevHirang Logo" />
   <h1>🚀 DevHirang</h1>
   <p><strong>The Pinnacle of Developer Recognition & Achievement Showcase</strong></p>
 

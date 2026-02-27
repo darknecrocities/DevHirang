@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/lucide-react/lucide/main/icons/globe.svg" width="80" height="80" alt="DevHirang Logo" />
+  <img src="https://github.com/darknecrocities/DevHirang/blob/main/banner.png?raw=true" width="80" height="80" alt="DevHirang Logo" />
   <h1>🚀 DevHirang</h1>
   <p><strong>The Pinnacle of Developer Recognition & Achievement Showcase</strong></p>
 

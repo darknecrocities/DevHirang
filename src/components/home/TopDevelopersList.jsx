@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, ChevronRight, Star } from 'lucide-react';
+import { Trophy, ChevronRight, Star, Info } from 'lucide-react';
 import { cn } from '../../lib/utils';
+import { calculateScore } from '../../utils/ranking';
+import RankingCriteriaModal from './RankingCriteriaModal';
 
 const TopDevelopersList = ({ developers, onSelect }) => {
-    // Sort developers by points descending
-    const sortedDevs = [...developers].sort((a, b) => b.points - a.points);
+    const [isCriteriaOpen, setIsCriteriaOpen] = useState(false);
+
+    // Dynamic Ranking System Algorithm
+    const sortedDevs = [...developers]
+        .map(dev => ({
+            ...dev,
+            credibilityScore: calculateScore(dev)
+        }))
+        .sort((a, b) => b.credibilityScore - a.credibilityScore);
 
     return (
         <div className="w-full max-w-5xl mx-auto space-y-6">
-            <div className="flex items-center gap-3 mb-8 pb-4 border-b border-white/20">
-                <Trophy className="w-8 h-8 text-secondary" />
-                <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">Top Developers in Pampanga</h2>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-white/20">
+                <div className="flex items-center gap-3">
+                    <Trophy className="w-8 h-8 text-secondary" />
+                    <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">Top Developers</h2>
+                </div>
+
+                <button
+                    onClick={() => setIsCriteriaOpen(true)}
+                    className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white text-text-muted hover:text-black border border-white/10 rounded-lg transition-all font-mono text-sm font-bold uppercase tracking-tighter"
+                >
+                    <Info className="w-4 h-4" />
+                    Ranking Criteria
+                </button>
             </div>
 
             <div className="space-y-4">
@@ -25,7 +44,12 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                         className="group flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 md:p-6 bg-background border border-dashed border-white/20 hover:border-white transition-all cursor-pointer"
                     >
                         <div className="flex items-center gap-6">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-full border border-white/20 bg-white/5 font-mono text-xl font-bold text-white group-hover:bg-white group-hover:text-black transition-colors">
+                            <div className={cn(
+                                "flex items-center justify-center w-12 h-12 rounded-full border font-mono text-xl font-bold transition-all",
+                                index === 0 ? "bg-secondary border-secondary text-background" :
+                                    index === 1 ? "bg-white/20 border-white/30 text-white" :
+                                        index === 2 ? "bg-white/10 border-white/20 text-white/80" : "bg-white/5 border-white/20 text-white/50"
+                            )}>
                                 #{index + 1}
                             </div>
 
@@ -47,14 +71,19 @@ const TopDevelopersList = ({ developers, onSelect }) => {
 
                         <div className="flex items-center justify-between md:justify-end gap-8 md:w-1/3">
                             <div className="text-left md:text-right">
-                                <p className="text-xs text-text-muted font-mono uppercase tracking-widest">Impact Score</p>
-                                <p className="text-2xl font-bold text-white">{dev.points.toLocaleString()}</p>
+                                <p className="text-xs text-text-muted font-mono uppercase tracking-widest">Credibility Score</p>
+                                <p className="text-2xl font-bold text-white">{dev.credibilityScore.toLocaleString()}</p>
                             </div>
                             <ChevronRight className="w-5 h-5 text-white/30 group-hover:text-white transition-colors" />
                         </div>
                     </motion.div>
                 ))}
             </div>
+
+            <RankingCriteriaModal
+                isOpen={isCriteriaOpen}
+                onClose={() => setIsCriteriaOpen(false)}
+            />
         </div>
     );
 };

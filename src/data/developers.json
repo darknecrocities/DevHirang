@@ -328,7 +328,12 @@
         ],
         "points": 5250,
         "isAdmin": true,
-        "featured": true
+        "featured": true,
+        "testimonial": {
+            "text": "Arron is a visionary leader who doesn't just build code; he builds communities. His work with DevHirang is a testament to his dedication to the local/International tech scene.",
+            "author": "Founder & Developer",
+            "date": "2026-02-27"
+        }
     },
     {
         "id": 2,
@@ -382,7 +387,12 @@
             }
         ],
         "points": 980,
-        "featured": true
+        "featured": true,
+        "testimonial": {
+            "text": "Jane's ability to simplify complex cloud architectures is unmatched. She has been pivotal in scaling our startup infrastructure from zero to thousands of users.",
+            "author": "CEO, CloudScale Solutions",
+            "date": "2024-11-15"
+        }
     },
     {
         "id": 3,
@@ -436,7 +446,12 @@
             }
         ],
         "points": 1100,
-        "featured": false
+        "featured": false,
+        "testimonial": {
+            "text": "John has an incredible eye for detail. The UI library he built saved our team months of development time while keeping a premium, consistent look.",
+            "author": "Lead Product Designer",
+            "date": "2023-12-01"
+        }
     },
     {
         "id": 4,
@@ -490,6 +505,11 @@
             }
         ],
         "points": 1300,
-        "featured": true
+        "featured": true,
+        "testimonial": {
+            "text": "Maria's work on AgriPredict has fundamentally changed how local farmers approach crop management. Her research is both innovative and impactful.",
+            "author": "Regional Director, AgriTech",
+            "date": "2025-01-20"
+        }
     }
 ]

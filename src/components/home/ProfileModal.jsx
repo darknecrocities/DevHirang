@@ -40,35 +40,35 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                             <X className="w-5 h-5" />
                         </button>
 
-                        <div className="grid md:grid-cols-12 gap-0">
+                        <div className="grid md:grid-cols-12 gap-0 h-full overflow-y-auto">
                             {/* Left Column - Profile Sticky */}
-                            <div className="md:col-span-12 lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/10 space-y-8">
+                            <div className="md:col-span-12 lg:col-span-5 p-6 sm:p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/10 space-y-8">
                                 <div className="space-y-6 text-center lg:text-left">
                                     <div className="relative inline-block">
-                                        <div className="w-40 h-40 rounded-3xl overflow-hidden border-2 border-secondary/50 glow-secondary mx-auto lg:mx-0">
+                                        <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-3xl overflow-hidden border-2 border-secondary/50 glow-secondary mx-auto lg:mx-0">
                                             <img src={developer.avatar} alt={developer.name} className="w-full h-full object-cover" />
                                         </div>
                                     </div>
 
                                     <div>
-                                        <h2 className="text-4xl font-bold mb-2">{developer.name}</h2>
-                                        <p className="text-secondary text-lg font-medium">{developer.role.join(' • ')}</p>
+                                        <h2 className="text-3xl sm:text-4xl font-bold mb-2">{developer.name}</h2>
+                                        <p className="text-secondary text-sm sm:text-lg font-medium">{developer.role.join(' • ')}</p>
                                     </div>
 
-                                    <p className="text-text-muted leading-relaxed">
+                                    <p className="text-sm sm:text-base text-text-muted leading-relaxed">
                                         {developer.bio}
                                     </p>
 
-                                    <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                                    <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
                                         {developer.github && (
-                                            <a href={developer.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 rounded-2xl font-bold transition-all border border-white/10">
-                                                <Github className="w-5 h-5" />
+                                            <a href={developer.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3 bg-white/5 hover:bg-white/10 rounded-2xl font-bold transition-all border border-white/10 text-sm">
+                                                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                                                 GitHub
                                             </a>
                                         )}
                                         {developer.website && (
-                                            <a href={developer.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-secondary text-background hover:bg-white rounded-2xl font-bold transition-all glow-secondary">
-                                                <ExternalLink className="w-5 h-5" />
+                                            <a href={developer.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3 bg-secondary text-background hover:bg-white rounded-2xl font-bold transition-all glow-secondary text-sm">
+                                                <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                                                 Website
                                             </a>
                                         )}
@@ -76,41 +76,41 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                 </div>
 
                                 {/* Animated Stats Bar */}
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 gap-3 sm:gap-4">
                                     {statItems.map((item, i) => (
                                         <motion.div
                                             key={i}
                                             initial={{ opacity: 0, scale: 0.8 }}
                                             animate={{ opacity: 1, scale: 1 }}
                                             transition={{ delay: 0.2 + (i * 0.1) }}
-                                            className="p-4 bg-white/5 rounded-[1.5rem] border border-white/10 text-center"
+                                            className="p-3 sm:p-4 bg-white/5 rounded-[1.25rem] sm:rounded-[1.5rem] border border-white/10 text-center"
                                         >
-                                            <item.icon className="w-5 h-5 text-secondary mx-auto mb-2" />
-                                            <p className="text-2xl font-black text-white">{item.value}</p>
-                                            <p className="text-[10px] uppercase tracking-widest text-text-muted">{item.label}</p>
+                                            <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-secondary mx-auto mb-2" />
+                                            <p className="text-xl sm:text-2xl font-black text-white">{item.value}</p>
+                                            <p className="text-[9px] sm:text-[10px] uppercase tracking-widest text-text-muted">{item.label}</p>
                                         </motion.div>
                                     ))}
                                 </div>
 
                                 {/* Earned Badges Tray */}
                                 <div className="space-y-4">
-                                    <h4 className="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2">
+                                    <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2">
                                         <Award className="w-3 h-3" />
                                         Earned Badges
                                     </h4>
-                                    <div className="flex flex-wrap gap-3">
+                                    <div className="flex flex-wrap gap-2.5 sm:gap-3">
                                         {getDeveloperBadges(developer).map((badge) => (
                                             <motion.div
                                                 key={badge.id}
                                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                                 className={cn(
-                                                    "p-3 rounded-2xl border flex items-center justify-center relative group/badge",
+                                                    "p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border flex items-center justify-center relative group/badge",
                                                     badge.bgColor,
                                                     badge.borderColor
                                                 )}
                                             >
-                                                <badge.icon className={cn("w-6 h-6", badge.color)} />
-                                                <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-white text-black text-[10px] font-bold rounded opacity-0 group-hover/badge:opacity-100 transition-opacity whitespace-nowrap z-20">
+                                                <badge.icon className={cn("w-5 h-5 sm:w-6 sm:h-6", badge.color)} />
+                                                <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-white text-black text-[9px] sm:text-[10px] font-bold rounded opacity-0 lg:group-hover/badge:opacity-100 transition-opacity whitespace-nowrap z-20">
                                                     {badge.label}
                                                 </div>
                                             </motion.div>
@@ -120,9 +120,9 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                             </div>
 
                             {/* Right Column - Achievements Timeline */}
-                            <div className="md:col-span-12 lg:col-span-7 p-8 lg:p-12 space-y-10">
+                            <div className="md:col-span-12 lg:col-span-7 p-6 sm:p-8 lg:p-12 space-y-10">
                                 <section className="space-y-6">
-                                    <h3 className="text-xl font-bold flex items-center gap-2">
+                                    <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
                                         <Award className="w-5 h-5 text-secondary" />
                                         Achievements Timeline
                                     </h3>
@@ -134,19 +134,19 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                 initial={{ opacity: 0, x: 20 }}
                                                 animate={{ opacity: 1, x: 0 }}
                                                 transition={{ delay: 0.4 + (i * 0.1) }}
-                                                className="group flex gap-4 p-4 rounded-2xl hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"
+                                                className="group flex flex-col sm:flex-row gap-4 p-4 rounded-2xl sm:hover:bg-white/5 border border-white/5 sm:border-transparent sm:hover:border-white/10 transition-all bg-white/[0.02] sm:bg-transparent"
                                             >
-                                                <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-secondary font-bold text-xs">
+                                                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-xl flex items-center justify-center text-secondary font-bold text-[10px] sm:text-xs">
                                                     {ach.year}
                                                 </div>
                                                 <div className="flex-1">
-                                                    <div className="flex items-center justify-between mb-1">
-                                                        <h4 className="font-bold text-white group-hover:text-secondary transition-colors">{ach.title}</h4>
-                                                        <span className="text-[10px] font-bold uppercase tracking-widest text-text-muted px-2 py-0.5 bg-white/5 rounded-full">
+                                                    <div className="flex items-center justify-between mb-2 sm:mb-1">
+                                                        <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{ach.title}</h4>
+                                                        <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-text-muted px-2 py-0.5 bg-white/5 rounded-full whitespace-nowrap border border-white/5">
                                                             {ach.type}
                                                         </span>
                                                     </div>
-                                                    <p className="text-sm text-text-muted leading-relaxed">
+                                                    <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
                                                         {ach.description}
                                                     </p>
                                                 </div>
@@ -157,36 +157,36 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
 
                                 {developer.roadmap && developer.roadmap.length > 0 && (
                                     <section className="space-y-6 pt-6 border-t border-white/5">
-                                        <h3 className="text-xl font-bold flex items-center gap-2">
+                                        <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
                                             <Route className="w-5 h-5 text-secondary" />
                                             Achievement Highlights
                                         </h3>
 
-                                        <div className="space-y-4 relative before:absolute before:inset-0 before:ml-[1.4rem] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-secondary/50 before:via-white/10 before:to-transparent">
+                                        <div className="space-y-4 relative before:absolute before:inset-0 before:ml-[1.25rem] sm:before:ml-[1.4rem] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-secondary/50 before:via-white/10 before:to-transparent">
                                             {developer.roadmap.map((step, i) => (
                                                 <motion.div
                                                     key={i}
                                                     initial={{ opacity: 0, x: 20 }}
                                                     animate={{ opacity: 1, x: 0 }}
                                                     transition={{ delay: 0.5 + (i * 0.1) }}
-                                                    className="relative flex gap-6 items-start group"
+                                                    className="relative flex gap-4 sm:gap-6 items-start group"
                                                 >
                                                     <div className={cn(
-                                                        "w-12 h-12 rounded-full border-4 border-background flex items-center justify-center z-10 shrink-0 transition-colors",
+                                                        "w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-background flex items-center justify-center z-10 shrink-0 transition-colors",
                                                         step.status === 'Completed' ? "bg-secondary text-background" :
                                                             step.status === 'In Progress' ? "bg-primary border-secondary/50" : "bg-white/10"
                                                     )}>
-                                                        <span className="text-[10px] font-bold">
+                                                        <span className="text-[9px] sm:text-[10px] font-bold">
                                                             {step.status === 'Completed' ? '✓' : step.year}
                                                         </span>
                                                     </div>
 
                                                     <div className="flex-1 pb-6">
-                                                        <div className="bg-white/5 border border-white/10 p-4 rounded-2xl group-hover:border-secondary/30 transition-all">
-                                                            <div className="flex justify-between items-center mb-1">
-                                                                <h4 className="font-bold text-white group-hover:text-secondary transition-colors">{step.title}</h4>
+                                                        <div className="bg-white/5 border border-white/10 p-4 rounded-xl sm:rounded-2xl group-hover:border-secondary/30 transition-all">
+                                                            <div className="flex justify-between items-center mb-1 gap-2">
+                                                                <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{step.title}</h4>
                                                                 <span className={cn(
-                                                                    "text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full",
+                                                                    "text-[8px] sm:text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded-full whitespace-nowrap",
                                                                     step.status === 'Completed' ? "bg-secondary/20 text-secondary" :
                                                                         step.status === 'In Progress' ? "bg-primary/50 text-white" : "bg-white/10 text-text-muted"
                                                                 )}>
@@ -205,18 +205,18 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                 <section className="pt-6 border-t border-white/5">
                                     <button
                                         onClick={() => setShowBadgeGuide(!showBadgeGuide)}
-                                        className="w-full flex items-center justify-between p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group/guide"
+                                        className="w-full flex items-center justify-between p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group/guide"
                                     >
                                         <div className="flex items-center gap-3">
                                             <div className="p-2 bg-secondary/10 rounded-lg">
-                                                <Trophy className="w-5 h-5 text-secondary" />
+                                                <Trophy className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
                                             </div>
                                             <div className="text-left">
-                                                <h3 className="text-lg font-bold text-white group-hover/guide:text-secondary transition-colors">Badge Achievement Guide</h3>
-                                                <p className="text-xs text-text-muted">Learn how to earn exclusive community badges</p>
+                                                <h3 className="text-base sm:text-lg font-bold text-white group-hover/guide:text-secondary transition-colors">Badge Achievement Guide</h3>
+                                                <p className="text-[10px] text-text-muted">Learn how to earn exclusive community badges</p>
                                             </div>
                                         </div>
-                                        {showBadgeGuide ? <ChevronUp className="w-5 h-5 text-text-muted" /> : <ChevronDown className="w-5 h-5 text-text-muted" />}
+                                        {showBadgeGuide ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-text-muted" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-text-muted" />}
                                     </button>
 
                                     <AnimatePresence>
@@ -228,26 +228,26 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                 transition={{ duration: 0.3 }}
                                                 className="overflow-hidden"
                                             >
-                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-4 sm:pt-6">
                                                     {BADGE_CRITERIA.map((badge, i) => {
                                                         const isEarned = getDeveloperBadges(developer).some(b => b.id === badge.id);
                                                         return (
                                                             <div
                                                                 key={badge.id}
                                                                 className={cn(
-                                                                    "p-4 rounded-2xl border transition-all flex items-start gap-3",
+                                                                    "p-3 sm:p-4 rounded-xl sm:rounded-2xl border transition-all flex items-start gap-3",
                                                                     isEarned ? "bg-white/5 border-secondary/30" : "bg-black/20 border-white/5 opacity-60"
                                                                 )}
                                                             >
-                                                                <div className={cn("p-2 rounded-lg shrink-0", badge.bgColor, badge.borderColor)}>
-                                                                    <badge.icon className={cn("w-5 h-5", badge.color)} />
+                                                                <div className={cn("p-1.5 sm:p-2 rounded-lg shrink-0", badge.bgColor, badge.borderColor)}>
+                                                                    <badge.icon className={cn("w-4 h-4 sm:w-5 sm:h-5", badge.color)} />
                                                                 </div>
                                                                 <div>
                                                                     <div className="flex items-center gap-2">
-                                                                        <h5 className="font-bold text-sm text-white">{badge.label}</h5>
-                                                                        {isEarned && <span className="text-[10px] bg-secondary text-background px-1.5 py-0.5 rounded-md font-black">EARNED</span>}
+                                                                        <h5 className="font-bold text-xs sm:text-sm text-white">{badge.label}</h5>
+                                                                        {isEarned && <span className="text-[8px] sm:text-[10px] bg-secondary text-background px-1.5 py-0.5 rounded-md font-black">EARNED</span>}
                                                                     </div>
-                                                                    <p className="text-[10px] text-text-muted mt-1 leading-tight">{badge.description}</p>
+                                                                    <p className="text-[9px] sm:text-[10px] text-text-muted mt-1 leading-tight">{badge.description}</p>
                                                                 </div>
                                                             </div>
                                                         );
@@ -259,21 +259,21 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                 </section>
 
 
-                                <div className="p-8 rounded-xl bg-background border border-dashed border-white/20 font-mono">
-                                    <h4 className="font-bold mb-2 text-white">Want to work with {developer.name.split(' ')[0]}?</h4>
-                                    <p className="text-sm text-text-muted mb-6">
+                                <div className="p-6 sm:p-8 rounded-2xl bg-background border border-dashed border-white/20 font-mono">
+                                    <h4 className="font-bold mb-2 text-white text-base sm:text-lg">Want to work with {developer.name.split(' ')[0]}?</h4>
+                                    <p className="text-xs sm:text-sm text-text-muted mb-6">
                                         Professional inquiries and community collaborations are always welcome.
                                         Reach out via the buttons on the left profile card.
                                     </p>
                                     {developer.email ? (
                                         <a
                                             href={`mailto:${developer.email}`}
-                                            className="w-full py-4 bg-white text-black hover:bg-gray-200 rounded-lg font-bold transition-all inline-block text-center"
+                                            className="w-full py-4 bg-white text-black hover:bg-gray-200 rounded-xl font-bold transition-all inline-block text-center text-sm"
                                         >
                                             Send a Message
                                         </a>
                                     ) : (
-                                        <button disabled className="w-full py-4 bg-white/50 text-black/50 rounded-lg font-bold cursor-not-allowed text-center">
+                                        <button disabled className="w-full py-4 bg-white/50 text-black/50 rounded-xl font-bold cursor-not-allowed text-center text-sm">
                                             Email Not Available
                                         </button>
                                     )}

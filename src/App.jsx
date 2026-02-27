@@ -9,6 +9,7 @@ import DevDiaries from './components/home/DevDiaries';
 import TopDevelopersList from './components/home/TopDevelopersList';
 import Footer from './components/layout/Footer';
 import ProfileModal from './components/home/ProfileModal';
+import TestimonialCarousel from './components/home/TestimonialCarousel';
 
 function App() {
   const [developers, setDevelopers] = useState(developersData);
@@ -53,6 +54,8 @@ function App() {
         {activeTab === 'Home' ? (
           <>
             <Hero />
+
+            <TestimonialCarousel developers={developers} onSelect={setSelectedDev} />
 
             <section id="featured">
               <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">

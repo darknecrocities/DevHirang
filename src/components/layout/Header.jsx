@@ -4,6 +4,7 @@ import { cn } from '../../lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSelect }) => {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const tabs = ['Home', 'Top Developers'];
 
     // Filter logic for dropdown
@@ -31,7 +32,7 @@ const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSele
                     </span>
                 </div>
 
-                <div className="flex-1 max-w-md relative hidden md:block z-50">
+                <div className="flex-1 max-w-md relative hidden sm:block z-50">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
                     <input
                         type="text"
@@ -83,8 +84,8 @@ const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSele
                     </AnimatePresence>
                 </div>
 
-                {/* Tabs */}
-                <div className="flex items-center gap-2 lg:mx-8">
+                {/* Desktop Tabs */}
+                <div className="hidden lg:flex items-center gap-2 lg:mx-8">
                     {tabs.map(tab => (
                         <button
                             key={tab}
@@ -104,12 +105,73 @@ const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSele
                         href="https://forms.gle/iTD6v4WoUQdRRD1R9"
                         target="_blank"
                         rel="noreferrer"
-                        className="bg-white text-black hover:bg-gray-200 px-4 py-2 text-sm font-bold transition-all border border-transparent font-mono whitespace-nowrap inline-block text-center"
+                        className="hidden sm:inline-block bg-white text-black hover:bg-gray-200 px-4 py-2 text-sm font-bold transition-all border border-transparent font-mono whitespace-nowrap text-center"
                     >
                         Submit Dev
                     </a>
+
+                    {/* Mobile Menu Toggle */}
+                    <button
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        className="lg:hidden p-2 text-white hover:bg-white/5 rounded-lg transition-colors"
+                    >
+                        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    </button>
                 </div>
             </div>
+
+            {/* Mobile Navigation Drawer */}
+            <AnimatePresence>
+                {isMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="lg:hidden mt-4 pt-4 border-t border-white/10 space-y-4"
+                    >
+                        {/* Mobile Search */}
+                        <div className="relative sm:hidden">
+                            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
+                            <input
+                                type="text"
+                                placeholder="Search developers..."
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
+                                className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-white/50 transition-all font-mono"
+                            />
+                        </div>
+
+                        {/* Mobile Nav Links */}
+                        <div className="flex flex-col gap-2">
+                            {tabs.map(tab => (
+                                <button
+                                    key={tab}
+                                    onClick={() => {
+                                        setActiveTab(tab);
+                                        setIsMenuOpen(false);
+                                    }}
+                                    className={cn(
+                                        "w-full text-left px-4 py-3 rounded-xl font-mono text-sm font-bold transition-all",
+                                        activeTab === tab ? "bg-white text-black" : "text-text-muted hover:text-white hover:bg-white/5"
+                                    )}
+                                >
+                                    {tab}
+                                </button>
+                            ))}
+                        </div>
+
+                        <a
+                            href="https://forms.gle/iTD6v4WoUQdRRD1R9"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full py-4 bg-secondary text-background rounded-xl font-bold flex items-center justify-center gap-2 glow-secondary sm:hidden"
+                        >
+                            Submit Developer
+                            <ArrowRight className="w-4 h-4" />
+                        </a>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     );
 };

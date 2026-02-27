@@ -1,0 +1,239 @@
+[
+    {
+        "id": 1,
+        "name": "Arron Kian Parejas",
+        "role": [
+            "AI/ML Engineer",
+            "Full-stack Developer"
+        ],
+        "email": "parejasarronkian@gmail.com",
+        "github": "https://github.com/darknecrocities",
+        "website": "https://arron-portfolio-delta.vercel.app/",
+        "avatar": "https://avatars.githubusercontent.com/u/140617917?v=4",
+        "bio": "Chapter Lead on Google Developer Group on Campus HAU, building community-driven solutions, competitive in national/international hackathons and advocating for open-source technology in the local tech scene.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Main Organizer - GDG-HAU Hackathon 2025",
+                "year": 2025,
+                "description": "Led the organization of the first major regional hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - GDG-UPM Build with AI",
+                "year": 2025,
+                "description": "Champion of the Build with AI hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - SkyDev Hackathon 2025",
+                "year": 2025,
+                "description": "Champion of the SkyDev Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - Caffeine.ai Manila 2025",
+                "year": 2025,
+                "description": "Champion of the Caffeine.ai Manila 2025 hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - 2025UNity Hakackathon",
+                "year": 2025,
+                "description": "Champion of the 2025UNity Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - Sparkhub 2025",
+                "year": 2025,
+                "description": "Champion of the Sparkhub 2025 hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Finalist - Appcon 2024",
+                "year": 2025,
+                "description": "Finalist of the Appcon 2024 hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "opensource",
+                "title": "Devcon Contributors Hub",
+                "year": 2023,
+                "description": "Developed the central repo for local community projects.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Google Developer Group on Campus - Chapter Leader",
+                "year": 2025,
+                "description": "Recognized for community impact in the Google Community.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Learn AI Integrations",
+                "status": "In Progress"
+            },
+            {
+                "year": 2026,
+                "title": "Launch Tech Startup",
+                "status": "Planned"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 15,
+            "projects_contributed": 170
+        },
+        "points": 5250,
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "role": [
+            "Cloud Architect",
+            "Community Builder"
+        ],
+        "email": "jane.smith@example.com",
+        "github": "https://github.com/janesmith",
+        "website": "https://janesmith.dev",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane",
+        "bio": "AWS Community Builder and Cloud enthusiast. Helping startups scale their infrastructure with serverless architectures.",
+        "achievements": [
+            {
+                "type": "startup",
+                "title": "CloudScale Solutions",
+                "year": 2024,
+                "description": "Founded a cloud consultancy startup.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "AWS Speaker",
+                "year": 2024,
+                "description": "Delivered technical sessions at AWS User Group Pampanga.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "AWS Solutions Architect Pro",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Master Kubernetes",
+                "status": "In Progress"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 2,
+            "projects_contributed": 8
+        },
+        "points": 980,
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "John Doe",
+        "role": [
+            "Frontend Specialist",
+            "UI/UX Designer"
+        ],
+        "email": "john.doe@example.com",
+        "github": "https://github.com/johndoe",
+        "website": "https://johndoe.design",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john",
+        "bio": "UI/UX obsessed developer with a passion for building beautiful, accessible web applications using React and Tailwind.",
+        "achievements": [
+            {
+                "type": "opensource",
+                "title": "UI-Component-Lib",
+                "year": 2023,
+                "description": "Created a lightweight UI library for React.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Pampanga Hack Winner",
+                "year": 2022,
+                "description": "Won first place in the 2022 city-wide hackathon.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Contribute to React Core",
+                "status": "Planned"
+            },
+            {
+                "year": 2025,
+                "title": "Build UI Course",
+                "status": "In Progress"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 4,
+            "projects_contributed": 15
+        },
+        "points": 1100,
+        "featured": false
+    },
+    {
+        "id": 4,
+        "name": "Maria Garcia",
+        "role": [
+            "AI Researcher",
+            "Data Scientist"
+        ],
+        "email": "maria.garcia@example.com",
+        "github": "https://github.com/mariagarcia",
+        "website": "https://mariagarcia.ai",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=maria",
+        "bio": "Exploring the intersection of LLMs and local agriculture. Developed predictive models for crop yield in Pampanga.",
+        "achievements": [
+            {
+                "type": "opensource",
+                "title": "AgriPredict",
+                "year": 2024,
+                "description": "Built an open-source model for local farmers.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "AI in Ph Guest Speaker",
+                "year": 2025,
+                "description": "Talked about ethical AI at national conferences.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "Release AgriPredict v1",
+                "status": "Completed"
+            },
+            {
+                "year": 2026,
+                "title": "Ph.D in Machine Learning",
+                "status": "Planned"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 20
+        },
+        "points": 1300,
+        "featured": true
+    }
+]

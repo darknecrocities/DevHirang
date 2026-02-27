@@ -1,0 +1,94 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Github, ExternalLink, Award } from 'lucide-react';
+import { cn } from '../../lib/utils';
+
+const DevCard = ({ developer, onClick }) => {
+    return (
+        <motion.div
+            whileHover={{ y: -10, scale: 1.02 }}
+            onClick={onClick}
+            className="group cursor-pointer bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-secondary/30 transition-all hover:bg-white/8 glow-primary"
+        >
+            <div className="p-1">
+                <div className="relative aspect-square overflow-hidden rounded-xl">
+                    <img
+                        src={developer.avatar}
+                        alt={developer.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
+                    {developer.featured && (
+                        <div className="absolute top-3 right-3 p-1.5 bg-secondary text-background rounded-lg glow-secondary">
+                            <Award className="w-4 h-4" />
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            <div className="p-5 space-y-3">
+                <div>
+                    <h3 className="text-xl font-bold line-clamp-1">{developer.name}</h3>
+                    <p className="text-secondary text-sm font-medium">{developer.role.join(' • ')}</p>
+                </div>
+
+                <p className="text-text-muted text-sm line-clamp-2 min-h-[2.5rem]">
+                    {developer.bio}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                    {developer.achievements.slice(0, 3).map((ach, i) => (
+                        <span
+                            key={i}
+                            className="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[10px] uppercase font-bold tracking-wider text-text-muted"
+                        >
+                            {ach.type}
+                        </span>
+                    ))}
+                    {developer.achievements.length > 3 && (
+                        <span className="px-2.5 py-1 rounded-md bg-white/5 text-[10px] font-bold text-text-muted">
+                            +{developer.achievements.length - 3}
+                        </span>
+                    )}
+                </div>
+
+                {developer.roadmap && developer.roadmap.length > 0 && (
+                    <div className="pt-3 border-t border-white/5">
+                        <p className="text-xs font-bold text-secondary mb-1 uppercase tracking-wider">Current Focus</p>
+                        <p className="text-sm text-text-muted line-clamp-1">
+                            {developer.roadmap.find(r => r.status === 'In Progress')?.title || developer.roadmap[0].title}
+                        </p>
+                    </div>
+                )}
+
+                <div className="pt-2 flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                        <div className="text-center">
+                            <p className="text-xs text-text-muted">Won</p>
+                            <p className="font-bold text-secondary">{developer.stats.hackathons_won}</p>
+                        </div>
+                        <div className="text-center">
+                            <p className="text-xs text-text-muted">Projects</p>
+                            <p className="font-bold text-secondary">{developer.stats.projects_contributed}</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        {developer.github && (
+                            <a href={developer.github} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 bg-white/5 rounded-lg group-hover:bg-secondary group-hover:text-background transition-colors">
+                                <Github className="w-4 h-4" />
+                            </a>
+                        )}
+                        {developer.website && (
+                            <a href={developer.website} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 bg-white/5 rounded-lg group-hover:bg-secondary group-hover:text-background transition-colors">
+                                <ExternalLink className="w-4 h-4" />
+                            </a>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </motion.div>
+    );
+};
+
+export default DevCard;

@@ -72,9 +72,6 @@ const Footer = () => {
 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-text-muted">
                     <p>© 2025 DevHirang Pampanga. All rights reserved.</p>
-                    <p className="flex items-center gap-1.5">
-                        Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by DevHirang
-                    </p>
                 </div>
             </div>
         </footer>

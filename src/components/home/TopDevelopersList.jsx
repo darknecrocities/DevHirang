@@ -34,7 +34,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-white/20">
                 <div className="flex items-center gap-3">
                     <Trophy className="w-8 h-8 text-secondary" />
-                    <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">100 Devs</h2>
+                    <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">100 Hinirang</h2>
                 </div>
             </div>
 

@@ -75,7 +75,7 @@ function App() {
 
             <section id="featured">
               <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
-                <span className="text-secondary">✦</span> Featured Achievers
+                <span className="text-secondary">✦</span> Monthly Featured
               </h2>
               <FeatureCarousel developers={featuredDevs} onSelect={setSelectedDev} />
             </section>

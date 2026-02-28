@@ -4,7 +4,7 @@ export const BADGE_CRITERIA = [
     {
         id: 'world_level',
         label: 'World Level Developer',
-        description: '40+ certifications, 10+ hackathon wins, and 100+ projects',
+        description: '40+ certifications, 10+ hackathon wins, 100+ projects, and 2,000+ GitHub contributions',
         icon: Globe,
         points: 20000,
         color: 'text-indigo-400',
@@ -13,7 +13,8 @@ export const BADGE_CRITERIA = [
         check: (dev) =>
             (dev.certifications?.length || 0) >= 40 &&
             dev.stats.hackathons_won >= 10 &&
-            dev.stats.projects_contributed >= 100
+            dev.stats.projects_contributed >= 100 &&
+            (dev.stats.github_contributions || 0) >= 2000
     },
     {
         id: 'admin',

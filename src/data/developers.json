@@ -235,7 +235,7 @@
         "stats": {
             "hackathons_won": 15,
             "projects_contributed": 170,
-            "github_contributions": 1200
+            "github_contributions": 10000
         },
         "certifications": [
             {
@@ -464,7 +464,7 @@
                 "year": 2024
             }
         ],
-        "points": 160100,
+        "points": 600100,
         "isAdmin": true,
         "featured": true,
         "testimonial": {

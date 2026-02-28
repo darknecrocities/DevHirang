@@ -10,10 +10,15 @@ const TopDevelopersList = ({ developers, onSelect }) => {
 
     // Dynamic Ranking System Algorithm
     const sortedDevs = [...developers]
-        .map(dev => ({
-            ...dev,
-            credibilityScore: calculateScore(dev)
-        }))
+        .map(dev => {
+            const scores = calculateScore(dev);
+            return {
+                ...dev,
+                credibilityScore: scores.total,
+                impactScore: scores.impact,
+                trustScore: scores.trust
+            };
+        })
         .sort((a, b) => b.credibilityScore - a.credibilityScore);
 
     return (
@@ -69,12 +74,24 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-between md:justify-end gap-8 md:w-1/3">
-                            <div className="text-left md:text-right">
-                                <p className="text-xs text-text-muted font-mono uppercase tracking-widest">Credibility Score</p>
-                                <p className="text-2xl font-bold text-white">{dev.credibilityScore.toLocaleString()}</p>
+                        <div className="flex flex-col md:flex-row items-end md:items-center justify-between gap-4 md:gap-8 min-w-fit">
+                            <div className="flex items-center gap-4 text-right">
+                                <div className="hidden sm:block">
+                                    <p className="text-[10px] text-blue-400 font-mono uppercase tracking-tighter">Impact</p>
+                                    <p className="text-sm font-bold text-blue-200">{dev.impactScore.toLocaleString()}</p>
+                                </div>
+                                <div className="hidden sm:block w-px h-8 bg-white/10" />
+                                <div className="hidden sm:block">
+                                    <p className="text-[10px] text-green-400 font-mono uppercase tracking-tighter">Trust</p>
+                                    <p className="text-sm font-bold text-green-200">{dev.trustScore.toLocaleString()}</p>
+                                </div>
+                                <div className="hidden sm:block w-px h-8 bg-white/10" />
+                                <div>
+                                    <p className="text-[10px] text-secondary font-mono uppercase tracking-widest">Total</p>
+                                    <p className="text-2xl font-bold text-white tracking-tight">{dev.credibilityScore.toLocaleString()}</p>
+                                </div>
                             </div>
-                            <ChevronRight className="w-5 h-5 text-white/30 group-hover:text-white transition-colors" />
+                            <ChevronRight className="hidden md:block w-5 h-5 text-white/30 group-hover:text-white transition-colors" />
                         </div>
                     </motion.div>
                 ))}

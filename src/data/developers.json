@@ -20,6 +20,13 @@
                 "link": "#"
             },
             {
+                "type": "community",
+                "title": "Devcon Core Team - Devcon 2026",
+                "year": 2025,
+                "description": "One of the Core team and officer in Devcon Pampanga.",
+                "link": "#"
+            },
+            {
                 "type": "hackathon",
                 "title": "Champion - GDG-UPM Build with AI",
                 "year": 2025,
@@ -326,7 +333,7 @@
                 "year": 2024
             }
         ],
-        "points": 5250,
+        "points": 129600,
         "isAdmin": true,
         "featured": true,
         "testimonial": {
@@ -336,180 +343,139 @@
         }
     },
     {
-        "id": 2,
-        "name": "Jane Smith",
-        "role": [
-            "Cloud Architect",
-            "Community Builder"
-        ],
-        "email": "jane.smith@example.com",
-        "github": "https://github.com/janesmith",
-        "website": "https://janesmith.dev",
-        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane",
-        "bio": "AWS Community Builder and Cloud enthusiast. Helping startups scale their infrastructure with serverless architectures.",
-        "achievements": [
-            {
-                "type": "startup",
-                "title": "CloudScale Solutions",
-                "year": 2024,
-                "description": "Founded a cloud consultancy startup.",
-                "link": "#"
-            },
-            {
-                "type": "community",
-                "title": "AWS Speaker",
-                "year": 2024,
-                "description": "Delivered technical sessions at AWS User Group Pampanga.",
-                "link": "#"
-            }
-        ],
-        "roadmap": [
-            {
-                "year": 2024,
-                "title": "AWS Solutions Architect Pro",
-                "status": "Completed"
-            },
-            {
-                "year": 2025,
-                "title": "Master Kubernetes",
-                "status": "In Progress"
-            }
-        ],
-        "stats": {
-            "hackathons_won": 2,
-            "projects_contributed": 8
+    "id": 2,
+    "name": "Rasheed Gavin M. Esponga",
+    "role": [
+        "Student"
+    ],
+    "location": "Apalit",
+    "email": "rasheedgavinesponga@gmail.com",
+    "github": "https://github.com/rshdgvn",
+    "linkedin": "https://www.linkedin.com/in/rasheed-gavin-65332a349",
+    "website": "https://rshdgvn.github.io/personal-portfolio/",
+    "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/598608760_1854968645225773_4009951120016616168_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFKXztghhA4C6kOVLcZPW1LQ_S4nMOgrEpD9Licw6CsSqiM_4Q7A8pjXGaYZa2uyHI4E3ctpV46oHWli3IhryGI&_nc_ohc=1-HXwPZAbyAQ7kNvwE1JQIu&_nc_oc=AdnOmAfvQhm6qTlvwX2HuAOEpO46MdGBE2Qjy_jj-N51nU8CIHTzDXLSRyy4RK_jmxw&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=pPRSX5-keKQWZ8q9DLPCpA&_nc_ss=8&oh=00_AftlHf7Ir6GhM1off2pDLR5IL9hbxTuLE3NcBlnTbK1nPA&oe=69A809B7",
+    "bio": "Building systems is one thing. Protecting them is where true mastery begins.",
+    "achievements": [
+        {
+        "type": "community",
+        "title": "GDG-HAU Participant",
+        "year": 2025,
+        "description": "Participated in Google Developer Group on Campus HAU activities.",
+        "link": "#"
         },
-        "certifications": [
-            {
-                "title": "AWS Certified Solutions Architect – Associate",
-                "issuer": "AWS",
-                "year": 2024
-            }
-        ],
-        "points": 980,
-        "featured": true,
-        "testimonial": {
-            "text": "Jane's ability to simplify complex cloud architectures is unmatched. She has been pivotal in scaling our startup infrastructure from zero to thousands of users.",
-            "author": "CEO, CloudScale Solutions",
-            "date": "2024-11-15"
+        {
+        "type": "hackathon",
+        "title": "1st Runner Up - GDG-HAU 2025",
+        "year": 2025,
+        "description": "Placed 1st Runner Up in the GDG-HAU 2025 competition.",
+        "link": "#"
+        },
+        {
+        "type": "hackathon",
+        "title": "Champion - HAU 2025 CTF",
+        "year": 2025,
+        "description": "Champion of the HAU 2025 Capture The Flag cybersecurity competition.",
+        "link": "#"
+        },
+        {
+        "type": "hackathon",
+        "title": "1st Runner Up - HACK4GOV 2025",
+        "year": 2025,
+        "description": "Placed 1st Runner Up in the HACK4GOV 2025 hackathon.",
+        "link": "#"
+        }
+    ],
+    "roadmap": [],
+    "stats": {
+        "hackathons_won": 3,
+        "projects_contributed": 16
+    },
+    "certifications": [
+        {
+        "title": "Machine Learning Basics",
+        "issuer": "Amazon Web Services",
+        "year": 2026,
+        "issued": "February 2026"
+        }
+    ],
+    "points": 24180,
+    "isAdmin": false,
+    "featured": true,
+    "testimonial": {
+            "text": "Rasheed Gavin M. Esponga is a focused and determined technologist with a strong interest in cybersecurity. He consistently demonstrates analytical thinking, discipline, and problem-solving skills in competitive environments such as CTFs and hackathons, showing strong potential in building and securing reliable systems.",
+            "author": "Student & Developer",
+            "date": "2026-02-27"
         }
     },
     {
-        "id": 3,
-        "name": "John Doe",
-        "role": [
-            "Frontend Specialist",
-            "UI/UX Designer"
-        ],
-        "email": "john.doe@example.com",
-        "github": "https://github.com/johndoe",
-        "website": "https://johndoe.design",
-        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john",
-        "bio": "UI/UX obsessed developer with a passion for building beautiful, accessible web applications using React and Tailwind.",
-        "achievements": [
-            {
-                "type": "opensource",
-                "title": "UI-Component-Lib",
-                "year": 2023,
-                "description": "Created a lightweight UI library for React.",
-                "link": "#"
-            },
-            {
-                "type": "hackathon",
-                "title": "Pampanga Hack Winner",
-                "year": 2022,
-                "description": "Won first place in the 2022 city-wide hackathon.",
-                "link": "#"
-            }
-        ],
-        "roadmap": [
-            {
-                "year": 2025,
-                "title": "Contribute to React Core",
-                "status": "Planned"
-            },
-            {
-                "year": 2025,
-                "title": "Build UI Course",
-                "status": "In Progress"
-            }
-        ],
-        "stats": {
-            "hackathons_won": 4,
-            "projects_contributed": 15
-        },
-        "certifications": [
-            {
-                "title": "Meta iOS Developer Professional Certificate",
-                "issuer": "Meta",
-                "year": 2023
-            }
-        ],
-        "points": 1100,
-        "featured": false,
-        "testimonial": {
-            "text": "John has an incredible eye for detail. The UI library he built saved our team months of development time while keeping a premium, consistent look.",
-            "author": "Lead Product Designer",
-            "date": "2023-12-01"
-        }
+    "id": 3,
+    "name": "Ceejay Santos",
+    "role": [
+        "Full Stack Web Developer"
+    ],
+    "location": "Apalit, Pampanga",
+    "email": "7078ceejay@gmail.com",
+    "github": "https://github.com/7078-cj",
+    "linkedin": "https://www.linkedin.com/in/ceejay-santos-8586752bb/",
+    "website": "",
+    "avatar": "https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-1/474466386_1119090356351844_8771349686609442197_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFyqZXdHDQE_gJE0irwSbW7zlaBh02gcbnOVoGHTaBxublbWZlJNX3nIyBfcEeUidkPY3BhKrmCZ0H502JS1WU6&_nc_ohc=jUEjh7UEVKMQ7kNvwEku1rm&_nc_oc=AdnuTgl--KNxDr7hZmphI2YIkIppl4noLTCSD3OemOx11qVAYY8YM3LN0IfQe4LMKHk&_nc_zt=24&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=YWs__g7mdFu5ULdO_O_Cvw&_nc_ss=8&oh=00_Afvagmvb5KNMzglcr4oj8VPcxAfo4dhsKiR2JLZntkr75w&oe=69A83284",
+    "bio": "Aspiring Web Developer with a passion for building scalable, high-performance web applications. Specializes in React for dynamic frontends and Django, Laravel, and FastAPI for secure backends. Experienced in delivering production-ready systems including real-time WebSockets and AI-powered features, with a strong focus on clean, maintainable code and optimized user experiences.",
+    "community_affiliation": {
+        "organization": "Devcon Pampanga",
+        "role": "Core Team Volunteer"
     },
-    {
-        "id": 4,
-        "name": "Maria Garcia",
-        "role": [
-            "AI Researcher",
-            "Data Scientist"
-        ],
-        "email": "maria.garcia@example.com",
-        "github": "https://github.com/mariagarcia",
-        "website": "https://mariagarcia.ai",
-        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=maria",
-        "bio": "Exploring the intersection of LLMs and local agriculture. Developed predictive models for crop yield in Pampanga.",
-        "achievements": [
-            {
-                "type": "opensource",
-                "title": "AgriPredict",
-                "year": 2024,
-                "description": "Built an open-source model for local farmers.",
-                "link": "#"
-            },
-            {
-                "type": "community",
-                "title": "AI in Ph Guest Speaker",
-                "year": 2025,
-                "description": "Talked about ethical AI at national conferences.",
-                "link": "#"
-            }
-        ],
-        "roadmap": [
-            {
-                "year": 2024,
-                "title": "Release AgriPredict v1",
-                "status": "Completed"
-            },
-            {
-                "year": 2026,
-                "title": "Ph.D in Machine Learning",
-                "status": "Planned"
-            }
-        ],
-        "stats": {
-            "hackathons_won": 1,
-            "projects_contributed": 20
+    "achievements": [
+        {
+        "type": "hackathon",
+        "title": "1st Runner-up - TipAId (HAU AI Conference Hackathon)",
+        "year": 2025,
+        "description": "Placed 1st Runner-up in the TipAId project during the HAU AI Conference Hackathon.",
+        "link": "#"
         },
-        "certifications": [
-            {
-                "title": "DeepLearning.AI TensorFlow Developer",
-                "issuer": "Coursera",
-                "year": 2024
-            }
-        ],
-        "points": 1300,
-        "featured": true,
-        "testimonial": {
-            "text": "Maria's work on AgriPredict has fundamentally changed how local farmers approach crop management. Her research is both innovative and impactful.",
-            "author": "Regional Director, AgriTech",
-            "date": "2025-01-20"
+        {
+        "type": "ctf",
+        "title": "Champion - HAU CTF",
+        "year": 2025,
+        "description": "Champion of the Capture The Flag (CTF) competition at Holy Angel University.",
+        "link": "#"
+        },
+        {
+        "type": "hackathon",
+        "title": "1st Runner-up - Hack4Gov",
+        "year": 2025,
+        "description": "Placed 1st Runner-up in the Hack4Gov competition.",
+        "link": "#"
+        }
+    ],
+    "roadmap": [],
+    "stats": {
+        "hackathons_won": 3,
+        "projects_contributed": 57
+    },
+    "certifications": [
+        {
+        "title": "Django 101",
+        "issuer": "Simplilearn",
+        "year": 2026,
+        "issued": "January 2026",
+        "credential_id": "9752126"
+        },
+        {
+        "title": "Python Django 101",
+        "issuer": "freeCodeCamp",
+        "year": 2026,
+        "issued": "January 2026",
+        "credential_id": "c7078j-pyv9",
+        "credential_url": "https://www.freecodecamp.org/certification/c7078j/python-v9"
+        }
+    ],
+    "points": 22380,
+    "isAdmin": false,
+    "featured": true,
+    "testimonial": {
+        "text": "Ceejay Santos is a highly capable full-stack web developer with strong expertise in React and modern backend frameworks. He delivers scalable, production-ready solutions with clean code and optimized performance, excelling in hackathons and real-world projects by turning complex ideas into functional web applications.",
+        "author": "Student & Developer",
+        "date": "2026-02-27"
         }
     }
 ]

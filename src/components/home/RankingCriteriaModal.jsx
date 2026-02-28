@@ -63,9 +63,19 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
 
                     {/* Content */}
                     <div className="p-8 space-y-8 max-h-[70vh] overflow-y-auto">
-                        <p className="text-text-muted text-sm leading-relaxed">
-                            The DevHirang Ranking Algorithm automatically calculates a "Credibility Score" for each developer based on their verified profile data. Points are distributed across four key categories:
-                        </p>
+                        <section className="space-y-4">
+                            <h3 className="text-secondary font-bold uppercase tracking-widest text-xs">Score Breakdown</h3>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                                    <p className="text-blue-400 font-bold text-sm uppercase">Impact Score</p>
+                                    <p className="text-xs text-text-muted mt-1">Measures performance: projects, hackathon wins, and open-source contributions.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+                                    <p className="text-green-400 font-bold text-sm uppercase">Trust Score</p>
+                                    <p className="text-xs text-text-muted mt-1">Measures status: certifications, community leadership, and verified platform roles.</p>
+                                </div>
+                            </div>
+                        </section>
 
                         <div className="grid gap-6">
                             {criteria.map((item, i) => (
@@ -87,6 +97,24 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
                                     </div>
                                 </div>
                             ))}
+
+                            {/* Status Bonuses */}
+                            <div className="p-4 rounded-xl border border-secondary/20 bg-secondary/5">
+                                <h3 className="text-secondary font-bold text-sm uppercase mb-3 tracking-widest flex items-center gap-2">
+                                    <Star className="w-4 h-4 fill-secondary" />
+                                    Platform Status Bonuses
+                                </h3>
+                                <div className="space-y-2">
+                                    <div className="flex justify-between items-center text-xs">
+                                        <span className="text-white/70">Admin Verified Status</span>
+                                        <span className="font-bold text-secondary">+5,000 pts</span>
+                                    </div>
+                                    <div className="flex justify-between items-center text-xs">
+                                        <span className="text-white/70">Featured Developer</span>
+                                        <span className="font-bold text-secondary">+1,000 pts</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="p-4 rounded-xl bg-white/5 border border-dashed border-white/20 text-center">

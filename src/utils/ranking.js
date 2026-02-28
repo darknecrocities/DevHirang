@@ -9,37 +9,52 @@
  */
 
 export const calculateScore = (developer) => {
-    let score = 0;
+    let impactScore = developer.points || 0;
+    let trustScore = 0;
 
     // 1. Contributions (Achievements array)
     developer.achievements?.forEach(ach => {
-        switch (ach.type.toLowerCase()) {
-            case 'hackathon': score += 100; break;
-            case 'opensource': score += 150; break;
-            case 'community': score += 200; break;
-            case 'startup': score += 300; break;
-            default: score += 50;
+        const type = ach.type.toLowerCase();
+        switch (type) {
+            case 'hackathon': impactScore += 100; break;
+            case 'opensource': impactScore += 150; break;
+            case 'startup': impactScore += 300; break;
+            case 'community': trustScore += 200; break;
+            default: impactScore += 50;
         }
     });
 
-    // 2. Projects (from stats.projects_contributed)
-    score += (developer.stats?.projects_contributed || 0) * 20;
+    // 2. Projects (Impact)
+    impactScore += (developer.stats?.projects_contributed || 0) * 20;
 
-    // 3. Certifications
-    score += (developer.certifications?.length || 0) * 150;
+    // 3. Certifications (Trust)
+    trustScore += (developer.certifications?.length || 0) * 150;
 
-    // 4. Baseline stats (hackathons won bonus)
-    score += (developer.stats?.hackathons_won || 0) * 50;
+    // 4. Bonus Stats (Impact)
+    impactScore += (developer.stats?.hackathons_won || 0) * 50;
 
-    return score;
+    // 5. Status Bonuses (Trust)
+    if (developer.isAdmin) trustScore += 5000;
+    if (developer.featured) trustScore += 1000;
+
+    return {
+        impact: impactScore,
+        trust: trustScore,
+        total: impactScore + trustScore
+    };
 };
 
 export const getRankingData = (developers) => {
     return developers
-        .map(dev => ({
-            ...dev,
-            credibilityScore: calculateScore(dev)
-        }))
+        .map(dev => {
+            const scores = calculateScore(dev);
+            return {
+                ...dev,
+                credibilityScore: scores.total,
+                impactScore: scores.impact,
+                trustScore: scores.trust
+            };
+        })
         .sort((a, b) => b.credibilityScore - a.credibilityScore);
 };
 

@@ -1017,5 +1017,176 @@
             "author": "Student & Developer",
             "date": "2026-02-27"
         }
+    },
+    {
+    "id": 7,
+    "name": "Ralph Louis Gopez",
+    "role": [
+        "Chief Technology Officer"
+    ],
+    "location": "San Fernando City",
+    "email": "ralph.louis.g@gmail.com",
+    "github": "https://github.com/sevora",
+    "linkedin": "https://www.linkedin.com/in/ralphlouisgopez/",
+    "website": "https://ralphlouisgopez.com",
+    "avatar": "https://blog.ralphlouisgopez.com/assets/images/profile.jpg",
+    "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation—a serial programmer.",
+    "achievements": [
+        {
+            "type": "community",
+            "title": "GDSC – Web Development Lead",
+            "year": 2023,
+            "description": "Served as Web Development Lead for GDSC from 2023 to 2024.",
+            "link": "#"
+        },
+        {
+            "type": "academic",
+            "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
+            "year": 2022,
+            "description": "Consistent academic excellence as President’s Lister and Dean’s Lister from 2022 to 2026.",
+            "link": "#"
+        },
+        {
+            "type": "career",
+            "title": "Software Engineer – Cinelaya Corporation",
+            "year": 2023,
+            "description": "Worked as a Software Engineer at Cinelaya Corporation.",
+            "link": "#"
+        },
+        {
+            "type": "career",
+            "title": "CTO & Co-founder – Cinelaya Corporation",
+            "year": 2025,
+            "description": "Officially named Chief Technology Officer and Co-founder of Cinelaya Corporation.",
+            "link": "#"
+        }
+    ],
+    "roadmap": [
+        {
+            "year": 2023,
+            "title": "Software Engineer Role – Cinelaya",
+            "type": "career",
+            "status": "Done"
+        },
+        {
+            "year": 2025,
+            "title": "CTO & Co-founder – Cinelaya Corporation",
+            "type": "startup",
+            "status": "Done"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Introduction to Front-End Development",
+            "issuer": "Meta",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "IPYV96CB1LYI"
+        },
+        {
+            "title": "Programming with JavaScript",
+            "issuer": "Meta",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "1GX2BVMABMPE"
+        },
+        {
+            "title": "People and Soft Skills Assessment",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "GW8I4FLIEP8A"
+        },
+        {
+            "title": "Developing Interpersonal Skills",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "THPGCTLFJKLI"
+        },
+        {
+            "title": "Solving Problems with Creative and Critical Thinking",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "A7JSL3X4NCHF"
+        },
+        {
+            "title": "Delivering Quality Work with Agility",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "C29I1IHFHJVB"
+        },
+        {
+            "title": "Present with Purpose: Create and Deliver Effective Presentations",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "FZBC4SXGGDQO"
+        },
+        {
+            "title": "Collaborate Effectively for Professional Success",
+            "issuer": "IBM",
+            "year": 2026,
+            "issued": "February 2026",
+            "credential_id": "LF81GQQFA76M"
+        },
+        {
+            "title": "Introduction to Modern AI",
+            "issuer": "Cisco",
+            "year": 2025,
+            "issued": "April 2025"
+        },
+        {
+            "title": "AWS Academy Graduate – Cloud Foundations",
+            "issuer": "Amazon Web Services (AWS)",
+            "year": 2025,
+            "issued": "March 2025"
+        },
+        {
+            "title": "Data Analytics Essentials",
+            "issuer": "Cisco",
+            "year": 2025,
+            "issued": "March 2025"
+        },
+        {
+            "title": "CompTIA IT Fundamentals+ (ITF+)",
+            "issuer": "CompTIA",
+            "year": 2023,
+            "issued": "May 2023"
+        },
+        {
+            "title": "CCNA: Introduction to Networks",
+            "issuer": "Cisco",
+            "year": 2024,
+            "issued": "May 2024"
+        },
+        {
+            "title": "English for IT 1",
+            "issuer": "Cisco",
+            "year": 2024,
+            "issued": "October 2024"
+        },
+        {
+            "title": "Cyber Threat Management",
+            "issuer": "Cisco",
+            "year": 2024,
+            "issued": "October 2024"
+        }
+    ],
+    "stats": {
+        "hackathons_won": 0,
+        "projects_contributed": 11,
+        "github_contributions": 858
+    },
+    "points": 28500,
+    "isAdmin": false,
+    "featured": true,
+    "testimonial": {
+        "text": "Ralph Louis Gopez is a highly versatile technologist who operates like an entire IT department. His leadership as a CTO and strong foundation in software, cloud, and AI reflect both technical excellence and relentless drive.",
+        "author": "CTO & Co-founder",
+        "date": "2026-02-27"
     }
+}
 ]

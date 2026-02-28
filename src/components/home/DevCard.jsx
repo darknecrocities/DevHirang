@@ -99,14 +99,20 @@ const DevCard = ({ developer, onClick }) => {
                 )}
 
                 <div className="pt-2 flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                        <div className="text-center">
-                            <p className="text-xs text-text-muted">Won</p>
-                            <p className="font-bold text-secondary">{developer.stats?.hackathons_won || 0}</p>
+                    <div className="flex items-center gap-3">
+                        <div className="text-center group-hover:scale-105 transition-transform">
+                            <p className="text-[8px] text-text-muted uppercase font-bold tracking-tighter">Joined</p>
+                            <p className="text-sm font-bold text-white font-mono">{Math.min(...developer.achievements.map(a => a.year), 2026)}</p>
                         </div>
-                        <div className="text-center">
-                            <p className="text-xs text-text-muted">Projects</p>
-                            <p className="font-bold text-secondary">{developer.stats?.projects_contributed || 0}</p>
+                        <div className="w-px h-6 bg-white/10" />
+                        <div className="text-center group-hover:scale-105 transition-transform">
+                            <p className="text-[8px] text-text-muted uppercase font-bold tracking-tighter">Wins</p>
+                            <p className="text-sm font-bold text-secondary font-mono">{developer.stats?.hackathons_won || 0}</p>
+                        </div>
+                        <div className="w-px h-6 bg-white/10" />
+                        <div className="text-center group-hover:scale-105 transition-transform">
+                            <p className="text-[8px] text-text-muted uppercase font-bold tracking-tighter">Projects</p>
+                            <p className="text-sm font-bold text-blue-400 font-mono">{developer.stats?.projects_contributed || 0}</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-2">

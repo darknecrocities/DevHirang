@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp } from 'lucide-react';
+import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp, ShieldCheck } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
 import { calculateScore } from '../../utils/ranking';
@@ -8,14 +8,17 @@ import { calculateScore } from '../../utils/ranking';
 const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showBadgeGuide, setShowBadgeGuide] = useState(false);
     const [showAllCerts, setShowAllCerts] = useState(false);
+    const [showAllAchievements, setShowAllAchievements] = useState(false);
     if (!developer) return null;
 
     const scores = calculateScore(developer);
     const statItems = [
-        { label: 'Impact', value: scores.impact.toLocaleString(), icon: Award },
-        { label: 'Trust', value: scores.trust.toLocaleString(), icon: Briefcase },
-        { label: 'Total', value: scores.total.toLocaleString(), icon: Trophy },
+        { label: 'Wins', value: developer.stats.hackathons_won, icon: Award },
         { label: 'Projects', value: developer.stats.projects_contributed, icon: Code },
+        { label: 'Joined', value: developer.achievements?.length > 0 ? Math.min(...developer.achievements.map(a => a.year)) : 2026, icon: Users },
+        { label: 'Impact', value: scores.impact.toLocaleString(), icon: Briefcase },
+        { label: 'Trust', value: scores.trust.toLocaleString(), icon: ShieldCheck },
+        { label: 'Total', value: scores.total.toLocaleString(), icon: Trophy },
     ];
 
     return (
@@ -125,13 +128,23 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                             {/* Right Column - Achievements Timeline */}
                             <div className="md:col-span-12 lg:col-span-7 p-6 sm:p-8 lg:p-12 space-y-10">
                                 <section className="space-y-6">
-                                    <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
-                                        <Award className="w-5 h-5 text-secondary" />
-                                        Achievements Timeline
-                                    </h3>
+                                    <div className="flex items-baseline justify-between">
+                                        <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
+                                            <Award className="w-5 h-5 text-secondary" />
+                                            Achievements Timeline
+                                        </h3>
+                                        {developer.achievements.length > 3 && (
+                                            <button
+                                                onClick={() => setShowAllAchievements(!showAllAchievements)}
+                                                className="text-[10px] font-bold uppercase tracking-widest text-secondary hover:text-white transition-colors"
+                                            >
+                                                {showAllAchievements ? 'Show Less' : `+${developer.achievements.length - 3} More`}
+                                            </button>
+                                        )}
+                                    </div>
 
                                     <div className="space-y-4">
-                                        {[...developer.achievements].sort((a, b) => b.year - a.year).map((ach, i) => (
+                                        {(showAllAchievements ? [...developer.achievements].sort((a, b) => b.year - a.year) : [...developer.achievements].sort((a, b) => b.year - a.year).slice(0, 3)).map((ach, i) => (
                                             <motion.div
                                                 key={i}
                                                 initial={{ opacity: 0, x: 20 }}
@@ -213,7 +226,7 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
 
                                 {developer.certifications && developer.certifications.length > 0 && (
                                     <section className="space-y-6 pt-6 border-t border-white/5">
-                                        <div className="flex items-center justify-between">
+                                        <div className="flex items-baseline justify-between">
                                             <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
                                                 <Briefcase className="w-5 h-5 text-secondary" />
                                                 Professional Certifications
@@ -277,7 +290,7 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                 className="overflow-hidden"
                                             >
                                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-4 sm:pt-6">
-                                                    {BADGE_CRITERIA.map((badge, i) => {
+                                                    {BADGE_CRITERIA.map((badge) => {
                                                         const isEarned = getDeveloperBadges(developer).some(b => b.id === badge.id);
                                                         return (
                                                             <div

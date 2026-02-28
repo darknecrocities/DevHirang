@@ -30,7 +30,7 @@ const Footer = () => {
                             The ultimate hall of fame for tech innovators and leaders.
                         </p>
                         <div className="flex items-center gap-4">
-                            <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-secondary hover:text-background transition-all">
+                            <a href="https://github.com/darknecrocities/DevHirang" className="p-2 bg-white/5 rounded-full hover:bg-secondary hover:text-background transition-all">
                                 <Github className="w-5 h-5" />
                             </a>
                             <a

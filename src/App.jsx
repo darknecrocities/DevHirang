@@ -71,14 +71,15 @@ function App() {
 
             <AnalyticsSpotlight developers={developers} />
 
-            <TestimonialCarousel developers={developers} onSelect={setSelectedDev} />
-
             <section id="featured">
               <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
                 <span className="text-secondary">✦</span> Monthly Featured
               </h2>
               <FeatureCarousel developers={featuredDevs} onSelect={setSelectedDev} />
             </section>
+
+            <TestimonialCarousel developers={developers} onSelect={setSelectedDev} />
+
 
             <section id="achievements">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">

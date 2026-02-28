@@ -10,6 +10,7 @@ import TopDevelopersList from './components/home/TopDevelopersList';
 import Footer from './components/layout/Footer';
 import ProfileModal from './components/home/ProfileModal';
 import TestimonialCarousel from './components/home/TestimonialCarousel';
+import AnalyticsSpotlight from './components/home/AnalyticsSpotlight';
 
 function App() {
   const [developers, setDevelopers] = useState(developersData);
@@ -54,6 +55,8 @@ function App() {
         {activeTab === 'Home' ? (
           <>
             <Hero />
+
+            <AnalyticsSpotlight developers={developers} />
 
             <TestimonialCarousel developers={developers} onSelect={setSelectedDev} />
 

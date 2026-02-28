@@ -402,7 +402,7 @@
     "isAdmin": false,
     "featured": true,
     "testimonial": {
-            "text": "Rasheed Gavin M. Esponga is a focused and determined technologist with a strong interest in cybersecurity. He consistently demonstrates analytical thinking, discipline, and problem-solving skills in competitive environments such as CTFs and hackathons, showing strong potential in building and securing reliable systems.",
+            "text": "Rasheed Gavin M. Esponga is a focused and determined technologist with strong interest in cybersecurity, demonstrating analytical thinking, discipline, and problem-solving skills in CTFs and hackathons, showing clear potential overall.",
             "author": "Student & Developer",
             "date": "2026-02-27"
         }
@@ -473,7 +473,7 @@
     "isAdmin": false,
     "featured": true,
     "testimonial": {
-        "text": "Ceejay Santos is a highly capable full-stack web developer with strong expertise in React and modern backend frameworks. He delivers scalable, production-ready solutions with clean code and optimized performance, excelling in hackathons and real-world projects by turning complex ideas into functional web applications.",
+        "text": "Ceejay Santos is a skilled full-stack web developer with strong expertise in React and modern backend frameworks, delivering scalable, production-ready solutions with clean code, optimized performance, and impactful real-world applications.",
         "author": "Student & Developer",
         "date": "2026-02-27"
         }

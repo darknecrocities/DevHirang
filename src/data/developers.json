@@ -1868,5 +1868,154 @@
             "author": "Software Engineer",
             "date": "2026-02-27"
         }
+    },
+    {
+        "id": 12,
+        "name": "Kervin Clyde Padilla",
+        "role": [
+            "Project Manager",
+            "Lead Software Engineer"
+        ],
+        "location": "Olongapo City",
+        "email": "user@kace.dev",
+        "github": "https://github.com/userkace",
+        "linkedin": "https://www.linkedin.com/in/kcspadilla/",
+        "website": "https://kace.dev",
+        "avatar": "https://kace.dev/images/portrait.jpg",
+        "bio": "Project manager and lead software engineer focused on delivering high-impact technical solutions that align architecture with business value. Known for rigorous standards, proactive risk mitigation, and clear technical vision that turns complex systems into reliable, scalable products.",
+        "achievements": [
+            {
+                "type": "career",
+                "title": "Project Manager – HomesFarmsAndLand LLC",
+                "year": 2025,
+                "description": "Leads project execution and strategic delivery for HomesFarmsAndLand LLC, ensuring alignment between technical implementation and business objectives.",
+                "link": "#"
+            },
+            {
+                "type": "career",
+                "title": "Lead Software Engineer – HomesFarmsAndLand LLC",
+                "year": 2025,
+                "description": "Architects and engineers core systems while guiding development standards and technical direction.",
+                "link": "#"
+            },
+            {
+                "type": "career",
+                "title": "Software Engineer – QuakesLegacy.com",
+                "year": 2025,
+                "description": "Contributed to production software systems and feature development.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Finalist – Appcon 2024",
+                "year": 2024,
+                "description": "Finalist in the Appcon 2024 hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Most Intellectual Councilor – SINAG Awarding",
+                "year": 2024,
+                "description": "Recognized for intellectual leadership and contribution as Councilor for Financial Management.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Most Innovative Councilor – SINAG Awarding",
+                "year": 2024,
+                "description": "Awarded for innovation and impactful initiatives in student governance.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Sumo-Robotics – National Science Quest (2nd Place)",
+                "year": 2020,
+                "description": "Placed 2nd in the National Science Quest Sumo-Robotics competition.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2023,
+                "title": "Chief Technology Officer – GDG Holy Angel University",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2024,
+                "title": "Chief Financial Officer – GDG Holy Angel University",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Cloud Developer – GDG Holy Angel University",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Project Manager & Lead Software Engineer – HomesFarmsAndLand LLC",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Data Engineer Associate",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "Cybersecurity Essentials",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "September 2024"
+            },
+            {
+                "title": "CCNAv7: Introduction to Networks",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 0,
+            "projects_contributed": 46,
+            "github_contributions": 2154
+        },
+        "points": 122420,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Kervin Clyde Padilla bridges technical depth and strategic leadership. His experience leading engineering teams and managing complex projects demonstrates a strong ability to turn architecture into business value.",
+            "author": "Project Manager & Lead Engineer",
+            "date": "2026-02-27"
+        }
     }
 ]

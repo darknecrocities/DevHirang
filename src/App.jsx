@@ -30,7 +30,9 @@ function App() {
   }, []);
 
   const filteredDevs = developers.filter(dev => {
-    const matchesFilter = filter === 'All' || dev.achievements.some(a => a.type.toLowerCase() === filter.toLowerCase());
+    const matchesFilter = filter === 'All' || dev.achievements.some(a =>
+      a.type.toLowerCase().replace(/\s+/g, '') === filter.toLowerCase().replace(/\s+/g, '')
+    );
 
     // Improved Advanced Search Algorithm
     const searchTerms = search.toLowerCase().split(' ').filter(Boolean);

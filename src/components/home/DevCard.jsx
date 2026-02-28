@@ -74,7 +74,7 @@ const DevCard = ({ developer, onClick }) => {
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                    {developer.achievements.slice(0, 3).map((ach, i) => (
+                    {[...developer.achievements].sort((a, b) => b.year - a.year).slice(0, 3).map((ach, i) => (
                         <span
                             key={i}
                             className="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[10px] uppercase font-bold tracking-wider text-text-muted"

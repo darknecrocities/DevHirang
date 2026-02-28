@@ -129,7 +129,7 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                     </h3>
 
                                     <div className="space-y-4">
-                                        {developer.achievements.map((ach, i) => (
+                                        {[...developer.achievements].sort((a, b) => b.year - a.year).map((ach, i) => (
                                             <motion.div
                                                 key={i}
                                                 initial={{ opacity: 0, x: 20 }}
@@ -164,7 +164,7 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                         </h3>
 
                                         <div className="space-y-4 relative before:absolute before:inset-0 before:ml-[1.25rem] sm:before:ml-[1.4rem] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-secondary/50 before:via-white/10 before:to-transparent">
-                                            {developer.roadmap.map((step, i) => (
+                                            {[...developer.roadmap].sort((a, b) => b.year - a.year).map((step, i) => (
                                                 <motion.div
                                                     key={i}
                                                     initial={{ opacity: 0, x: 20 }}
@@ -226,7 +226,7 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                             )}
                                         </div>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            {(showAllCerts ? developer.certifications : developer.certifications.slice(0, 4)).map((cert, i) => (
+                                            {(showAllCerts ? [...developer.certifications].sort((a, b) => b.year - a.year) : [...developer.certifications].sort((a, b) => b.year - a.year).slice(0, 4)).map((cert, i) => (
                                                 <motion.div
                                                     key={i}
                                                     initial={{ opacity: 0, y: 10 }}

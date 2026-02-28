@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = ({ search, setSearch, activeTab, setActiveTab, developers, onSelect }) => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const tabs = ['Bale', '100 Hirang'];
+    const tabs = ['Contributors', '100 Devs'];
 
     // Filter logic for dropdown
     const searchTerms = search?.toLowerCase().split(' ').filter(Boolean) || [];

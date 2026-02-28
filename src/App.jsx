@@ -16,7 +16,7 @@ import { useEffect } from 'react';
 
 function App() {
   const [developers, setDevelopers] = useState(developersData);
-  const [activeTab, setActiveTab] = useState('Contributors');
+  const [activeTab, setActiveTab] = useState('Bale');
   const [filter, setFilter] = useState('All');
   const [search, setSearch] = useState('');
   const [selectedDev, setSelectedDev] = useState(null);
@@ -65,7 +65,7 @@ function App() {
       />
 
       <main className="container mx-auto px-4 py-8 space-y-16">
-        {activeTab === 'Contributors' ? (
+        {activeTab === 'Bale' ? (
           <>
             <Hero />
 

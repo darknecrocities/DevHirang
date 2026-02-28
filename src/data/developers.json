@@ -183,54 +183,54 @@
             }
         ],
         "roadmap": [
-    {
-        "year": 2025,
-        "title": "Champion – GDG-UPM Build with AI",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Champion – SkyDev Hackathon",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Champion – Caffeine.ai Manila",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Champion – 2025UNity Hackathon",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Champion – Sparkhub",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Finalist – Appcon 2024",
-        "type": "hackathon",
-        "status": "Completed"
-    },
-    {
-        "year": 2025,
-        "title": "Learn AI Integrations",
-        "type": "technical",
-        "status": "In Progress"
-    },
-    {
-        "year": 2026,
-        "title": "Launch Tech Community Startup",
-        "type": "startup",
-        "status": "In Progress"
-    }
+            {
+                "year": 2025,
+                "title": "Champion – GDG-UPM Build with AI",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Champion – SkyDev Hackathon",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Champion – Caffeine.ai Manila",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Champion – 2025UNity Hackathon",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Champion – Sparkhub",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Finalist – Appcon 2024",
+                "type": "hackathon",
+                "status": "Completed"
+            },
+            {
+                "year": 2025,
+                "title": "Learn AI Integrations",
+                "type": "technical",
+                "status": "In Progress"
+            },
+            {
+                "year": 2026,
+                "title": "Launch Tech Community Startup",
+                "type": "startup",
+                "status": "In Progress"
+            }
         ],
         "stats": {
             "hackathons_won": 15,

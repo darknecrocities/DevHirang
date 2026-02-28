@@ -172,73 +172,124 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                         </div>
 
                         {/* Grouping by Badge Category */}
-                        {['Knight Lead', 'Hackathons Heroes', 'Startups Tycoons', 'Open Source Master', 'Community Leader', 'Academic', 'Mentors']
-                            .filter(category => activeFilter === 'all' || activeFilter === category)
-                            .map((category) => {
-                                const devsInCategory = sortedDevs.filter(dev =>
-                                    dev.badges.some(b => b.label === category)
-                                ).slice(0, 10); // Limit to top 10 per category
-
-                                if (devsInCategory.length === 0) return null;
-
-                                return (
+                        {activeFilter === 'all' ? (
+                            <motion.div
+                                layout
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                            >
+                                {sortedDevs.map((dev) => (
                                     <motion.div
-                                        key={category}
+                                        key={dev.id}
                                         layout
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        className="mb-12"
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        onClick={() => onSelect(dev)}
+                                        className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-xl"
                                     >
-                                        <div className="flex items-center gap-4 mb-6">
-                                            <h4 className="text-xs font-bold text-secondary uppercase tracking-widest">{category}</h4>
-                                            <div className="flex-1 h-px bg-white/5" />
+                                        <div className="flex items-center gap-4">
+                                            <img
+                                                src={dev.avatar}
+                                                alt={dev.name}
+                                                className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all object-cover"
+                                            />
+                                            <div>
+                                                <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm">
+                                                    {dev.name}
+                                                </h4>
+                                                <p className="text-[10px] text-text-muted font-mono">{dev.role[0]}</p>
+                                            </div>
                                         </div>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            {devsInCategory.map((dev) => (
-                                                <motion.div
-                                                    key={dev.id}
-                                                    layout
-                                                    initial={{ opacity: 0, y: 10 }}
-                                                    animate={{ opacity: 1, y: 0 }}
-                                                    onClick={() => onSelect(dev)}
-                                                    className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-xl"
-                                                >
-                                                    <div className="flex items-center gap-4">
-                                                        <img
-                                                            src={dev.avatar}
-                                                            alt={dev.name}
-                                                            className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all object-cover"
-                                                        />
-                                                        <div>
-                                                            <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm">
-                                                                {dev.name}
-                                                            </h4>
-                                                            <p className="text-[10px] text-text-muted font-mono">{dev.role[0]}</p>
-                                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <div className="flex items-center gap-1.5">
+                                                {dev.badges.slice(0, 3).map((badge) => (
+                                                    <div
+                                                        key={badge.id}
+                                                        className={cn(
+                                                            "p-1.5 rounded-lg border backdrop-blur-md",
+                                                            badge.bgColor,
+                                                            badge.borderColor
+                                                        )}
+                                                    >
+                                                        <badge.icon className={cn("w-3 h-3", badge.color)} />
                                                     </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="flex items-center gap-1.5">
-                                                            {dev.badges.slice(0, 3).map((badge) => (
-                                                                <div
-                                                                    key={badge.id}
-                                                                    className={cn(
-                                                                        "p-1.5 rounded-lg border backdrop-blur-md",
-                                                                        badge.bgColor,
-                                                                        badge.borderColor
-                                                                    )}
-                                                                >
-                                                                    <badge.icon className={cn("w-3 h-3", badge.color)} />
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                        <ChevronRight className="w-4 h-4 text-white/20 group-hover:text-white transition-colors" />
-                                                    </div>
-                                                </motion.div>
-                                            ))}
+                                                ))}
+                                            </div>
+                                            <ChevronRight className="w-4 h-4 text-white/20 group-hover:text-white transition-colors" />
                                         </div>
                                     </motion.div>
-                                );
-                            })}
+                                ))}
+                            </motion.div>
+                        ) : (
+                            ['Knight Lead', 'Hackathons Heroes', 'Startups Tycoons', 'Open Source Master', 'Community Leader', 'Academic', 'Mentors']
+                                .filter(category => activeFilter === category)
+                                .map((category) => {
+                                    const devsInCategory = sortedDevs.filter(dev =>
+                                        dev.badges.some(b => b.label === category)
+                                    ).slice(0, 10); // Limit to top 10 per category
+
+                                    if (devsInCategory.length === 0) return null;
+
+                                    return (
+                                        <motion.div
+                                            key={category}
+                                            layout
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            className="mb-12"
+                                        >
+                                            <div className="flex items-center gap-4 mb-6">
+                                                <h4 className="text-xs font-bold text-secondary uppercase tracking-widest">{category}</h4>
+                                                <div className="flex-1 h-px bg-white/5" />
+                                            </div>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                {devsInCategory.map((dev) => (
+                                                    <motion.div
+                                                        key={dev.id}
+                                                        layout
+                                                        initial={{ opacity: 0, y: 10 }}
+                                                        animate={{ opacity: 1, y: 0 }}
+                                                        onClick={() => onSelect(dev)}
+                                                        className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-xl"
+                                                    >
+                                                        <div className="flex items-center gap-4">
+                                                            <img
+                                                                src={dev.avatar}
+                                                                alt={dev.name}
+                                                                className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all object-cover"
+                                                            />
+                                                            <div>
+                                                                <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm">
+                                                                    {dev.name}
+                                                                </h4>
+                                                                <p className="text-[10px] text-text-muted font-mono">{dev.role[0]}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="flex items-center gap-1.5">
+                                                                {dev.badges.slice(0, 3).map((badge) => (
+                                                                    <div
+                                                                        key={badge.id}
+                                                                        className={cn(
+                                                                            "p-1.5 rounded-lg border backdrop-blur-md",
+                                                                            badge.bgColor,
+                                                                            badge.borderColor
+                                                                        )}
+                                                                    >
+                                                                        <badge.icon className={cn("w-3 h-3", badge.color)} />
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                            <ChevronRight className="w-4 h-4 text-white/20 group-hover:text-white transition-colors" />
+                                                        </div>
+                                                    </motion.div>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    );
+                                })
+                        )}
                     </div>
                 </div>
             </div>

@@ -974,7 +974,7 @@
         },
         "points": 15450,
         "isAdmin": false,
-        "featured": false,
+        "featured": true,
         "testimonial": {
             "text": "Randel Angelo Yumul is an aspiring full-stack developer committed to continuous learning and building innovative digital solutions. His achievements in hackathons and certifications demonstrate strong technical skill and dedication.",
             "author": "Student & Developer",

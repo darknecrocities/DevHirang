@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp, ShieldCheck } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
-import { calculateScore } from '../../utils/ranking';
 
 const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showBadgeGuide, setShowBadgeGuide] = useState(false);
@@ -11,14 +10,11 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showAllAchievements, setShowAllAchievements] = useState(false);
     if (!developer) return null;
 
-    const scores = calculateScore(developer);
     const statItems = [
         { label: 'Wins', value: developer.stats.hackathons_won, icon: Award },
         { label: 'Projects', value: developer.stats.projects_contributed, icon: Code },
-        { label: 'Joined', value: developer.achievements?.length > 0 ? Math.min(...developer.achievements.map(a => a.year)) : 2026, icon: Users },
-        { label: 'Impact', value: scores.impact.toLocaleString(), icon: Briefcase },
-        { label: 'Trust', value: scores.trust.toLocaleString(), icon: ShieldCheck },
-        { label: 'Total', value: scores.total.toLocaleString(), icon: Trophy },
+        { label: 'Contributions', value: developer.stats.github_contributions?.toLocaleString() || 0, icon: Github },
+        { label: 'Certs', value: developer.certifications?.length || 0, icon: Briefcase },
     ];
 
     return (

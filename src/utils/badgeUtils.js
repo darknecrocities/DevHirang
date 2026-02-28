@@ -2,96 +2,81 @@ import { Trophy, Rocket, Code, Users, Star, Award, ShieldCheck, Globe } from 'lu
 
 export const BADGE_CRITERIA = [
     {
-        id: 'world_level',
-        label: 'World Level Developer',
-        description: '40+ certifications, 10+ hackathon wins, 100+ projects, and 2,000+ GitHub contributions',
-        icon: Globe,
-        points: 20000,
-        color: 'text-indigo-400',
-        bgColor: 'bg-indigo-500/10',
-        borderColor: 'border-indigo-500/20',
-        check: (dev) =>
-            (dev.certifications?.length || 0) >= 40 &&
-            dev.stats.hackathons_won >= 10 &&
-            dev.stats.projects_contributed >= 100 &&
-            (dev.stats.github_contributions || 0) >= 2000
-    },
-    {
-        id: 'admin',
-        label: 'Platform Admin',
-        description: 'Exclusive badge for platform administrators',
+        id: 'knight_lead',
+        label: 'Knight Lead',
+        description: 'Elite platform leader and administrator',
         icon: ShieldCheck,
-        points: 10000,
+        points: 20000,
         color: 'text-red-500',
         bgColor: 'bg-red-500/10',
         borderColor: 'border-red-500/20',
         check: (dev) => dev.isAdmin
     },
     {
-        id: 'hackathon_hero',
-        label: 'Hackathon Hero',
-        description: 'Won more than 5 hackathons',
+        id: 'hackathon_heroes',
+        label: 'Hackathons Heroes',
+        description: 'Proven track record in national/international hackathons or CTFs',
         icon: Trophy,
         points: 15000,
         color: 'text-yellow-500',
         bgColor: 'bg-yellow-500/10',
         borderColor: 'border-yellow-500/20',
-        check: (dev) => dev.stats.hackathons_won > 5
+        check: (dev) => dev.achievements.some(a => a.type === 'hackathon' || a.type === 'ctf') || dev.stats.hackathons_won > 0
     },
     {
-        id: 'product_visionary',
-        label: 'Product Visionary',
-        description: 'Founded or led a startup project',
+        id: 'startups_tycoons',
+        label: 'Startups Tycoons',
+        description: 'Founded or led innovative tech startups and products',
         icon: Rocket,
-        points: 10000,
+        points: 12000,
         color: 'text-purple-500',
         bgColor: 'bg-purple-500/10',
         borderColor: 'border-purple-500/20',
-        check: (dev) => dev.achievements.some(a => a.type === 'startup')
+        check: (dev) => dev.achievements.some(a => a.type === 'startup') || dev.role.some(r => r.includes('Founder') || r.includes('CEO'))
     },
     {
-        id: 'elite_contributor',
-        label: 'Elite Contributor',
-        description: 'Contributed to over 50 projects',
+        id: 'open_source_master',
+        label: 'Open Source Master',
+        description: 'Significant contributions to open source projects and tools',
         icon: Code,
         points: 10000,
         color: 'text-blue-500',
         bgColor: 'bg-blue-500/10',
         borderColor: 'border-blue-500/20',
-        check: (dev) => dev.stats.projects_contributed > 50
+        check: (dev) => dev.achievements.some(a => a.type === 'opensource') || dev.stats.projects_contributed > 20
     },
     {
-        id: 'community_pillar',
-        label: 'Community Pillar',
-        description: 'High impact in 3 or more community initiatives',
+        id: 'community_leader',
+        label: 'Community Leader',
+        description: 'Driving growth and impact through tech communities',
         icon: Users,
         points: 8000,
         color: 'text-green-500',
         bgColor: 'bg-green-500/10',
         borderColor: 'border-green-500/20',
-        check: (dev) => dev.achievements.filter(a => a.type === 'community').length >= 3
+        check: (dev) => dev.achievements.some(a => a.type === 'community')
     },
     {
-        id: 'legacy_builder',
-        label: 'Legacy Builder',
-        description: 'Proven impact with 20+ projects or 500+ GitHub contributions',
+        id: 'academic',
+        label: 'Academic',
+        description: 'Scholarship and excellence in academic pursuits',
         icon: Award,
         points: 7000,
+        color: 'text-indigo-400',
+        bgColor: 'bg-indigo-500/10',
+        borderColor: 'border-indigo-500/20',
+        check: (dev) => dev.achievements.some(a => a.type === 'academic') || dev.role.some(r => r.includes('Student'))
+    },
+    {
+        id: 'mentors',
+        label: 'Mentors',
+        description: 'Guiding and teaching the next generation of developers',
+        icon: Globe,
+        points: 9000,
         color: 'text-cyan-500',
         bgColor: 'bg-cyan-500/10',
         borderColor: 'border-cyan-500/20',
-        check: (dev) => (dev.stats.projects_contributed || 0) >= 20 || (dev.stats.github_contributions || 0) >= 500
-    },
-    {
-        id: 'rising_star',
-        label: 'Rising Star',
-        description: 'Active contributor with at least 5 projects',
-        icon: Star,
-        points: 5000,
-        color: 'text-orange-500',
-        bgColor: 'bg-orange-500/10',
-        borderColor: 'border-orange-500/20',
-        check: (dev) => (dev.stats.projects_contributed || 0) >= 5
+        check: (dev) => dev.role.some(r => r.toLowerCase().includes('mentor') || r.toLowerCase().includes('lead') || r.toLowerCase().includes('expert'))
     }
 ];
 

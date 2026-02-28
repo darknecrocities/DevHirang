@@ -10,7 +10,7 @@
 
 import { getDeveloperBadges } from './badgeUtils';
 
-export const calculateScore = (developer) => {
+const calculateScore = (developer) => {
     let impactScore = 0;
     let trustScore = 0;
 
@@ -57,15 +57,25 @@ export const calculateScore = (developer) => {
 export const getRankingData = (developers) => {
     return developers
         .map(dev => {
-            const scores = calculateScore(dev);
+            const badges = getDeveloperBadges(dev);
             return {
                 ...dev,
-                credibilityScore: scores.total,
-                impactScore: scores.impact,
-                trustScore: scores.trust
+                badgeCount: badges.length
             };
         })
-        .sort((a, b) => b.credibilityScore - a.credibilityScore);
+        .sort((a, b) => {
+            // 1. Admin Status
+            if (a.isAdmin !== b.isAdmin) return b.isAdmin ? 1 : -1;
+
+            // 2. Featured Status
+            if (a.featured !== b.featured) return b.featured ? 1 : -1;
+
+            // 3. Badge count (Activity)
+            if (a.badgeCount !== b.badgeCount) return b.badgeCount - a.badgeCount;
+
+            // 4. Alphabetical (for stable sorting)
+            return a.name.localeCompare(b.name);
+        });
 };
 
 export const RANKING_WEIGHTS = {

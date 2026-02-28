@@ -16,7 +16,7 @@ import { useEffect } from 'react';
 
 function App() {
   const [developers, setDevelopers] = useState(developersData);
-  const [activeTab, setActiveTab] = useState('Home');
+  const [activeTab, setActiveTab] = useState('Contributors');
   const [filter, setFilter] = useState('All');
   const [search, setSearch] = useState('');
   const [selectedDev, setSelectedDev] = useState(null);
@@ -65,7 +65,7 @@ function App() {
       />
 
       <main className="container mx-auto px-4 py-8 space-y-16">
-        {activeTab === 'Home' ? (
+        {activeTab === 'Contributors' ? (
           <>
             <Hero />
 
@@ -82,7 +82,7 @@ function App() {
 
             <section id="achievements">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
-                <h2 className="text-3xl font-bold">Hall of Fame</h2>
+                <h2 className="text-3xl font-bold">Contributors</h2>
                 <FilterBar activeFilter={filter} setFilter={setFilter} />
               </div>
 

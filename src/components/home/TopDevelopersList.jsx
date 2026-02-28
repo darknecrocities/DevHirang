@@ -2,45 +2,40 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, ChevronRight, Star, Info } from 'lucide-react';
 import { cn } from '../../lib/utils';
-import { calculateScore } from '../../utils/ranking';
-import RankingCriteriaModal from './RankingCriteriaModal';
+import { getDeveloperBadges } from '../../utils/badgeUtils';
 
 const TopDevelopersList = ({ developers, onSelect }) => {
-    const [isCriteriaOpen, setIsCriteriaOpen] = useState(false);
     const [expandedSections, setExpandedSections] = useState({ elite: true, pro: true });
+    const [activeFilter, setActiveFilter] = useState('all');
 
     const toggleSection = (section) => {
         setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
     };
 
-    // Dynamic Ranking System Algorithm
+    // Qualitative Sorting System
     const sortedDevs = [...developers]
         .map(dev => {
-            const scores = calculateScore(dev);
+            const badges = getDeveloperBadges(dev);
             return {
                 ...dev,
-                credibilityScore: scores.total,
-                impactScore: scores.impact,
-                trustScore: scores.trust
+                badges,
+                badgeCount: badges.length
             };
         })
-        .sort((a, b) => b.credibilityScore - a.credibilityScore);
+        .sort((a, b) => {
+            if (a.isAdmin !== b.isAdmin) return b.isAdmin ? -1 : 1;
+            if (a.featured !== b.featured) return b.featured ? -1 : 1;
+            if (a.badgeCount !== b.badgeCount) return b.badgeCount - a.badgeCount;
+            return a.name.localeCompare(b.name);
+        });
 
     return (
         <div className="w-full max-w-5xl mx-auto space-y-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-white/20">
                 <div className="flex items-center gap-3">
                     <Trophy className="w-8 h-8 text-secondary" />
-                    <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">Top Developers</h2>
+                    <h2 className="text-3xl font-bold font-mono uppercase tracking-widest text-white">100 Devs</h2>
                 </div>
-
-                <button
-                    onClick={() => setIsCriteriaOpen(true)}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white text-text-muted hover:text-black border border-white/10 rounded-lg transition-all font-mono text-sm font-bold uppercase tracking-tighter"
-                >
-                    <Info className="w-4 h-4" />
-                    Ranking Criteria
-                </button>
             </div>
 
             <div className="space-y-12">
@@ -55,14 +50,8 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                 <Star key={i} className="w-4 h-4 text-secondary fill-secondary animate-pulse" style={{ animationDelay: `${i * 200}ms` }} />
                             ))}
                         </div>
-                        <h3 className="text-sm font-black uppercase tracking-[0.3em] text-secondary group-hover/header:text-white transition-colors">Elite Division <span className="text-white/30 ml-2">// Top 3</span></h3>
+                        <h3 className="text-sm font-black uppercase tracking-[0.3em] text-secondary group-hover/header:text-white transition-colors">Featured Developers</h3>
                         <div className="flex-1 h-px bg-gradient-to-r from-secondary/50 to-transparent" />
-                        <button
-                            onClick={(e) => { e.stopPropagation(); setIsCriteriaOpen(true); }}
-                            className="p-1 hover:bg-white/10 rounded transition-colors"
-                        >
-                            <Info className="w-4 h-4 text-secondary/50 hover:text-secondary" />
-                        </button>
                     </div>
 
                     <AnimatePresence>
@@ -73,7 +62,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                 exit={{ height: 0, opacity: 0 }}
                                 className="space-y-4 overflow-hidden"
                             >
-                                {sortedDevs.slice(0, 3).map((dev, index) => (
+                                {sortedDevs.filter(d => d.featured).map((dev, index) => (
                                     <motion.div
                                         key={dev.id}
                                         initial={{ opacity: 0, x: -20 }}
@@ -93,12 +82,12 @@ const TopDevelopersList = ({ developers, onSelect }) => {
 
                                         <div className="flex items-center gap-6 relative z-10">
                                             <div className={cn(
-                                                "flex items-center justify-center w-12 h-12 rounded-full border font-mono text-xl font-bold transition-all shrink-0",
+                                                "flex items-center justify-center w-12 h-12 rounded-full border transition-all shrink-0",
                                                 index === 0 ? "bg-secondary border-secondary text-background shadow-[0_0_20px_rgba(212,175,55,0.3)]" :
                                                     index === 1 ? "bg-white/20 border-white/30 text-white" :
                                                         index === 2 ? "bg-white/10 border-white/20 text-white/80" : "bg-white/5 border-white/20 text-white/50"
                                             )}>
-                                                #{index + 1}
+                                                <Trophy className="w-6 h-6" />
                                             </div>
 
                                             <div className="flex items-center gap-4">
@@ -125,21 +114,20 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                         </div>
 
                                         <div className="flex flex-col md:flex-row items-end md:items-center justify-between gap-4 md:gap-8 min-w-fit relative z-10">
-                                            <div className="flex items-center gap-4 text-right">
-                                                <div className="hidden sm:block">
-                                                    <p className="text-[10px] text-blue-400 font-mono uppercase tracking-tighter">Impact</p>
-                                                    <p className="text-sm font-bold text-blue-200">{dev.impactScore.toLocaleString()}</p>
-                                                </div>
-                                                <div className="hidden sm:block w-px h-8 bg-white/10" />
-                                                <div className="hidden sm:block">
-                                                    <p className="text-[10px] text-green-400 font-mono uppercase tracking-tighter">Trust</p>
-                                                    <p className="text-sm font-bold text-green-200">{dev.trustScore.toLocaleString()}</p>
-                                                </div>
-                                                <div className="hidden sm:block w-px h-8 bg-white/10" />
-                                                <div>
-                                                    <p className="text-[10px] text-secondary font-mono uppercase tracking-widest">Total</p>
-                                                    <p className="text-2xl font-bold text-white tracking-tight">{dev.credibilityScore.toLocaleString()}</p>
-                                                </div>
+                                            <div className="flex items-center gap-3">
+                                                {dev.badges.map((badge) => (
+                                                    <div
+                                                        key={badge.id}
+                                                        className={cn(
+                                                            "p-2 rounded-lg border backdrop-blur-md transition-all",
+                                                            badge.bgColor,
+                                                            badge.borderColor
+                                                        )}
+                                                        title={badge.label}
+                                                    >
+                                                        <badge.icon className={cn("w-4 h-4", badge.color)} />
+                                                    </div>
+                                                ))}
                                             </div>
                                             <ChevronRight className="hidden md:block w-5 h-5 text-white/30 group-hover:text-white transition-colors" />
                                         </div>
@@ -150,74 +138,111 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                     </AnimatePresence>
                 </div>
 
-                {/* Professional Division */}
-                {sortedDevs.length > 3 && (
-                    <div className="space-y-6 pt-8">
-                        <div
-                            onClick={() => toggleSection('pro')}
-                            className="flex items-center gap-4 px-2 cursor-pointer group/header"
-                        >
-                            <h3 className="text-sm font-black uppercase tracking-[0.3em] text-white/40 group-hover:text-white transition-colors">Professional Division <span className="text-white/20 ml-2">// Top 100</span></h3>
-                            <div className="flex-1 h-px bg-white/10" />
-                            <button
-                                onClick={(e) => { e.stopPropagation(); setIsCriteriaOpen(true); }}
-                                className="p-1 hover:bg-white/10 rounded transition-colors"
-                            >
-                                <Info className="w-4 h-4 text-white/20 hover:text-white/50" />
-                            </button>
+                {/* Contributors Section */}
+                <div className="space-y-12">
+                    <div className="px-2">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 border-b border-white/10 pb-6">
+                            <h3 className="text-sm font-black uppercase tracking-[0.3em] text-white/40">Contributors Section</h3>
+
+                            {/* Filter Bar */}
+                            <div className="flex flex-wrap gap-2">
+                                {[
+                                    { id: 'all', label: 'All' },
+                                    { id: 'Hackathons Heroes', label: 'Hackathons' },
+                                    { id: 'Startups Tycoons', label: 'Start up' },
+                                    { id: 'Mentors', label: 'Mentors' },
+                                    { id: 'Academic', label: 'Academe' },
+                                    { id: 'Community Leader', label: 'Community Leader' },
+                                    { id: 'Open Source Master', label: 'Open Source' }
+                                ].map((tab) => (
+                                    <button
+                                        key={tab.id}
+                                        onClick={() => setActiveFilter(tab.id)}
+                                        className={cn(
+                                            "px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all border",
+                                            activeFilter === tab.id
+                                                ? "bg-secondary border-secondary text-background shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                                                : "bg-white/5 border-white/10 text-white/50 hover:border-white/30 hover:text-white"
+                                        )}
+                                    >
+                                        {tab.label}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
-                        <AnimatePresence>
-                            {expandedSections.pro && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: 'auto', opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="space-y-3 overflow-hidden"
-                                >
-                                    {sortedDevs.slice(3, 100).map((dev, index) => (
-                                        <motion.div
-                                            key={dev.id}
-                                            initial={{ opacity: 0 }}
-                                            animate={{ opacity: 1 }}
-                                            onClick={() => onSelect(dev)}
-                                            className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-lg"
-                                        >
-                                            <div className="flex items-center gap-4">
-                                                <span className="w-8 font-mono text-sm text-white/30 text-center">#{index + 4}</span>
-                                                <img
-                                                    src={dev.avatar}
-                                                    alt={dev.name}
-                                                    className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all object-cover"
-                                                />
-                                                <div>
-                                                    <h4 className="font-bold text-white group-hover:text-secondary transition-colors truncate max-w-[150px] sm:max-w-none">
-                                                        {dev.name}
-                                                    </h4>
-                                                    <p className="text-[10px] text-text-muted font-mono truncate max-w-[150px] sm:max-w-none">{dev.role[0]}</p>
-                                                </div>
-                                            </div>
+                        {/* Grouping by Badge Category */}
+                        {['Knight Lead', 'Hackathons Heroes', 'Startups Tycoons', 'Open Source Master', 'Community Leader', 'Academic', 'Mentors']
+                            .filter(category => activeFilter === 'all' || activeFilter === category)
+                            .map((category) => {
+                                const devsInCategory = sortedDevs.filter(dev =>
+                                    dev.badges.some(b => b.label === category)
+                                ).slice(0, 10); // Limit to top 10 per category
 
-                                            <div className="flex items-center gap-6">
-                                                <div className="hidden sm:block text-right">
-                                                    <p className="text-[8px] text-text-muted font-mono uppercase tracking-tighter">Credibility</p>
-                                                    <p className="text-sm font-bold text-white/60">{dev.credibilityScore.toLocaleString()}</p>
-                                                </div>
-                                                <ChevronRight className="w-4 h-4 text-white/20 group-hover:text-white transition-colors" />
-                                            </div>
-                                        </motion.div>
-                                    ))}
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                                if (devsInCategory.length === 0) return null;
+
+                                return (
+                                    <motion.div
+                                        key={category}
+                                        layout
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        className="mb-12"
+                                    >
+                                        <div className="flex items-center gap-4 mb-6">
+                                            <h4 className="text-xs font-bold text-secondary uppercase tracking-widest">{category}</h4>
+                                            <div className="flex-1 h-px bg-white/5" />
+                                        </div>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            {devsInCategory.map((dev) => (
+                                                <motion.div
+                                                    key={dev.id}
+                                                    layout
+                                                    initial={{ opacity: 0, y: 10 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    onClick={() => onSelect(dev)}
+                                                    className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-xl"
+                                                >
+                                                    <div className="flex items-center gap-4">
+                                                        <img
+                                                            src={dev.avatar}
+                                                            alt={dev.name}
+                                                            className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all object-cover"
+                                                        />
+                                                        <div>
+                                                            <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm">
+                                                                {dev.name}
+                                                            </h4>
+                                                            <p className="text-[10px] text-text-muted font-mono">{dev.role[0]}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex items-center gap-1.5">
+                                                            {dev.badges.slice(0, 3).map((badge) => (
+                                                                <div
+                                                                    key={badge.id}
+                                                                    className={cn(
+                                                                        "p-1.5 rounded-lg border backdrop-blur-md",
+                                                                        badge.bgColor,
+                                                                        badge.borderColor
+                                                                    )}
+                                                                >
+                                                                    <badge.icon className={cn("w-3 h-3", badge.color)} />
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                        <ChevronRight className="w-4 h-4 text-white/20 group-hover:text-white transition-colors" />
+                                                    </div>
+                                                </motion.div>
+                                            ))}
+                                        </div>
+                                    </motion.div>
+                                );
+                            })}
                     </div>
-                )}
+                </div>
             </div>
 
-            <RankingCriteriaModal
-                isOpen={isCriteriaOpen}
-                onClose={() => setIsCriteriaOpen(false)}
-            />
         </div>
     );
 };

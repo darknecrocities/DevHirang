@@ -1379,7 +1379,7 @@
         },
         "points": 83510,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Kirsten Dwayne Dizon is a highly driven software engineer with strong full-stack expertise, leadership experience, and a passion for building scalable, data-driven systems.",
             "author": "Software Engineer",

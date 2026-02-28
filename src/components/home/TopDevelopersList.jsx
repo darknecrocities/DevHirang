@@ -7,7 +7,7 @@ import RankingCriteriaModal from './RankingCriteriaModal';
 
 const TopDevelopersList = ({ developers, onSelect }) => {
     const [isCriteriaOpen, setIsCriteriaOpen] = useState(false);
-    const [expandedSections, setExpandedSections] = useState({ elite: true, pro: false });
+    const [expandedSections, setExpandedSections] = useState({ elite: true, pro: true });
 
     const toggleSection = (section) => {
         setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
@@ -55,7 +55,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                 <Star key={i} className="w-4 h-4 text-secondary fill-secondary animate-pulse" style={{ animationDelay: `${i * 200}ms` }} />
                             ))}
                         </div>
-                        <h3 className="text-sm font-black uppercase tracking-[0.3em] text-secondary group-hover/header:text-white transition-colors">Elite Division <span className="text-white/30 ml-2">// Top 10</span></h3>
+                        <h3 className="text-sm font-black uppercase tracking-[0.3em] text-secondary group-hover/header:text-white transition-colors">Elite Division <span className="text-white/30 ml-2">// Top 3</span></h3>
                         <div className="flex-1 h-px bg-gradient-to-r from-secondary/50 to-transparent" />
                         <button
                             onClick={(e) => { e.stopPropagation(); setIsCriteriaOpen(true); }}
@@ -73,7 +73,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                 exit={{ height: 0, opacity: 0 }}
                                 className="space-y-4 overflow-hidden"
                             >
-                                {sortedDevs.slice(0, 10).map((dev, index) => (
+                                {sortedDevs.slice(0, 3).map((dev, index) => (
                                     <motion.div
                                         key={dev.id}
                                         initial={{ opacity: 0, x: -20 }}
@@ -151,7 +151,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                 </div>
 
                 {/* Professional Division */}
-                {sortedDevs.length > 10 && (
+                {sortedDevs.length > 3 && (
                     <div className="space-y-6 pt-8">
                         <div
                             onClick={() => toggleSection('pro')}
@@ -175,7 +175,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                     exit={{ height: 0, opacity: 0 }}
                                     className="space-y-3 overflow-hidden"
                                 >
-                                    {sortedDevs.slice(10, 100).map((dev, index) => (
+                                    {sortedDevs.slice(3, 100).map((dev, index) => (
                                         <motion.div
                                             key={dev.id}
                                             initial={{ opacity: 0 }}
@@ -184,7 +184,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                             className="group flex items-center justify-between p-4 bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all cursor-pointer rounded-lg"
                                         >
                                             <div className="flex items-center gap-4">
-                                                <span className="w-8 font-mono text-sm text-white/30 text-center">#{index + 11}</span>
+                                                <span className="w-8 font-mono text-sm text-white/30 text-center">#{index + 4}</span>
                                                 <img
                                                     src={dev.avatar}
                                                     alt={dev.name}

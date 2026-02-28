@@ -168,7 +168,7 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
                                     </h3>
                                     <div className="space-y-2">
                                         <div className="flex justify-between items-center text-xs">
-                                            <span className="text-white/70">Elite (Top 10)</span>
+                                            <span className="text-white/70">Elite (Top 3)</span>
                                             <span className="font-bold text-secondary">Legendary</span>
                                         </div>
                                         <div className="flex justify-between items-center text-xs">

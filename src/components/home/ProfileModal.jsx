@@ -242,12 +242,12 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                                 <div className={cn("p-1.5 sm:p-2 rounded-lg shrink-0", badge.bgColor, badge.borderColor)}>
                                                                     <badge.icon className={cn("w-4 h-4 sm:w-5 sm:h-5", badge.color)} />
                                                                 </div>
-                                                                <div>
-                                                                    <div className="flex items-center gap-2">
+                                                                <div className="flex-1 min-w-0">
+                                                                    <div className="flex flex-wrap items-center gap-2 mb-1">
                                                                         <h5 className="font-bold text-xs sm:text-sm text-white">{badge.label}</h5>
-                                                                        {isEarned && <span className="text-[8px] sm:text-[10px] bg-secondary text-background px-1.5 py-0.5 rounded-md font-black">EARNED</span>}
+                                                                        {isEarned && <span className="text-[8px] sm:text-[10px] bg-secondary text-background px-1.5 py-0.5 rounded-md font-black shrink-0">EARNED</span>}
                                                                     </div>
-                                                                    <p className="text-[9px] sm:text-[10px] text-text-muted mt-1 leading-tight">{badge.description}</p>
+                                                                    <p className="text-[9px] sm:text-[10px] text-text-muted leading-tight">{badge.description}</p>
                                                                 </div>
                                                             </div>
                                                         );

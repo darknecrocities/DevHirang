@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Award } from 'lucide-react';
+import { Github, ExternalLink, Award, Scroll } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges } from '../../utils/badgeUtils';
 
@@ -26,6 +26,24 @@ const DevCard = ({ developer, onClick }) => {
                         {developer.featured && (
                             <div className="p-1.5 bg-secondary text-background rounded-lg glow-secondary">
                                 <Award className="w-4 h-4" />
+                            </div>
+                        )}
+                        {developer.certifications && developer.certifications.length > 0 && (
+                            <div className="relative group/cert-pop">
+                                <div className="p-1.5 bg-background/60 backdrop-blur-md border border-secondary/30 text-secondary rounded-lg cursor-help transition-all hover:bg-secondary hover:text-background">
+                                    <Scroll className="w-4 h-4" />
+                                </div>
+                                <div className="absolute top-0 right-full mr-3 w-48 p-3 bg-background/95 backdrop-blur-xl border border-white/10 rounded-2xl opacity-0 translate-x-4 pointer-events-none group-hover/cert-pop:opacity-100 group-hover/cert-pop:translate-x-0 transition-all z-50 shadow-2xl">
+                                    <p className="text-[10px] font-bold text-secondary uppercase tracking-widest mb-2 px-1">Certifications</p>
+                                    <div className="space-y-2 max-h-40 overflow-y-auto custom-scrollbar">
+                                        {developer.certifications.map((cert, i) => (
+                                            <div key={i} className="px-2 py-1.5 bg-white/5 rounded-lg border border-white/5">
+                                                <p className="text-[10px] font-bold text-white leading-tight mb-0.5">{cert.title}</p>
+                                                <p className="text-[9px] text-text-muted">{cert.issuer}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         )}
                         {badges.slice(0, 3).map((badge, i) => (
@@ -84,11 +102,11 @@ const DevCard = ({ developer, onClick }) => {
                     <div className="flex items-center gap-4">
                         <div className="text-center">
                             <p className="text-xs text-text-muted">Won</p>
-                            <p className="font-bold text-secondary">{developer.stats.hackathons_won}</p>
+                            <p className="font-bold text-secondary">{developer.stats?.hackathons_won || 0}</p>
                         </div>
                         <div className="text-center">
                             <p className="text-xs text-text-muted">Projects</p>
-                            <p className="font-bold text-secondary">{developer.stats.projects_contributed}</p>
+                            <p className="font-bold text-secondary">{developer.stats?.projects_contributed || 0}</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-2">

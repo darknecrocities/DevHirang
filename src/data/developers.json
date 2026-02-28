@@ -4,7 +4,8 @@
         "name": "Arron Kian Parejas",
         "role": [
             "AI/ML Engineer",
-            "Full-stack Developer"
+            "Full-stack Developer",
+            "Student"
         ],
         "email": "parejasarronkian@gmail.com",
         "github": "https://github.com/darknecrocities",
@@ -94,11 +95,13 @@
             {
                 "year": 2025,
                 "title": "Learn AI Integrations",
+                "type": "technical",
                 "status": "In Progress"
             },
             {
                 "year": 2026,
                 "title": "Launch Tech Startup",
+                "type": "startup",
                 "status": "In Progress"
             }
         ],
@@ -343,139 +346,376 @@
         }
     },
     {
-    "id": 2,
-    "name": "Rasheed Gavin M. Esponga",
-    "role": [
-        "Student","Developer"
-    ],
-    "location": "Apalit",
-    "email": "rasheedgavinesponga@gmail.com",
-    "github": "https://github.com/rshdgvn",
-    "linkedin": "https://www.linkedin.com/in/rasheed-gavin-65332a349",
-    "website": "https://rshdgvn.github.io/personal-portfolio/",
-    "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/598608760_1854968645225773_4009951120016616168_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFKXztghhA4C6kOVLcZPW1LQ_S4nMOgrEpD9Licw6CsSqiM_4Q7A8pjXGaYZa2uyHI4E3ctpV46oHWli3IhryGI&_nc_ohc=1-HXwPZAbyAQ7kNvwE1JQIu&_nc_oc=AdnOmAfvQhm6qTlvwX2HuAOEpO46MdGBE2Qjy_jj-N51nU8CIHTzDXLSRyy4RK_jmxw&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=pPRSX5-keKQWZ8q9DLPCpA&_nc_ss=8&oh=00_AftlHf7Ir6GhM1off2pDLR5IL9hbxTuLE3NcBlnTbK1nPA&oe=69A809B7",
-    "bio": "Building systems is one thing. Protecting them is where true mastery begins.",
-    "achievements": [
-        {
-        "type": "community",
-        "title": "GDG-HAU Participant",
-        "year": 2025,
-        "description": "Participated in Google Developer Group on Campus HAU activities.",
-        "link": "#"
+        "id": 2,
+        "name": "Rasheed Gavin M. Esponga",
+        "role": [
+            "Student",
+            "Developer"
+        ],
+        "location": "Apalit",
+        "email": "rasheedgavinesponga@gmail.com",
+        "github": "https://github.com/rshdgvn",
+        "linkedin": "https://www.linkedin.com/in/rasheed-gavin-65332a349",
+        "website": "https://rshdgvn.github.io/personal-portfolio/",
+        "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/598608760_1854968645225773_4009951120016616168_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFKXztghhA4C6kOVLcZPW1LQ_S4nMOgrEpD9Licw6CsSqiM_4Q7A8pjXGaYZa2uyHI4E3ctpV46oHWli3IhryGI&_nc_ohc=1-HXwPZAbyAQ7kNvwE1JQIu&_nc_oc=AdnOmAfvQhm6qTlvwX2HuAOEpO46MdGBE2Qjy_jj-N51nU8CIHTzDXLSRyy4RK_jmxw&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=pPRSX5-keKQWZ8q9DLPCpA&_nc_ss=8&oh=00_AftlHf7Ir6GhM1off2pDLR5IL9hbxTuLE3NcBlnTbK1nPA&oe=69A809B7",
+        "bio": "Building systems is one thing. Protecting them is where true mastery begins.",
+        "achievements": [
+            {
+                "type": "community",
+                "title": "GDG-HAU Participant",
+                "year": 2025,
+                "description": "Participated in Google Developer Group on Campus HAU activities.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "1st Runner Up - GDG-HAU 2025",
+                "year": 2025,
+                "description": "Placed 1st Runner Up in the GDG-HAU 2025 competition.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion - HAU 2025 CTF",
+                "year": 2025,
+                "description": "Champion of the HAU 2025 Capture The Flag cybersecurity competition.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "1st Runner Up - HACK4GOV 2025",
+                "year": 2025,
+                "description": "Placed 1st Runner Up in the HACK4GOV 2025 hackathon.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "CompTIA Security+ Certification",
+                "type": "technical",
+                "status": "In Progress"
+            },
+            {
+                "year": 2026,
+                "title": "Academic Excellence Award",
+                "type": "academic",
+                "status": "In Progress"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 3,
+            "projects_contributed": 16
         },
-        {
-        "type": "hackathon",
-        "title": "1st Runner Up - GDG-HAU 2025",
-        "year": 2025,
-        "description": "Placed 1st Runner Up in the GDG-HAU 2025 competition.",
-        "link": "#"
-        },
-        {
-        "type": "hackathon",
-        "title": "Champion - HAU 2025 CTF",
-        "year": 2025,
-        "description": "Champion of the HAU 2025 Capture The Flag cybersecurity competition.",
-        "link": "#"
-        },
-        {
-        "type": "hackathon",
-        "title": "1st Runner Up - HACK4GOV 2025",
-        "year": 2025,
-        "description": "Placed 1st Runner Up in the HACK4GOV 2025 hackathon.",
-        "link": "#"
-        }
-    ],
-    "roadmap": [],
-    "stats": {
-        "hackathons_won": 3,
-        "projects_contributed": 16
-    },
-    "certifications": [
-        {
-        "title": "Machine Learning Basics",
-        "issuer": "Amazon Web Services",
-        "year": 2026,
-        "issued": "February 2026"
-        }
-    ],
-    "points": 24180,
-    "isAdmin": false,
-    "featured": true,
-    "testimonial": {
+        "certifications": [
+            {
+                "title": "Machine Learning Basics",
+                "issuer": "Amazon Web Services",
+                "year": 2026,
+                "issued": "February 2026"
+            }
+        ],
+        "points": 24180,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
             "text": "Rasheed Gavin M. Esponga is a focused and determined technologist with strong interest in cybersecurity, demonstrating analytical thinking, discipline, and problem-solving skills in CTFs and hackathons, showing clear potential overall.",
             "author": "Student & Developer",
             "date": "2026-02-27"
         }
     },
     {
-    "id": 3,
-    "name": "Ceejay Santos",
-    "role": [
-        "Full Stack Web Developer"
-    ],
-    "location": "Apalit, Pampanga",
-    "email": "7078ceejay@gmail.com",
-    "github": "https://github.com/7078-cj",
-    "linkedin": "https://www.linkedin.com/in/ceejay-santos-8586752bb/",
-    "website": "",
-    "avatar": "https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-1/474466386_1119090356351844_8771349686609442197_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFyqZXdHDQE_gJE0irwSbW7zlaBh02gcbnOVoGHTaBxublbWZlJNX3nIyBfcEeUidkPY3BhKrmCZ0H502JS1WU6&_nc_ohc=jUEjh7UEVKMQ7kNvwEku1rm&_nc_oc=AdnuTgl--KNxDr7hZmphI2YIkIppl4noLTCSD3OemOx11qVAYY8YM3LN0IfQe4LMKHk&_nc_zt=24&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=YWs__g7mdFu5ULdO_O_Cvw&_nc_ss=8&oh=00_Afvagmvb5KNMzglcr4oj8VPcxAfo4dhsKiR2JLZntkr75w&oe=69A83284",
-    "bio": "Aspiring Web Developer with a passion for building scalable, high-performance web applications. Specializes in React for dynamic frontends and Django, Laravel, and FastAPI for secure backends. Experienced in delivering production-ready systems including real-time WebSockets and AI-powered features, with a strong focus on clean, maintainable code and optimized user experiences.",
-    "community_affiliation": {
-        "organization": "Devcon Pampanga",
-        "role": "Core Team Volunteer"
-    },
-    "achievements": [
-        {
-        "type": "hackathon",
-        "title": "1st Runner-up - TipAId (HAU AI Conference Hackathon)",
-        "year": 2025,
-        "description": "Placed 1st Runner-up in the TipAId project during the HAU AI Conference Hackathon.",
-        "link": "#"
+        "id": 3,
+        "name": "Ceejay Santos",
+        "role": [
+            "Full Stack Web Developer"
+        ],
+        "location": "Apalit, Pampanga",
+        "email": "7078ceejay@gmail.com",
+        "github": "https://github.com/7078-cj",
+        "linkedin": "https://www.linkedin.com/in/ceejay-santos-8586752bb/",
+        "website": "",
+        "avatar": "https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-1/474466386_1119090356351844_8771349686609442197_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFyqZXdHDQE_gJE0irwSbW7zlaBh02gcbnOVoGHTaBxublbWZlJNX3nIyBfcEeUidkPY3BhKrmCZ0H502JS1WU6&_nc_ohc=jUEjh7UEVKMQ7kNvwEku1rm&_nc_oc=AdnuTgl--KNxDr7hZmphI2YIkIppl4noLTCSD3OemOx11qVAYY8YM3LN0IfQe4LMKHk&_nc_zt=24&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=YWs__g7mdFu5ULdO_O_Cvw&_nc_ss=8&oh=00_Afvagmvb5KNMzglcr4oj8VPcxAfo4dhsKiR2JLZntkr75w&oe=69A83284",
+        "bio": "Aspiring Web Developer with a passion for building scalable, high-performance web applications. Specializes in React for dynamic frontends and Django, Laravel, and FastAPI for secure backends. Experienced in delivering production-ready systems including real-time WebSockets and AI-powered features, with a strong focus on clean, maintainable code and optimized user experiences.",
+        "community_affiliation": {
+            "organization": "Devcon Pampanga",
+            "role": "Core Team Volunteer"
         },
-        {
-        "type": "ctf",
-        "title": "Champion - HAU CTF",
-        "year": 2025,
-        "description": "Champion of the Capture The Flag (CTF) competition at Holy Angel University.",
-        "link": "#"
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "1st Runner-up - TipAId (HAU AI Conference Hackathon)",
+                "year": 2025,
+                "description": "Placed 1st Runner-up in the TipAId project during the HAU AI Conference Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "ctf",
+                "title": "Champion - HAU CTF",
+                "year": 2025,
+                "description": "Champion of the Capture The Flag (CTF) competition at Holy Angel University.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "1st Runner-up - Hack4Gov",
+                "year": 2025,
+                "description": "Placed 1st Runner-up in the Hack4Gov competition.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Master React & Next.js",
+                "type": "technical",
+                "status": "In Progress"
+            },
+            {
+                "year": 2026,
+                "title": "Graduate with Honors",
+                "type": "academic",
+                "status": "In Progress"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 3,
+            "projects_contributed": 57
         },
-        {
-        "type": "hackathon",
-        "title": "1st Runner-up - Hack4Gov",
-        "year": 2025,
-        "description": "Placed 1st Runner-up in the Hack4Gov competition.",
-        "link": "#"
+        "certifications": [
+            {
+                "title": "Django 101",
+                "issuer": "Simplilearn",
+                "year": 2026,
+                "issued": "January 2026",
+                "credential_id": "9752126"
+            },
+            {
+                "title": "Python Django 101",
+                "issuer": "freeCodeCamp",
+                "year": 2026,
+                "issued": "January 2026",
+                "credential_id": "c7078j-pyv9",
+                "credential_url": "https://www.freecodecamp.org/certification/c7078j/python-v9"
+            }
+        ],
+        "points": 22380,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Ceejay Santos is a skilled full-stack web developer with strong expertise in React and modern backend frameworks, delivering scalable, production-ready solutions with clean code, optimized performance, and impactful real-world applications.",
+            "author": "Student & Developer",
+            "date": "2026-02-27"
         }
-    ],
-    "roadmap": [],
-    "stats": {
-        "hackathons_won": 3,
-        "projects_contributed": 57
     },
-    "certifications": [
-        {
-        "title": "Django 101",
-        "issuer": "Simplilearn",
-        "year": 2026,
-        "issued": "January 2026",
-        "credential_id": "9752126"
+    {
+        "id": 4,
+        "name": "Reinael Yabut",
+        "role": [
+            "Student"
+        ],
+        "location": "Magalang",
+        "email": "reinaelyabut1234@gmail.com",
+        "github": "https://github.com/yabswannalearn",
+        "linkedin": "https://www.linkedin.com/in/reinaelyabut/",
+        "website": "https://www.reinaelyabut.dev/",
+        "avatar": "https://media.licdn.com/dms/image/v2/D4D03AQFIH495-Z3rBQ/profile-displayphoto-shrink_400_400/B4DZVAJrUGG8Ag-/0/1740538035447?e=1773878400&v=beta&t=4vsRRJPHcqt2fU7vHA6li-71rj01wRmDey--AzWbGDs",
+        "bio": "A computer engineering graduating student in HAU, very curious about AI/ML, Data and SWE. Likes to learn and upskill.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "BPI DATAWAVE Participant",
+                "year": 2025,
+                "description": "Participated in the BPI DATAWAVE hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "Dean's Lister",
+                "year": 2025,
+                "description": "Recognized as Dean's Lister for academic excellence.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "President's Lister",
+                "year": 2025,
+                "description": "Recognized as President's Lister for academic excellence.",
+                "link": "#"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Azure AI Fundamentals (AI-900)",
+                "issuer": "Microsoft",
+                "year": 2025
+            },
+            {
+                "title": "Machine Learning Fundamentals",
+                "issuer": "AWS",
+                "year": 2025
+            },
+            {
+                "title": "Data Analyst Associate",
+                "issuer": "DataCamp",
+                "year": 2025
+            },
+            {
+                "title": "Artificial Intelligence Fundamentals",
+                "issuer": "IBM",
+                "year": 2025
+            },
+            {
+                "title": "Data Engineering Associate",
+                "issuer": "DataCamp",
+                "year": 2026
+            },
+            {
+                "title": "Generative AI with AWS",
+                "issuer": "Udacity",
+                "year": 2025
+            },
+            {
+                "title": "SQL (Advanced)",
+                "issuer": "HackerRank",
+                "year": 2025
+            },
+            {
+                "title": "Prompting Essentials",
+                "issuer": "Google",
+                "year": 2025
+            },
+            {
+                "title": "AI Fundamentals",
+                "issuer": "DataCamp",
+                "year": 2025
+            },
+            {
+                "title": "Enterprise Networking & Security",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "SQL Associate",
+                "issuer": "DataCamp",
+                "year": 2025
+            },
+            {
+                "title": "SQL (Basic)",
+                "issuer": "HackerRank",
+                "year": 2025
+            },
+            {
+                "title": "Lean Six Sigma Yellow Belt",
+                "issuer": "Six Sigma",
+                "year": 2025
+            },
+            {
+                "title": "Excel Automation using ChatGPT",
+                "issuer": "Simplilearn",
+                "year": 2025
+            },
+            {
+                "title": "Data Literacy",
+                "issuer": "DataCamp",
+                "year": 2025
+            },
+            {
+                "title": "Switching, Routing, & Wireless",
+                "issuer": "Cisco",
+                "year": 2024
+            },
+            {
+                "title": "Lean Six Sigma White Belt",
+                "issuer": "Six Sigma",
+                "year": 2025
+            },
+            {
+                "title": "Introduction to Data Science",
+                "issuer": "Cisco",
+                "year": 2026
+            },
+            {
+                "title": "Introduction to IoT",
+                "issuer": "Cisco",
+                "year": 2026
+            },
+            {
+                "title": "Introduction to Modern AI",
+                "issuer": "Cisco",
+                "year": 2026
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Academic Excellence (President's List)",
+                "type": "academic",
+                "status": "In Progress"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 29
         },
-        {
-        "title": "Python Django 101",
-        "issuer": "freeCodeCamp",
-        "year": 2026,
-        "issued": "January 2026",
-        "credential_id": "c7078j-pyv9",
-        "credential_url": "https://www.freecodecamp.org/certification/c7078j/python-v9"
+        "points": 13720,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Reinael Yabut is a highly motivated computer engineering student with strong curiosity in AI, ML, and data-driven solutions.",
+            "author": "Computer Engineer | Student",
+            "date": "2026-02-27"
         }
-    ],
-    "points": 22380,
-    "isAdmin": false,
-    "featured": true,
-    "testimonial": {
-        "text": "Ceejay Santos is a skilled full-stack web developer with strong expertise in React and modern backend frameworks, delivering scalable, production-ready solutions with clean code, optimized performance, and impactful real-world applications.",
-        "author": "Student & Developer",
-        "date": "2026-02-27"
+    },
+    {
+        "id": 5,
+        "name": "Ram Achilles O. Guinto",
+        "role": [
+            "Student"
+        ],
+        "email": "",
+        "github": "https://github.com/Ram-Gold",
+        "linkedin": "https://www.linkedin.com/in/ram-guinto/",
+        "website": "https://ram-gold.github.io/Personal-Website/",
+        "avatar": "https://litter.catbox.moe/salxsywcd8akwdow.jpg",
+        "bio": "I'm Ram Achilles Guinto, I specialize in frontend design & development, turning ideas into seamless user experiences.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Champion - Caffeine.ai Technical Track 2025",
+                "year": 2025,
+                "description": "Champion of the Caffeine.ai Technical Track 2025.",
+                "link": "#"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "KadaKareer x Home Credit Hackathon Certificate",
+                "issuer": "KadaKareer",
+                "year": 2025
+            },
+            {
+                "title": "The Origins I: HTML",
+                "issuer": "Codédex",
+                "year": 2025
+            },
+            {
+                "title": "The Origins III: JavaScript",
+                "issuer": "Codédex",
+                "year": 2025
+            }
+        ],
+        "stats": {
+            "hackathons_won": 3,
+            "projects_contributed": 3
+        },
+        "points": 24680,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Ram Achilles O. Guinto is a skilled frontend developer specializing in Figma, HTML, and JavaScript, delivering seamless user experiences. His featured projects highlight creativity, technical expertise, and impactful design solutions.",
+            "author": "Student & Developer",
+            "date": "2026-02-27"
         }
     }
 ]

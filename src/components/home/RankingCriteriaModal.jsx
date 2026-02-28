@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Trophy, Code, Award, BookOpen, Info } from 'lucide-react';
+import { X, Trophy, Code, Award, BookOpen, Info, Star } from 'lucide-react';
 import { RANKING_WEIGHTS } from '../../utils/ranking';
 
 const RankingCriteriaModal = ({ isOpen, onClose }) => {

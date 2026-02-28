@@ -6,6 +6,7 @@ import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
 
 const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showBadgeGuide, setShowBadgeGuide] = useState(false);
+    const [showAllCerts, setShowAllCerts] = useState(false);
     if (!developer) return null;
 
     const statItems = [
@@ -183,10 +184,17 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
 
                                                     <div className="flex-1 pb-6">
                                                         <div className="bg-white/5 border border-white/10 p-4 rounded-xl sm:rounded-2xl group-hover:border-secondary/30 transition-all">
-                                                            <div className="flex justify-between items-center mb-1 gap-2">
-                                                                <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{step.title}</h4>
+                                                            <div className="flex justify-between items-start mb-1 gap-4">
+                                                                <div className="space-y-1">
+                                                                    <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{step.title}</h4>
+                                                                    {step.type && (
+                                                                        <span className="inline-block text-[7px] sm:text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 bg-white/5 border border-white/10 rounded-full text-text-muted">
+                                                                            {step.type}
+                                                                        </span>
+                                                                    )}
+                                                                </div>
                                                                 <span className={cn(
-                                                                    "text-[8px] sm:text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded-full whitespace-nowrap",
+                                                                    "text-[8px] sm:text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded-full whitespace-nowrap shrink-0",
                                                                     step.status === 'Completed' ? "bg-secondary/20 text-secondary" :
                                                                         step.status === 'In Progress' ? "bg-primary/50 text-white" : "bg-white/10 text-text-muted"
                                                                 )}>
@@ -194,6 +202,44 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                                 </span>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </motion.div>
+                                            ))}
+                                        </div>
+                                    </section>
+                                )}
+
+                                {developer.certifications && developer.certifications.length > 0 && (
+                                    <section className="space-y-6 pt-6 border-t border-white/5">
+                                        <div className="flex items-center justify-between">
+                                            <h3 className="text-lg sm:text-xl font-bold flex items-center gap-2">
+                                                <Briefcase className="w-5 h-5 text-secondary" />
+                                                Professional Certifications
+                                            </h3>
+                                            {developer.certifications.length > 4 && (
+                                                <button
+                                                    onClick={() => setShowAllCerts(!showAllCerts)}
+                                                    className="text-[10px] font-bold uppercase tracking-widest text-secondary hover:text-white transition-colors"
+                                                >
+                                                    {showAllCerts ? 'Show Less' : `+${developer.certifications.length - 4} More`}
+                                                </button>
+                                            )}
+                                        </div>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            {(showAllCerts ? developer.certifications : developer.certifications.slice(0, 4)).map((cert, i) => (
+                                                <motion.div
+                                                    key={i}
+                                                    initial={{ opacity: 0, y: 10 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    transition={{ delay: 0.1 + (i * 0.05) }}
+                                                    className="p-4 bg-white/5 border border-white/10 rounded-2xl hover:border-secondary/30 transition-all group/cert"
+                                                >
+                                                    <h4 className="font-bold text-white group-hover/cert:text-secondary transition-colors text-sm sm:text-base leading-tight mb-1">
+                                                        {cert.title}
+                                                    </h4>
+                                                    <div className="flex justify-between items-center text-[10px] sm:text-xs">
+                                                        <span className="text-text-muted">{cert.issuer}</span>
+                                                        <span className="font-mono text-secondary/70">{cert.year}</span>
                                                     </div>
                                                 </motion.div>
                                             ))}

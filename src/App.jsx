@@ -11,6 +11,8 @@ import Footer from './components/layout/Footer';
 import ProfileModal from './components/home/ProfileModal';
 import TestimonialCarousel from './components/home/TestimonialCarousel';
 import AnalyticsSpotlight from './components/home/AnalyticsSpotlight';
+import SplashScreen from './components/layout/SplashScreen';
+import { useEffect } from 'react';
 
 function App() {
   const [developers, setDevelopers] = useState(developersData);
@@ -18,6 +20,14 @@ function App() {
   const [filter, setFilter] = useState('All');
   const [search, setSearch] = useState('');
   const [selectedDev, setSelectedDev] = useState(null);
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const filteredDevs = developers.filter(dev => {
     const matchesFilter = filter === 'All' || dev.achievements.some(a => a.type.toLowerCase() === filter.toLowerCase());
@@ -42,6 +52,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-text-main">
+      <SplashScreen isVisible={showSplash} />
       <Header
         search={search}
         setSearch={setSearch}

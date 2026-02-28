@@ -540,7 +540,7 @@
         ],
         "points": 74520,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Rasheed Gavin M. Esponga is a focused and determined technologist with strong interest in cybersecurity, demonstrating analytical thinking, discipline, and problem-solving skills in CTFs and hackathons, showing clear potential overall.",
             "author": "Student & Developer",
@@ -785,7 +785,7 @@
         },
         "points": 50130,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Reinael Yabut is a highly motivated computer engineering student with strong curiosity in AI, ML, and data-driven solutions.",
             "author": "Computer Engineer | Student",
@@ -837,7 +837,7 @@
         },
         "points": 1360,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Ram Achilles O. Guinto is a skilled frontend developer specializing in Figma, HTML, and JavaScript, delivering seamless user experiences. His featured projects highlight creativity, technical expertise, and impactful design solutions.",
             "author": "Student & Developer",
@@ -1011,7 +1011,7 @@
         },
         "points": 15450,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Randel Angelo Yumul is an aspiring full-stack developer committed to continuous learning and building innovative digital solutions. His achievements in hackathons and certifications demonstrate strong technical skill and dedication.",
             "author": "Student & Developer",
@@ -1019,174 +1019,350 @@
         }
     },
     {
-    "id": 7,
-    "name": "Ralph Louis Gopez",
-    "role": [
-        "Chief Technology Officer"
-    ],
-    "location": "San Fernando City",
-    "email": "ralph.louis.g@gmail.com",
-    "github": "https://github.com/sevora",
-    "linkedin": "https://www.linkedin.com/in/ralphlouisgopez/",
-    "website": "https://ralphlouisgopez.com",
-    "avatar": "https://blog.ralphlouisgopez.com/assets/images/profile.jpg",
-    "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation—a serial programmer.",
-    "achievements": [
-        {
-            "type": "community",
-            "title": "GDSC – Web Development Lead",
-            "year": 2023,
-            "description": "Served as Web Development Lead for GDSC from 2023 to 2024.",
-            "link": "#"
+        "id": 7,
+        "name": "Ralph Louis Gopez",
+        "role": [
+            "Chief Technology Officer"
+        ],
+        "location": "San Fernando City",
+        "email": "ralph.louis.g@gmail.com",
+        "github": "https://github.com/sevora",
+        "linkedin": "https://www.linkedin.com/in/ralphlouisgopez/",
+        "website": "https://ralphlouisgopez.com",
+        "avatar": "https://blog.ralphlouisgopez.com/assets/images/profile.jpg",
+        "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation—a serial programmer.",
+        "achievements": [
+            {
+                "type": "community",
+                "title": "GDSC – Web Development Lead",
+                "year": 2023,
+                "description": "Served as Web Development Lead for GDSC from 2023 to 2024.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
+                "year": 2022,
+                "description": "Consistent academic excellence as President’s Lister and Dean’s Lister from 2022 to 2026.",
+                "link": "#"
+            },
+            {
+                "type": "career",
+                "title": "Software Engineer – Cinelaya Corporation",
+                "year": 2023,
+                "description": "Worked as a Software Engineer at Cinelaya Corporation.",
+                "link": "#"
+            },
+            {
+                "type": "career",
+                "title": "CTO & Co-founder – Cinelaya Corporation",
+                "year": 2025,
+                "description": "Officially named Chief Technology Officer and Co-founder of Cinelaya Corporation.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2023,
+                "title": "Software Engineer Role – Cinelaya",
+                "type": "career",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "CTO & Co-founder – Cinelaya Corporation",
+                "type": "startup",
+                "status": "Done"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Introduction to Front-End Development",
+                "issuer": "Meta",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "IPYV96CB1LYI"
+            },
+            {
+                "title": "Programming with JavaScript",
+                "issuer": "Meta",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "1GX2BVMABMPE"
+            },
+            {
+                "title": "People and Soft Skills Assessment",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "GW8I4FLIEP8A"
+            },
+            {
+                "title": "Developing Interpersonal Skills",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "THPGCTLFJKLI"
+            },
+            {
+                "title": "Solving Problems with Creative and Critical Thinking",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "A7JSL3X4NCHF"
+            },
+            {
+                "title": "Delivering Quality Work with Agility",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "C29I1IHFHJVB"
+            },
+            {
+                "title": "Present with Purpose: Create and Deliver Effective Presentations",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "FZBC4SXGGDQO"
+            },
+            {
+                "title": "Collaborate Effectively for Professional Success",
+                "issuer": "IBM",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "LF81GQQFA76M"
+            },
+            {
+                "title": "Introduction to Modern AI",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "March 2025"
+            },
+            {
+                "title": "Data Analytics Essentials",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "March 2025"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023"
+            },
+            {
+                "title": "CCNA: Introduction to Networks",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 0,
+            "projects_contributed": 11,
+            "github_contributions": 858
         },
-        {
-            "type": "academic",
-            "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
-            "year": 2022,
-            "description": "Consistent academic excellence as President’s Lister and Dean’s Lister from 2022 to 2026.",
-            "link": "#"
-        },
-        {
-            "type": "career",
-            "title": "Software Engineer – Cinelaya Corporation",
-            "year": 2023,
-            "description": "Worked as a Software Engineer at Cinelaya Corporation.",
-            "link": "#"
-        },
-        {
-            "type": "career",
-            "title": "CTO & Co-founder – Cinelaya Corporation",
-            "year": 2025,
-            "description": "Officially named Chief Technology Officer and Co-founder of Cinelaya Corporation.",
-            "link": "#"
+        "points": 57720,
+        "isAdmin": false,
+        "featured": false,
+        "testimonial": {
+            "text": "Ralph Louis Gopez is a highly versatile technologist who operates like an entire IT department. His leadership as a CTO and strong foundation in software, cloud, and AI reflect both technical excellence and relentless drive.",
+            "author": "CTO & Co-founder",
+            "date": "2026-02-27"
         }
-    ],
-    "roadmap": [
-        {
-            "year": 2023,
-            "title": "Software Engineer Role – Cinelaya",
-            "type": "career",
-            "status": "Done"
-        },
-        {
-            "year": 2025,
-            "title": "CTO & Co-founder – Cinelaya Corporation",
-            "type": "startup",
-            "status": "Done"
-        }
-    ],
-    "certifications": [
-        {
-            "title": "Introduction to Front-End Development",
-            "issuer": "Meta",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "IPYV96CB1LYI"
-        },
-        {
-            "title": "Programming with JavaScript",
-            "issuer": "Meta",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "1GX2BVMABMPE"
-        },
-        {
-            "title": "People and Soft Skills Assessment",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "GW8I4FLIEP8A"
-        },
-        {
-            "title": "Developing Interpersonal Skills",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "THPGCTLFJKLI"
-        },
-        {
-            "title": "Solving Problems with Creative and Critical Thinking",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "A7JSL3X4NCHF"
-        },
-        {
-            "title": "Delivering Quality Work with Agility",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "C29I1IHFHJVB"
-        },
-        {
-            "title": "Present with Purpose: Create and Deliver Effective Presentations",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "FZBC4SXGGDQO"
-        },
-        {
-            "title": "Collaborate Effectively for Professional Success",
-            "issuer": "IBM",
-            "year": 2026,
-            "issued": "February 2026",
-            "credential_id": "LF81GQQFA76M"
-        },
-        {
-            "title": "Introduction to Modern AI",
-            "issuer": "Cisco",
-            "year": 2025,
-            "issued": "April 2025"
-        },
-        {
-            "title": "AWS Academy Graduate – Cloud Foundations",
-            "issuer": "Amazon Web Services (AWS)",
-            "year": 2025,
-            "issued": "March 2025"
-        },
-        {
-            "title": "Data Analytics Essentials",
-            "issuer": "Cisco",
-            "year": 2025,
-            "issued": "March 2025"
-        },
-        {
-            "title": "CompTIA IT Fundamentals+ (ITF+)",
-            "issuer": "CompTIA",
-            "year": 2023,
-            "issued": "May 2023"
-        },
-        {
-            "title": "CCNA: Introduction to Networks",
-            "issuer": "Cisco",
-            "year": 2024,
-            "issued": "May 2024"
-        },
-        {
-            "title": "English for IT 1",
-            "issuer": "Cisco",
-            "year": 2024,
-            "issued": "October 2024"
-        },
-        {
-            "title": "Cyber Threat Management",
-            "issuer": "Cisco",
-            "year": 2024,
-            "issued": "October 2024"
-        }
-    ],
-    "stats": {
-        "hackathons_won": 0,
-        "projects_contributed": 11,
-        "github_contributions": 858
     },
-    "points": 28500,
-    "isAdmin": false,
-    "featured": true,
-    "testimonial": {
-        "text": "Ralph Louis Gopez is a highly versatile technologist who operates like an entire IT department. His leadership as a CTO and strong foundation in software, cloud, and AI reflect both technical excellence and relentless drive.",
-        "author": "CTO & Co-founder",
-        "date": "2026-02-27"
+    {
+        "id": 8,
+        "name": "Kirsten Dwayne Arciga Dizon",
+        "role": [
+            "Software Engineer"
+        ],
+        "location": "Mabalacat City",
+        "email": "kirstendwaynedizon03@gmail.com",
+        "github": "https://github.com/left-no-crumbz",
+        "linkedin": "https://www.linkedin.com/in/dwayne-dizon-674893277/",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQFMnb7nyU1DwA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693728914859?e=1773878400&v=beta&t=S4lE7wtJ1wCDxFXS5CXP0kxNCf43aTYZBcvyutn9i-M",
+        "bio": "Software engineer with strong end-to-end development expertise, combining frontend and backend technologies to build scalable systems and intuitive user experiences. Experienced in leadership, cloud, and data-driven solutions.",
+        "achievements": [
+            {
+                "type": "career",
+                "title": "Software Engineer – Homes, Farms and Land LLC",
+                "year": 2025,
+                "description": "Worked as a Software Engineer handling full-stack development in a remote setup based in New York, USA.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Web Development Lead – Google Developer Student Clubs HAU",
+                "year": 2024,
+                "description": "Led and spearheaded web development projects for GDSC Holy Angel University.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "President – League of Outstanding Programmers",
+                "year": 2023,
+                "description": "Served as President, leading organizational initiatives and programming-related activities.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion – GDG-UPM Build with AI",
+                "year": 2025,
+                "description": "Champion of the Build with AI Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Finalist – Appcon 2024",
+                "year": 2025,
+                "description": "Finalist in Appcon 2024 Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "APAC Google Solution Challenge 2025 – Top Entries",
+                "year": 2025,
+                "description": "Top entry participant in the Google Solution Challenge APAC 2025.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "Web Development Lead – GDSC HAU",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Software Engineer – Homes, Farms and Land LLC",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Critical Thinking for Better Judgment and Decision-Making",
+                "issuer": "LinkedIn",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "3d269a5d2b91a308740b4fa60adb2251afba6a4efdd31e607e00cd24927714cd"
+            },
+            {
+                "title": "Conflict Resolution for Professionals",
+                "issuer": "GoSkills",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "70375695"
+            },
+            {
+                "title": "Business Writing Skills",
+                "issuer": "GoSkills",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "18801433"
+            },
+            {
+                "title": "Meta Data Analyst Professional Certificate",
+                "issuer": "Meta / Coursera",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Data Management",
+                "issuer": "Meta",
+                "year": 2025,
+                "issued": "April 2025",
+                "credential_id": "N3EE0UCT93JX"
+            },
+            {
+                "title": "AWS Academy Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Data Analytics Essentials",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Python Data Analytics",
+                "issuer": "Meta",
+                "year": 2025,
+                "issued": "February 2025"
+            },
+            {
+                "title": "Data Analysis with Spreadsheets and SQL",
+                "issuer": "Meta",
+                "year": 2025,
+                "issued": "February 2025"
+            },
+            {
+                "title": "Introduction to Data Analytics",
+                "issuer": "Meta",
+                "year": 2025,
+                "issued": "February 2025",
+                "credential_id": "S6SMJBZK1LCQ"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "CCNA: Introduction to Networks",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023",
+                "credential_id": "DJS9DP5SYJ4QQLKK"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 3,
+            "projects_contributed": 43,
+            "github_contributions": 1353
+        },
+        "points": 83510,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Kirsten Dwayne Dizon is a highly driven software engineer with strong full-stack expertise, leadership experience, and a passion for building scalable, data-driven systems.",
+            "author": "Software Engineer",
+            "date": "2026-02-27"
+        }
     }
-}
 ]

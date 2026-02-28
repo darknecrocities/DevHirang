@@ -71,7 +71,7 @@ const SplashScreen = ({ isVisible }) => {
                     {/* Decorative Elements */}
                     <div className="absolute bottom-12 left-12 hidden lg:block">
                         <p className="text-[10px] font-mono text-white/20 uppercase tracking-widest">
-                            Secure Entry v2.0 // Terminal Protocol Active
+                            Powered by <span className="text-secondary">DevHirang</span>
                         </p>
                     </div>
                 </motion.div>

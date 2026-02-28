@@ -3,17 +3,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
+import { calculateScore } from '../../utils/ranking';
 
 const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showBadgeGuide, setShowBadgeGuide] = useState(false);
     const [showAllCerts, setShowAllCerts] = useState(false);
     if (!developer) return null;
 
+    const scores = calculateScore(developer);
     const statItems = [
-        { label: 'Hackathons', value: developer.stats.hackathons_won, icon: Award },
+        { label: 'Impact', value: scores.impact.toLocaleString(), icon: Award },
+        { label: 'Trust', value: scores.trust.toLocaleString(), icon: Briefcase },
+        { label: 'Total', value: scores.total.toLocaleString(), icon: Trophy },
         { label: 'Projects', value: developer.stats.projects_contributed, icon: Code },
-        { label: 'Community', value: 12, icon: Users }, // Mocked extra stat
-        { label: 'Impact', value: developer.points, icon: Briefcase },
     ];
 
     return (

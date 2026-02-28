@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-points": "node scripts/sync-points.cjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

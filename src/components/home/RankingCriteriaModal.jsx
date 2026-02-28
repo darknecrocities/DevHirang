@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Trophy, Code, Award, BookOpen, Info, Star } from 'lucide-react';
+import { X, Trophy, Code, Award, BookOpen, Info, Star, ShieldCheck, Crown } from 'lucide-react';
 import { RANKING_WEIGHTS } from '../../utils/ranking';
 
 const RankingCriteriaModal = ({ isOpen, onClose }) => {
@@ -18,6 +18,12 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
             title: "Projects",
             description: "Calculated based on the total number of verified projects and applications contributed to.",
             points: RANKING_WEIGHTS.projects
+        },
+        {
+            icon: Star,
+            title: "GitHub Contributions",
+            description: "Points awarded for each verified GitHub contribution made to ecosystem repositories.",
+            points: RANKING_WEIGHTS.github_contributions
         },
         {
             icon: BookOpen,
@@ -77,6 +83,44 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
                             </div>
                         </section>
 
+                        <section className="space-y-4">
+                            <h3 className="text-secondary font-bold uppercase tracking-widest text-xs">Badge Earnings (New)</h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-indigo-400 font-bold uppercase tracking-tight">World Level</span>
+                                    <span className="text-xs font-mono text-white">+20,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-yellow-500 font-bold uppercase tracking-tight">Hackathon Hero</span>
+                                    <span className="text-xs font-mono text-white">+15,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-red-400 font-bold uppercase tracking-tight">Platform Admin</span>
+                                    <span className="text-xs font-mono text-white">+10,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-purple-500/10 border border-purple-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-purple-400 font-bold uppercase tracking-tight">Visionary</span>
+                                    <span className="text-xs font-mono text-white">+10,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-blue-400 font-bold uppercase tracking-tight">Elite Contributor</span>
+                                    <span className="text-xs font-mono text-white">+10,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-green-500/10 border border-green-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-green-400 font-bold uppercase tracking-tight">Community Pillar</span>
+                                    <span className="text-xs font-mono text-white">+8,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-cyan-400 font-bold uppercase tracking-tight">Legacy Builder</span>
+                                    <span className="text-xs font-mono text-white">+7,000</span>
+                                </div>
+                                <div className="p-3 rounded-xl bg-orange-500/10 border border-orange-500/20 flex justify-between items-center">
+                                    <span className="text-xs text-orange-400 font-bold uppercase tracking-tight">Rising Star</span>
+                                    <span className="text-xs font-mono text-white">+5,000</span>
+                                </div>
+                            </div>
+                        </section>
+
                         <div className="grid gap-6">
                             {criteria.map((item, i) => (
                                 <div key={i} className="group p-4 rounded-xl border border-white/5 bg-white/5 hover:border-white/20 transition-all">
@@ -99,19 +143,38 @@ const RankingCriteriaModal = ({ isOpen, onClose }) => {
                             ))}
 
                             {/* Status Bonuses */}
-                            <div className="p-4 rounded-xl border border-secondary/20 bg-secondary/5">
-                                <h3 className="text-secondary font-bold text-sm uppercase mb-3 tracking-widest flex items-center gap-2">
-                                    <Star className="w-4 h-4 fill-secondary" />
-                                    Platform Status Bonuses
-                                </h3>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between items-center text-xs">
-                                        <span className="text-white/70">Admin Verified Status</span>
-                                        <span className="font-bold text-secondary">+5,000 pts</span>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="p-4 rounded-xl border border-secondary/20 bg-secondary/5">
+                                    <h3 className="text-secondary font-bold text-sm uppercase mb-3 tracking-widest flex items-center gap-2">
+                                        <Star className="w-4 h-4 fill-secondary" />
+                                        Activity Milestones
+                                    </h3>
+                                    <div className="space-y-2">
+                                        <div className="flex justify-between items-center text-xs">
+                                            <span className="text-white/70">Legacy Builder</span>
+                                            <span className="font-bold text-secondary">+7,000 pts</span>
+                                        </div>
+                                        <div className="flex justify-between items-center text-xs">
+                                            <span className="text-white/70">Rising Star</span>
+                                            <span className="font-bold text-secondary">+5,000 pts</span>
+                                        </div>
                                     </div>
-                                    <div className="flex justify-between items-center text-xs">
-                                        <span className="text-white/70">Featured Developer</span>
-                                        <span className="font-bold text-secondary">+1,000 pts</span>
+                                </div>
+
+                                <div className="p-4 rounded-xl border border-white/10 bg-white/5">
+                                    <h3 className="text-white font-bold text-sm uppercase mb-3 tracking-widest flex items-center gap-2">
+                                        <Crown className="w-4 h-4 text-secondary" />
+                                        Ranking Tiers
+                                    </h3>
+                                    <div className="space-y-2">
+                                        <div className="flex justify-between items-center text-xs">
+                                            <span className="text-white/70">Elite (Top 10)</span>
+                                            <span className="font-bold text-secondary">Legendary</span>
+                                        </div>
+                                        <div className="flex justify-between items-center text-xs">
+                                            <span className="text-white/70">Pro (Top 100)</span>
+                                            <span className="font-bold text-text-muted">Certified</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

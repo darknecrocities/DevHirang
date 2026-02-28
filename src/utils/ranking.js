@@ -8,9 +8,16 @@
  * - Achievements count: 50 pts each (baseline multiplier)
  */
 
+import { getDeveloperBadges } from './badgeUtils';
+
 export const calculateScore = (developer) => {
-    let impactScore = developer.points || 0;
+    let impactScore = 0;
     let trustScore = 0;
+
+    // 0. Badge-Based Base Points (v2 Scaling)
+    const earnedBadges = getDeveloperBadges(developer);
+    const badgePoints = earnedBadges.reduce((sum, badge) => sum + (badge.points || 0), 0);
+    impactScore += badgePoints;
 
     // 1. Contributions (Achievements array)
     developer.achievements?.forEach(ach => {
@@ -32,10 +39,13 @@ export const calculateScore = (developer) => {
 
     // 4. Bonus Stats (Impact)
     impactScore += (developer.stats?.hackathons_won || 0) * 50;
+    impactScore += (developer.stats?.github_contributions || 0) * 50;
 
-    // 5. Status Bonuses (Trust)
-    if (developer.isAdmin) trustScore += 5000;
-    if (developer.featured) trustScore += 1000;
+    // 5. Status Bonuses (Trust) - Now handled via badges, but keeping for backward compatibility if needed, 
+    // though the badge system already covers isAdmin and featured.
+    // To avoid double counting, we'll keep only what's not in badges or adjust.
+    // Actually, Admin and Featured are badges now (15k and 1k/8k).
+    // Let's remove them here to avoid double counting.
 
     return {
         impact: impactScore,
@@ -66,6 +76,7 @@ export const RANKING_WEIGHTS = {
         'Startup': 300
     },
     projects: '20 pts per contribution',
+    github_contributions: '50 pts each',
     certifications: '150 pts per certificate',
     achievements: '50 pts per win'
 };

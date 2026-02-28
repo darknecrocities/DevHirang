@@ -67,11 +67,11 @@ const AnalyticsSpotlight = ({ developers }) => {
                     className="relative group h-full"
                 >
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-[2rem] blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative h-full glassmorphism p-8 rounded-[2rem] border border-white/10 hover:border-white/20 transition-all flex flex-col items-center text-center">
-                        <div className={`w-14 h-14 rounded-2xl ${stat.bgColor} ${stat.borderColor} border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                    <div className="relative h-full glassmorphism p-8 rounded-[2rem] border border-white/10 hover:border-secondary/30 transition-all flex flex-col items-center text-center cursor-pointer active:scale-95 group/card">
+                        <div className={`w-14 h-14 rounded-2xl ${stat.bgColor} ${stat.borderColor} border flex items-center justify-center mb-6 group-hover/card:scale-110 group-hover/card:border-secondary/50 transition-all shadow-lg shadow-black/20`}>
                             <stat.icon className={`w-7 h-7 ${stat.color}`} />
                         </div>
-                        <h4 className="text-4xl font-black text-white mb-2 tracking-tighter">
+                        <h4 className="text-4xl font-black text-white mb-2 tracking-tighter group-hover/card:text-secondary transition-colors">
                             {stat.value}
                             {index === 2 && <span className="text-secondary">+</span>}
                         </h4>
@@ -83,6 +83,9 @@ const AnalyticsSpotlight = ({ developers }) => {
                                 {stat.detail}
                             </p>
                         )}
+                        <div className="absolute bottom-4 opacity-0 group-hover/card:opacity-100 transition-opacity">
+                            <div className="w-8 h-1 bg-secondary rounded-full" />
+                        </div>
                     </div>
                 </motion.div>
             ))}

@@ -70,6 +70,90 @@
                 "link": "#"
             },
             {
+                "type": "community",
+                "title": "Machine Learning - Computer Vision Intern",
+                "year": 2026,
+                "description": "Worked on computer vision projects applying machine learning techniques at Intuition Machines.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Software Engineer - Lakbay PH",
+                "year": 2025,
+                "description": "Contributed to a travel platform, implementing frontend/backend solutions and enhancing UI/UX for Filipino tourism.",
+                "link": "https://lakbay.ph"
+            },
+            {
+                "type": "community",
+                "title": "CEO & Lead - GDG-HAU",
+                "year": 2025,
+                "description": "Led GDG-HAU, organizing projects, workshops, and community events for developer growth.",
+                "link": "https://gdg.dev/holyangel"
+            },
+            {
+                "type": "community",
+                "title": "Project Manager - GDG-HAU",
+                "year": 2024,
+                "description": "Managed organization website projects, feature recommendations, and task coordination.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Chief Technology Officer - GDG-HAU",
+                "year": 2024,
+                "description": "Led the tech committee to produce workshops, ideas, project management, and technical guidance.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Data Analyst Lead - Datacamp Scholar",
+                "year": 2024,
+                "description": "Oversaw data analysis projects, applying AI and data engineering techniques.",
+                "link": "https://www.datacamp.com"
+            },
+            {
+                "type": "community",
+                "title": "Member - GDG-HAU",
+                "year": 2023,
+                "description": "Joined GDG-HAU as a member, gaining foundational experience in community projects.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Freelance Software Developer - Wiggies Ice Cream",
+                "year": 2024,
+                "description": "Developed management software systems for Wiggies Ice Cream and Mr. Yogurt stores.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Prompt Engineer - NVIDIA",
+                "year": 2025,
+                "description": "Worked as a Prompt Engineer, focusing on AI integration and optimization.",
+                "link": "https://www.nvidia.com"
+            },
+            {
+                "type": "community",
+                "title": "Junior Software Engineer - Microsoft",
+                "year": 2025,
+                "description": "Interned as a Junior Software Engineer, contributing to Microsoft projects remotely.",
+                "link": "https://www.microsoft.com"
+            },
+            {
+                "type": "community",
+                "title": "Officer in Charge - League of Outstanding Programmers",
+                "year": 2024,
+                "description": "Managed operations and programs for the League of Outstanding Programmers.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Tech Consultant - League of Outstanding Programmers",
+                "year": 2024,
+                "description": "Provided technical consulting and guidance for projects within the organization.",
+                "link": "#"
+            },
+            {
                 "type": "opensource",
                 "title": "Devcon Contributors Hub",
                 "year": 2023,
@@ -107,7 +191,8 @@
         ],
         "stats": {
             "hackathons_won": 15,
-            "projects_contributed": 170
+            "projects_contributed": 170,
+            "github_contributions": 1200
         },
         "certifications": [
             {
@@ -336,7 +421,7 @@
                 "year": 2024
             }
         ],
-        "points": 129600,
+        "points": 159950,
         "isAdmin": true,
         "featured": true,
         "testimonial": {
@@ -405,7 +490,8 @@
         ],
         "stats": {
             "hackathons_won": 3,
-            "projects_contributed": 16
+            "projects_contributed": 16,
+            "github_contributions": 1228
         },
         "certifications": [
             {
@@ -415,7 +501,7 @@
                 "issued": "February 2026"
             }
         ],
-        "points": 24180,
+        "points": 74520,
         "isAdmin": false,
         "featured": true,
         "testimonial": {
@@ -480,7 +566,8 @@
         ],
         "stats": {
             "hackathons_won": 3,
-            "projects_contributed": 57
+            "projects_contributed": 57,
+            "github_contributions": 1119
         },
         "certifications": [
             {
@@ -499,7 +586,7 @@
                 "credential_url": "https://www.freecodecamp.org/certification/c7078j/python-v9"
             }
         ],
-        "points": 22380,
+        "points": 79790,
         "isAdmin": false,
         "featured": true,
         "testimonial": {
@@ -656,9 +743,10 @@
         ],
         "stats": {
             "hackathons_won": 1,
-            "projects_contributed": 29
+            "projects_contributed": 29,
+            "github_contributions": 686
         },
-        "points": 13720,
+        "points": 50130,
         "isAdmin": false,
         "featured": true,
         "testimonial": {
@@ -707,13 +795,188 @@
         ],
         "stats": {
             "hackathons_won": 3,
-            "projects_contributed": 3
+            "projects_contributed": 3,
+            "github_contributions": 12
         },
-        "points": 680,
+        "points": 1360,
         "isAdmin": false,
         "featured": true,
         "testimonial": {
             "text": "Ram Achilles O. Guinto is a skilled frontend developer specializing in Figma, HTML, and JavaScript, delivering seamless user experiences. His featured projects highlight creativity, technical expertise, and impactful design solutions.",
+            "author": "Student & Developer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Randel Angelo Yumul",
+        "role": [
+            "Student"
+        ],
+        "location": "Mabalacat City",
+        "email": "randel.angelo10@gmail.com",
+        "github": "https://github.com/RandelYumul",
+        "linkedin": "https://www.linkedin.com/in/randel-yumul",
+        "website": "https://randelyumulportfolio.vercel.app/",
+        "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/587506903_25300812592847744_5115384980866262285_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGSwJ24WySW3XbPltUPYsdDj_oO0cVp6E6P-g7RxWnoTrPBO8brAO0vdohzQ8Tz0sbaT4twz2Zn8u4HASK6ZIGY&_nc_ohc=XTMqxlyvTaMQ7kNvwFHUfae&_nc_oc=AdmwM_ArtcdxQaHAuFeNug07W7TKFtjWPhP_v7iVbsBl-zdctwy1GfPFCHbJUcNUhNU&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=IWckQhrIUdNo7OHqTPMzgA&_nc_ss=8&oh=00_Afs94aYA7TnCShDqgmqkcJTcS0piorqYxoOX7xFZpPnf3g&oe=69A86296",
+        "bio": "Aspiring Full-Stack Developer dedicated to continuous learning, exploring diverse technologies, and acquiring the skills to build innovative digital solutions.",
+        "achievements": [
+            {
+                "type": "community",
+                "title": "LOOP-External Vice President 2024-2025",
+                "year": 2024,
+                "description": "External Vice President of LOOP 2024-2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Cloudstaff AI Hackathon 2025 - 1st Runner Up",
+                "year": 2025,
+                "description": "Placed 1st Runner Up in the Cloudstaff AI Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Philippine Junior Data Science Challenge (PJDSC) 2025 - Top 10 Finalist",
+                "year": 2025,
+                "description": "Top 10 Finalist in PJDSC 2025.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "1st Year, 1st Semester - President's Lister",
+                "year": 2023,
+                "description": "Recognized as a President's Lister for outstanding academic performance in 1st Year, 1st Semester.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "1st Year, 2nd Semester - President's Lister",
+                "year": 2024,
+                "description": "Recognized as a President's Lister for outstanding academic performance in 1st Year, 2nd Semester.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "2nd Year, 1st Semester - President's Lister",
+                "year": 2024,
+                "description": "Recognized as a President's Lister for outstanding academic performance in 2nd Year, 1st Semester.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "2nd Year, 2nd Semester - President's Lister",
+                "year": 2025,
+                "description": "Recognized as a President's Lister for outstanding academic performance in 2nd Year, 2nd Semester.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "3rd Year, 1st Semester - President's Lister",
+                "year": 2025,
+                "description": "Recognized as a President's Lister for outstanding academic performance in 3rd Year, 1st Semester.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Philippine Junior Data Science Challenge (PJDSC) 2025 - Top 10 Finalist",
+                "type": "technical",
+                "status": "Done"
+            },
+            {
+                "year": 2026,
+                "title": "Launch Tech Startup",
+                "type": "startup",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Introduction to Career Skills in Data Analytics",
+                "issuer": "LinkedIn",
+                "year": 2025,
+                "issued": "June 2025"
+            },
+            {
+                "title": "Learning Data Analytics: 1 Foundations",
+                "issuer": "LinkedIn",
+                "year": 2025,
+                "issued": "June 2025"
+            },
+            {
+                "title": "Endpoint Security",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "August 2025",
+                "credential_id": "de47fa72-1452-4f03-908b-0a1f7c550405"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "November 2025",
+                "credential_id": "1d07a7ad-b036-46f3-85c3-0210d6eef59b"
+            },
+            {
+                "title": "Relational Database",
+                "issuer": "freeCodeCamp",
+                "year": 2025,
+                "issued": "February 2025",
+                "credential_id": "randel_yumul-rd"
+            },
+            {
+                "title": "Responsive Web Design",
+                "issuer": "freeCodeCamp",
+                "year": 2024,
+                "issued": "September 2024",
+                "credential_id": "randel_yumul-rwd"
+            },
+            {
+                "title": "JavaScript Essentials 1",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+) Certification",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "November 2023"
+            },
+            {
+                "title": "Full-Stack Development 101",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "May 2025",
+                "credential_id": "8400843"
+            },
+            {
+                "title": "Python for Beginners",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "May 2025",
+                "credential_id": "8396988"
+            },
+            {
+                "title": "Work with Components in Figma",
+                "issuer": "Coursera Project Network",
+                "year": 2024,
+                "issued": "September 2024",
+                "credential_id": "0MWYZ8TNFYDQ"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 3,
+            "projects_contributed": 15,
+            "github_contributions": 154
+        },
+        "points": 15450,
+        "isAdmin": false,
+        "featured": false,
+        "testimonial": {
+            "text": "Randel Angelo Yumul is an aspiring full-stack developer committed to continuous learning and building innovative digital solutions. His achievements in hackathons and certifications demonstrate strong technical skill and dedication.",
             "author": "Student & Developer",
             "date": "2026-02-27"
         }

@@ -50,6 +50,27 @@
             },
             {
                 "type": "hackathon",
+                "title": "Top Participant National AI Prompt Design Challenge",
+                "year": 2025,
+                "description": "Top participant in the National AI Prompt Design Challenge.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "1st place in HackForge 2025 Hackathon",
+                "year": 2025,
+                "description": "1st place in HackForge 2025 Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "2nd Place Data Hackfest 2025",
+                "year": 2025,
+                "description": "2nd place in Data Hackfest 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
                 "title": "Champion - 2025UNity Hackathon",
                 "year": 2025,
                 "description": "Champion of the 2025UNity Hackathon.",
@@ -458,7 +479,7 @@
                 "year": 2024
             }
         ],
-        "points": 203350,
+        "points": 203650,
         "isAdmin": true,
         "featured": true,
         "testimonial": {
@@ -625,7 +646,7 @@
         ],
         "points": 79790,
         "isAdmin": false,
-        "featured": true,
+        "featured": false,
         "testimonial": {
             "text": "Ceejay Santos is a skilled full-stack web developer with strong expertise in React and modern backend frameworks, delivering scalable, production-ready solutions with clean code, optimized performance, and impactful real-world applications.",
             "author": "Student & Developer",
@@ -1361,6 +1382,489 @@
         "featured": true,
         "testimonial": {
             "text": "Kirsten Dwayne Dizon is a highly driven software engineer with strong full-stack expertise, leadership experience, and a passion for building scalable, data-driven systems.",
+            "author": "Software Engineer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Jansen C. Cruz",
+        "role": [
+            "AI/ML Engineering Intern"
+        ],
+        "location": "Angeles City",
+        "email": "jansen.c.cruz@gmail.com",
+        "github": "https://github.com/jansencruz23",
+        "linkedin": "https://www.linkedin.com/in/jansen-cruz-480a47ba/",
+        "website": "",
+        "avatar": "https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/595435817_4441096172785967_1923243824095876891_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=yyxM4t64zzIQ7kNvwH2LkAx&_nc_oc=AdmtBeO6T6xSK7mWjMLRs9ahKpPvvEYTciifmWgja22kqSFcctzp0OBfqizPxBXAyRY&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=nCKa_8YQILX7fxIOmMxADQ&_nc_ss=8&oh=00_AfuLQ702K10Er-NY6mxgSCZnvJgUuboxRzW2bwiDBt6IWQ&oe=69A8C852",
+        "bio": "Computer Science senior and aspiring AI engineer specializing in intelligent systems, automation, and computer vision. Builds practical AI agents and scalable backend solutions, blending strong software engineering with applied machine learning. Driven by curiosity, continuous growth, and real-world impact.",
+        "achievements": [
+            {
+                "type": "academic",
+                "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
+                "year": 2022,
+                "description": "Consistent academic excellence from 1st year to 4th year with multiple President’s Lister and Dean’s Lister recognitions.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "GDG Holy Angel AI Hack 2025 – 1st Place & Best Use of Gemini API",
+                "year": 2025,
+                "description": "Secured 1st place and Best Use of Gemini API award.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "JPCS Hackathon 2025 – 1st Place",
+                "year": 2025,
+                "description": "Champion of JPCS Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "JPCS Hackathon 2025 – 2nd Place",
+                "year": 2025,
+                "description": "2nd place winner at JPCS Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "JPCS Hackathon 2024 – 3rd Place",
+                "year": 2024,
+                "description": "3rd place finisher at JPCS Hackathon 2024.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "iCode STI Hackathon 2022 – 2nd Place",
+                "year": 2022,
+                "description": "2nd place winner at iCode STI Hackathon 2022.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "iCode STI Hackathon 2021 – 2nd Place",
+                "year": 2021,
+                "description": "2nd place winner at iCode STI Hackathon 2021.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "Build AI Agents & Computer Vision Systems",
+                "type": "technical",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "AI/ML Engineering Internship",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "AZ-900: Azure Fundamentals",
+                "issuer": "Microsoft",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Cloud Computing",
+                "issuer": "IT Specialist",
+                "year": 2025,
+                "issued": "October 2025"
+            },
+            {
+                "title": "Oracle Cloud Infrastructure: AI Foundations Associate",
+                "issuer": "Oracle",
+                "year": 2025,
+                "issued": "October 2025"
+            },
+            {
+                "title": "Oracle Cloud Infrastructure: Generative AI Professional",
+                "issuer": "Oracle",
+                "year": 2025,
+                "issued": "October 2025"
+            },
+            {
+                "title": "Advanced Learning Algorithms",
+                "issuer": "Coursera",
+                "year": 2025,
+                "issued": "March 2025"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 6,
+            "projects_contributed": 71,
+            "github_contributions": 1099
+        },
+        "points": 95070,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Jansen C. Cruz is a disciplined and impact-driven AI engineer with strong foundations in machine learning, automation, and backend systems. His hackathon success and community contributions reflect both technical excellence and leadership potential.",
+            "author": "AI/ML Engineer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Josiah Faith V. Gorospe",
+        "role": [
+            "Software Engineer"
+        ],
+        "location": "Mabalacat City",
+        "email": "joshgorospe03@gmail.com",
+        "github": "https://github.com/Itsmeejoshiee",
+        "linkedin": "https://www.linkedin.com/in/itsmeejoshie/",
+        "website": "https://itsmeejoshie.netlify.app/",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQFsVVfJ4ferhw/profile-displayphoto-shrink_400_400/B56ZZPWg4UGoAg-/0/1745088025239?e=1773878400&v=beta&t=OGsLKeei69_Jx7lbaExvUablquPMmlRiz0HTeKAwZts",
+        "bio": "Software engineer focused on automation workflows and internal tooling across desktop and mobile platforms. Experienced in full-stack and mobile development, project leadership, and community building. Passionate about improving productivity through well-designed systems and real-world solutions.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Google Solutions Challenge APAC 2025 – Top 3 (People’s Choice Award)",
+                "year": 2025,
+                "description": "Won Top 3 People’s Choice Award at the Google Solutions Challenge APAC 2025 for Trashtrackr, an AI-powered mobile app for smarter waste disposal.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "University Days INOBASYON – Idea Pitching Competition (2nd Runner Up)",
+                "year": 2024,
+                "description": "2nd Runner Up in the University Days INOBASYON Idea Pitching Competition organized by Holy Angel University Student Council.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Notion Campus Lead",
+                "year": 2024,
+                "description": "Serves as a Notion Campus Lead, supporting student adoption and productivity initiatives.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Chapter Lead – GDSC Holy Angel University",
+                "year": 2023,
+                "description": "Served as Chapter Lead of Google Developer Student Clubs at Holy Angel University, leading initiatives, events, and community growth.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Consultant – GDSC Holy Angel University",
+                "year": 2024,
+                "description": "Provided guidance and mentorship as a Consultant for GDSC Holy Angel University.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Devcon Pampanga Officer",
+                "year": 2024,
+                "description": "Served as an officer for Devcon Pampanga, contributing to community programs, events, and local tech initiatives.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2023,
+                "title": "Chapter Lead – GDSC Holy Angel University",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2024,
+                "title": "Consultant – GDSC Holy Angel University",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2024,
+                "title": "Devcon Pampanga Officer",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Software Engineer – Homes, Farms and Land LLC",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Critical Thinking in the AI Era",
+                "issuer": "HP LIFE",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "20728e9f-b790-4b5c-9e38-5c3c3d439a9a"
+            },
+            {
+                "title": "Conflict Resolution for Professionals",
+                "issuer": "GoSkills",
+                "year": 2026,
+                "issued": "February 2026",
+                "credential_id": "32848147"
+            },
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "GitHub Foundations",
+                "issuer": "GitHub",
+                "year": 2025,
+                "issued": "February 2025"
+            },
+            {
+                "title": "Cybersecurity Essentials",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "September 2024"
+            },
+            {
+                "title": "CCNAv7: Introduction to Networks",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "Postman API Fundamentals Student Expert",
+                "issuer": "Postman",
+                "year": 2024,
+                "issued": "March 2024",
+                "credential_id": "65e480b00d88f060be6aa9ce"
+            },
+            {
+                "title": "Introduction to IoT",
+                "issuer": "Cisco",
+                "year": 2023,
+                "issued": "December 2023"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023",
+                "credential_id": "7DT1EM7S3BR41B9D"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 12,
+            "github_contributions": 1112
+        },
+        "points": 78190,
+        "isAdmin": false,
+        "featured": false,
+        "testimonial": {
+            "text": "Josiah Faith Gorospe is a versatile software engineer with strong experience in automation, mobile development, and community leadership. His achievements in global hackathons highlight both technical skill and impact-driven innovation.",
+            "author": "Software Engineer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Joaquin Galang",
+        "role": [
+            "Software Engineer"
+        ],
+        "location": "Angeles City",
+        "email": "galangjoaquin@gmail.com",
+        "github": "https://github.com/joaquingalang",
+        "linkedin": "https://www.linkedin.com/in/joaquin-galang/",
+        "website": "https://joaquingalang.vercel.app/",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQEYf26LeV1IsA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732394928613?e=1773878400&v=beta&t=-hngXsDt0ppWZIQMDoEGB3Dz_KI_xUEqvqG8yl3ohi4",
+        "bio": "Software engineer with strong experience in web, mobile, and AI-driven solutions. Active community leader and hackathon winner with a passion for scalable systems, developer advocacy, and continuous learning across AI, cloud, and software engineering.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Google Solutions Challenge 2025 – Winner",
+                "year": 2025,
+                "description": "Winner of the Google Solutions Challenge 2025, building impactful technology aligned with real-world problems.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Web Development Lead – GDG on Campus Holy Angel University",
+                "year": 2025,
+                "description": "Currently serving as Web Development Lead, overseeing web initiatives and project execution.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Mobile Development Lead – GDSC Holy Angel University",
+                "year": 2024,
+                "description": "Led mobile development initiatives and supported community-led technical events.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Vice President External – League of Outstanding Programmers",
+                "year": 2023,
+                "description": "Organized and facilitated workshops, seminars, and tutorials for the Computer Science community.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "Mobile Development Lead – GDSC HAU",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Software Development Intern – Symph",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "AI Fundamentals Certification",
+                "issuer": "DataCamp",
+                "year": 2025,
+                "issued": "January 2025",
+                "credential_id": "AIF0024068519439"
+            },
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Data Analytics Essentials",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "AI Fundamentals",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "AI Ethics",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Generative AI Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Large Language Models (LLMs) Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Introduction to ChatGPT",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Understanding Machine Learning",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Understanding Artificial Intelligence",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Intermediate GitHub Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "GitHub Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Intermediate Git",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Foundations of Git",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Cybersecurity Essentials",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "September 2024"
+            },
+            {
+                "title": "CCNAv7: Introduction to Networking",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "Python Bootcamp: From Zero to Hero in Python",
+                "issuer": "Udemy",
+                "year": 2020,
+                "issued": "November 2020",
+                "credential_id": "UC-22bf3428-2581-43eb-86e9-aab060067890"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023",
+                "credential_id": "7J26EWNQ3E11QJKF"
+            },
+            {
+                "title": "GitHub Foundations",
+                "issuer": "GitHub",
+                "year": 2024,
+                "issued": "December 2024"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 52,
+            "github_contributions": 1842
+        },
+        "points": 127040,
+        "isAdmin": false,
+        "featured": true,
+        "testimonial": {
+            "text": "Joaquin Galang is a high-impact software engineer and community leader whose work spans AI, web, and mobile development. His Google Solutions Challenge win and extensive certifications highlight both technical depth and real-world impact.",
             "author": "Software Engineer",
             "date": "2026-02-27"
         }

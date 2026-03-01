@@ -1825,5 +1825,206 @@
             "author": "Student Developer",
             "date": "2026-02-27"
         }
+    },
+    {
+        "id": 11,
+        "name": "Joaquin Galang",
+        "role": [
+            "Software Engineer"
+        ],
+        "location": "Angeles City",
+        "email": "galangjoaquin@gmail.com",
+        "github": "https://github.com/joaquingalang",
+        "linkedin": "https://www.linkedin.com/in/joaquin-galang/",
+        "website": "https://joaquingalang.vercel.app/",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQEYf26LeV1IsA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732394928613?e=1773878400&v=beta&t=-hngXsDt0ppWZIQMDoEGB3Dz_KI_xUEqvqG8yl3ohi4",
+        "bio": "Software engineer with strong experience in web, mobile, and AI-driven solutions. Active community leader and hackathon winner with a passion for scalable systems, developer advocacy, and continuous learning across AI, cloud, and software engineering.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Google Solutions Challenge 2025 – Winner",
+                "year": 2025,
+                "description": "Winner of the Google Solutions Challenge 2025, building impactful technology aligned with real-world problems.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Web Development Lead – GDG on Campus Holy Angel University",
+                "year": 2025,
+                "description": "Currently serving as Web Development Lead, overseeing web initiatives and project execution.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Mobile Development Lead – GDSC Holy Angel University",
+                "year": 2024,
+                "description": "Led mobile development initiatives and supported community-led technical events.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Vice President External – League of Outstanding Programmers",
+                "year": 2023,
+                "description": "Organized and facilitated workshops, seminars, and tutorials for the Computer Science community.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2024,
+                "title": "Mobile Development Lead – GDSC HAU",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Software Development Intern – Symph",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "AI Fundamentals Certification",
+                "issuer": "DataCamp",
+                "year": 2025,
+                "issued": "January 2025",
+                "credential_id": "AIF0024068519439"
+            },
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Data Analytics Essentials",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "AI Fundamentals",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "AI Ethics",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Generative AI Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Large Language Models (LLMs) Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Introduction to ChatGPT",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Understanding Machine Learning",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Understanding Artificial Intelligence",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "December 2024"
+            },
+            {
+                "title": "Intermediate GitHub Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "GitHub Concepts",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Intermediate Git",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Foundations of Git",
+                "issuer": "DataCamp",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Cybersecurity Essentials",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "September 2024"
+            },
+            {
+                "title": "CCNAv7: Introduction to Networking",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "Python Bootcamp: From Zero to Hero in Python",
+                "issuer": "Udemy",
+                "year": 2020,
+                "issued": "November 2020",
+                "credential_id": "UC-22bf3428-2581-43eb-86e9-aab060067890"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023",
+                "credential_id": "7J26EWNQ3E11QJKF"
+            },
+            {
+                "title": "GitHub Foundations",
+                "issuer": "GitHub",
+                "year": 2024,
+                "issued": "December 2024"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 52,
+            "github_contributions": 1842
+        },
+        "isAdmin": false,
+        "featured": "monthly",
+        "testimonial": {
+            "text": "Joaquin Galang is a high-impact software engineer and community leader whose work spans AI, web, and mobile development. His Google Solutions Challenge win and extensive certifications highlight both technical depth and real-world impact.",
+            "author": "Software Engineer",
+            "date": "2026-02-27"
+        }
     }
 ]

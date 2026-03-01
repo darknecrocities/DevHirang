@@ -10,7 +10,7 @@
         "email": "parejasarronkian@gmail.com",
         "github": "https://github.com/darknecrocities",
         "website": "https://arron-portfolio-delta.vercel.app/",
-        "avatar": "https://avatars.githubusercontent.com/u/140617917?v=4",
+        "avatar": "/src/assets/dev_img/1_arron_kian_parejas.jpg",
         "bio": "Chapter Lead on Google Developer Group on Campus HAU, building community-driven solutions, competitive in national/international hackathons and advocating for open-source technology in the local tech scene.",
         "achievements": [
             {
@@ -499,7 +499,7 @@
         "github": "https://github.com/rshdgvn",
         "linkedin": "https://www.linkedin.com/in/rasheed-gavin-65332a349",
         "website": "https://rshdgvn.github.io/personal-portfolio/",
-        "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/598608760_1854968645225773_4009951120016616168_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFKXztghhA4C6kOVLcZPW1LQ_S4nMOgrEpD9Licw6CsSqiM_4Q7A8pjXGaYZa2uyHI4E3ctpV46oHWli3IhryGI&_nc_ohc=1-HXwPZAbyAQ7kNvwE1JQIu&_nc_oc=AdnOmAfvQhm6qTlvwX2HuAOEpO46MdGBE2Qjy_jj-N51nU8CIHTzDXLSRyy4RK_jmxw&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=pPRSX5-keKQWZ8q9DLPCpA&_nc_ss=8&oh=00_AftlHf7Ir6GhM1off2pDLR5IL9hbxTuLE3NcBlnTbK1nPA&oe=69A809B7",
+        "avatar": "/src/assets/dev_img/2_rasheed_gavin_m__esponga.jpg",
         "bio": "Building systems is one thing. Protecting them is where true mastery begins.",
         "achievements": [
             {
@@ -577,7 +577,7 @@
         "github": "https://github.com/7078-cj",
         "linkedin": "https://www.linkedin.com/in/ceejay-santos-8586752bb/",
         "website": "",
-        "avatar": "https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-1/474466386_1119090356351844_8771349686609442197_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFyqZXdHDQE_gJE0irwSbW7zlaBh02gcbnOVoGHTaBxublbWZlJNX3nIyBfcEeUidkPY3BhKrmCZ0H502JS1WU6&_nc_ohc=jUEjh7UEVKMQ7kNvwEku1rm&_nc_oc=AdnuTgl--KNxDr7hZmphI2YIkIppl4noLTCSD3OemOx11qVAYY8YM3LN0IfQe4LMKHk&_nc_zt=24&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=YWs__g7mdFu5ULdO_O_Cvw&_nc_ss=8&oh=00_Afvagmvb5KNMzglcr4oj8VPcxAfo4dhsKiR2JLZntkr75w&oe=69A83284",
+        "avatar": "/src/assets/dev_img/3_ceejay_santos.jpg",
         "bio": "Aspiring Web Developer with a passion for building scalable, high-performance web applications. Specializes in React for dynamic frontends and Django, Laravel, and FastAPI for secure backends. Experienced in delivering production-ready systems including real-time WebSockets and AI-powered features, with a strong focus on clean, maintainable code and optimized user experiences.",
         "community_affiliation": {
             "organization": "Devcon Pampanga",
@@ -661,7 +661,7 @@
         "github": "https://github.com/yabswannalearn",
         "linkedin": "https://www.linkedin.com/in/reinaelyabut/",
         "website": "https://www.reinaelyabut.dev/",
-        "avatar": "https://media.licdn.com/dms/image/v2/D4D03AQFIH495-Z3rBQ/profile-displayphoto-shrink_400_400/B4DZVAJrUGG8Ag-/0/1740538035447?e=1773878400&v=beta&t=4vsRRJPHcqt2fU7vHA6li-71rj01wRmDey--AzWbGDs",
+        "avatar": "/src/assets/dev_img/4_reinael_yabut.jpg",
         "bio": "A computer engineering graduating student in HAU, very curious about AI/ML, Data and SWE. Likes to learn and upskill.",
         "achievements": [
             {
@@ -819,7 +819,7 @@
         "github": "https://github.com/Ram-Gold",
         "linkedin": "https://www.linkedin.com/in/ram-guinto/",
         "website": "https://ram-gold.github.io/Personal-Website/",
-        "avatar": "https://litter.catbox.moe/salxsywcd8akwdow.jpg",
+        "avatar": "/src/assets/dev_img/5_ram_achilles_o__guinto.jpg",
         "bio": "I'm Ram Achilles Guinto, I specialize in frontend design & development, turning ideas into seamless user experiences.",
         "achievements": [
             {
@@ -871,7 +871,7 @@
         "github": "https://github.com/RandelYumul",
         "linkedin": "https://www.linkedin.com/in/randel-yumul",
         "website": "https://randelyumulportfolio.vercel.app/",
-        "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/587506903_25300812592847744_5115384980866262285_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGSwJ24WySW3XbPltUPYsdDj_oO0cVp6E6P-g7RxWnoTrPBO8brAO0vdohzQ8Tz0sbaT4twz2Zn8u4HASK6ZIGY&_nc_ohc=XTMqxlyvTaMQ7kNvwFHUfae&_nc_oc=AdmwM_ArtcdxQaHAuFeNug07W7TKFtjWPhP_v7iVbsBl-zdctwy1GfPFCHbJUcNUhNU&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=IWckQhrIUdNo7OHqTPMzgA&_nc_ss=8&oh=00_Afs94aYA7TnCShDqgmqkcJTcS0piorqYxoOX7xFZpPnf3g&oe=69A86296",
+        "avatar": "/src/assets/dev_img/6_randel_angelo_yumul.jpg",
         "bio": "Aspiring Full-Stack Developer dedicated to continuous learning, exploring diverse technologies, and acquiring the skills to build innovative digital solutions.",
         "achievements": [
             {
@@ -1044,7 +1044,7 @@
         "github": "https://github.com/sevora",
         "linkedin": "https://www.linkedin.com/in/ralphlouisgopez/",
         "website": "https://ralphlouisgopez.com",
-        "avatar": "https://blog.ralphlouisgopez.com/assets/images/profile.jpg",
+        "avatar": "/src/assets/dev_img/7_ralph_louis_gopez.jpg",
         "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation—a serial programmer.",
         "achievements": [
             {
@@ -1213,7 +1213,7 @@
         "email": "kirstendwaynedizon03@gmail.com",
         "github": "https://github.com/left-no-crumbz",
         "linkedin": "https://www.linkedin.com/in/dwayne-dizon-674893277/",
-        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQFMnb7nyU1DwA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693728914859?e=1773878400&v=beta&t=S4lE7wtJ1wCDxFXS5CXP0kxNCf43aTYZBcvyutn9i-M",
+        "avatar": "/src/assets/dev_img/8_kirsten_dwayne_arciga_dizon.jpg",
         "bio": "Software engineer with strong end-to-end development expertise, combining frontend and backend technologies to build scalable systems and intuitive user experiences. Experienced in leadership, cloud, and data-driven solutions.",
         "achievements": [
             {
@@ -1389,7 +1389,7 @@
         "github": "https://github.com/jansencruz23",
         "linkedin": "https://www.linkedin.com/in/jansen-cruz-480a47ba/",
         "website": "",
-        "avatar": "https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/595435817_4441096172785967_1923243824095876891_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=yyxM4t64zzIQ7kNvwH2LkAx&_nc_oc=AdmtBeO6T6xSK7mWjMLRs9ahKpPvvEYTciifmWgja22kqSFcctzp0OBfqizPxBXAyRY&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=nCKa_8YQILX7fxIOmMxADQ&_nc_ss=8&oh=00_AfuLQ702K10Er-NY6mxgSCZnvJgUuboxRzW2bwiDBt6IWQ&oe=69A8C852",
+        "avatar": "/src/assets/dev_img/9_jansen_c__cruz.jpg",
         "bio": "Computer Science senior and aspiring AI engineer specializing in intelligent systems, automation, and computer vision. Builds practical AI agents and scalable backend solutions, blending strong software engineering with applied machine learning. Driven by curiosity, continuous growth, and real-world impact.",
         "achievements": [
             {
@@ -1513,7 +1513,7 @@
         "github": "https://github.com/userkace",
         "linkedin": "https://www.linkedin.com/in/kcspadilla/",
         "website": "https://kace.dev",
-        "avatar": "https://kace.dev/images/portrait.jpg",
+        "avatar": "/src/assets/dev_img/12_kervin_clyde_padilla.jpg",
         "bio": "Project manager and lead software engineer focused on delivering high-impact technical solutions that align architecture with business value. Known for rigorous standards, proactive risk mitigation, and clear technical vision that turns complex systems into reliable, scalable products.",
         "achievements": [
             {
@@ -1663,7 +1663,7 @@
         "github": "https://github.com/shokomori",
         "linkedin": "https://www.linkedin.com/in/masatomartin/",
         "website": "",
-        "avatar": "https://i.ibb.co/7dRpshYV/MOSHED-2024-6-16-20-14-7.jpg",
+        "avatar": "/src/assets/dev_img/13_masato_martin.jpg",
         "bio": "Computer Science student and aspiring full-stack developer driven by curiosity and creativity. Enjoys transforming ideas into functional, user-friendly digital experiences while continuously expanding technical skills. Passionate about clean design, efficient systems, and thoughtful problem-solving that blends logic, innovation, and user experience.",
         "achievements": [
             {
@@ -1837,7 +1837,7 @@
         "github": "https://github.com/joaquingalang",
         "linkedin": "https://www.linkedin.com/in/joaquin-galang/",
         "website": "https://joaquingalang.vercel.app/",
-        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQEYf26LeV1IsA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732394928613?e=1773878400&v=beta&t=-hngXsDt0ppWZIQMDoEGB3Dz_KI_xUEqvqG8yl3ohi4",
+        "avatar": "/src/assets/dev_img/11_joaquin_galang.jpg",
         "bio": "Software engineer with strong experience in web, mobile, and AI-driven solutions. Active community leader and hackathon winner with a passion for scalable systems, developer advocacy, and continuous learning across AI, cloud, and software engineering.",
         "achievements": [
             {
@@ -2039,7 +2039,7 @@
         "github": "https://github.com/navarroangelo",
         "linkedin": "https://www.linkedin.com/in/marcelanghelo/",
         "website": "https://marcelangelodev.netlify.app/",
-        "avatar": "https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/644340240_2094267311357193_6172451842734417474_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHBG5T0iCFwgB-eXxNCKIoHfWrx6oAq3ip9avHqgCreKptsXQIhjWHAwQYMLTx-XMaksEvTPgzAF5IbVEK2i02K&_nc_ohc=t872lEGeCYIQ7kNvwFBntIO&_nc_oc=AdlxWUD3St3fcytQgNS6e6GLI5UNEkXCECwQrS51wj6c5j6-Je0H5vH7XQgB67lPMsU&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=41wQcSFedxpYBac3i7zo1Q&_nc_ss=8&oh=00_AfurhQH9uxsy0QHnFtG92jWCH4Z3cFxMmRiBe2X-Bzlo4A&oe=69A9FD82",
+        "avatar": "/src/assets/dev_img/14_marcel_angelo_navarro.jpg",
         "bio": "Lead Web Developer and Software Engineer specializing in modern frontend, backend, and AI-driven technologies. Cloudstaff AI Hackathon 2025 Champion with 5 years of industry experience, focused on building high-performance, user-centric digital experiences and transforming complex challenges into elegant, accessible solutions.",
         "achievements": [
             {
@@ -2164,7 +2164,7 @@
         "github": "https://github.com/jimvdz",
         "linkedin": "https://www.linkedin.com/in/jimwel-valdez/",
         "website": "https://jimvdz.dev/",
-        "avatar": "https://jimvdz.dev/jimvdz.webp",
+        "avatar": "/src/assets/dev_img/15_jimwel_valdez.webp",
         "bio": "Full-stack developer and UI/UX specialist blending high-performance engineering with intuitive design. An award-winning competitor in coding and web design events, Jimwel actively contributes to the GDG on Campus HAU community. He specializes in modern stacks such as React, Next.js, and PostgreSQL to build scalable, user-centric applications.",
         "achievements": [
             {

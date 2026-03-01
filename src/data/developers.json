@@ -2309,5 +2309,158 @@
             "author": "Full-Stack Developer",
             "date": "2026-02-27"
         }
+    },
+    {
+        "id": 16,
+        "name": "Marc Victor L. Velasquez",
+        "role": [
+            "AI Specialist Intern"
+        ],
+        "location": "Angeles City",
+        "email": "velasquezmarcvictor@gmail.com",
+        "github": "https://github.com/marccodesstuff",
+        "linkedin": "https://www.linkedin.com/in/mrcvctr-vel/",
+        "website": "https://marc-velasquez.appwrite.network",
+        "avatar": "/dev_img/16_marc_victor_velasquez.jpeg",
+        "bio": "Computer Science senior focused on robotics, digital twins, and intelligent systems. Works on automation pipelines, agentic AI for computer use, robotics simulation, and generative AI under As Foretold Research Labs. Blends strong software engineering with applied machine and deep learning to build scalable, real-world solutions.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Champion – AUF x HexCore Labs PH Capture The Flag Competition",
+                "year": 2025,
+                "description": "Secured 1st place in the AUF x HexCore Labs PH Capture The Flag Competition.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Best Technical Execution – The AI Hack (GDG Holy Angel University)",
+                "year": 2025,
+                "description": "Awarded Best Technical Execution for outstanding system design and implementation.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "People’s Choice Award – The AI Hack (GDG Holy Angel University)",
+                "year": 2025,
+                "description": "Received the People’s Choice Award at The AI Hack.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "3rd Place – The AI Hack (GDG Holy Angel University)",
+                "year": 2025,
+                "description": "Placed 3rd overall in The AI Hack competition.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "2nd Runner Up – Philippine Typhoon Survival Beacon (Regional AI Hackathon)",
+                "year": 2025,
+                "description": "2nd Runner Up for an AI-driven disaster response solution.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "3rd Place – AUF JPCS Digital Solution Hackathon",
+                "year": 2025,
+                "description": "3rd place winner in the AUF JPCS Digital Solution Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Speaker – Youth Ethics Empowerment Seminar",
+                "year": 2025,
+                "description": "Spoke on promoting digital ethics and social responsibility through AI-driven solutions for senior high school students.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Undergraduate Thesis – Knee MRI Injury Detection",
+                "type": "academic",
+                "status": "Done"
+            },
+            {
+                "year": 2026,
+                "title": "AI Specialist Intern – As Foretold Research Labs",
+                "type": "career",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Understanding Prompt Engineering",
+                "issuer": "DataCamp",
+                "year": 2026,
+                "issued": "February 2026"
+            },
+            {
+                "title": "Gemini Certified University Student",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "December 2025"
+            },
+            {
+                "title": "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+                "issuer": "Oracle",
+                "year": 2025,
+                "issued": "November 2025"
+            },
+            {
+                "title": "Oracle Cloud Infrastructure 2025 AI Foundations Associate",
+                "issuer": "Oracle",
+                "year": 2025,
+                "issued": "October 2025"
+            },
+            {
+                "title": "Microsoft Certified: Azure Fundamentals",
+                "issuer": "Microsoft",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Introduction to Data Science",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "August 2024"
+            },
+            {
+                "title": "Microsoft Certified: Azure AI Fundamentals",
+                "issuer": "Microsoft",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "Mathematics for Machine Learning: Linear Algebra",
+                "issuer": "Imperial College London",
+                "year": 2024,
+                "issued": "March 2024"
+            },
+            {
+                "title": "CCNA: Introduction to Networks",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "January 2024"
+            },
+            {
+                "title": "Microsoft Certified: Azure Data Fundamentals",
+                "issuer": "Microsoft",
+                "year": 2023,
+                "issued": "July 2023"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 4,
+            "projects_contributed": 27,
+            "github_contributions": 322
+        },
+        "isAdmin": false,
+        "featured": false,
+        "testimonial": {
+            "text": "Marc Victor Velasquez is a technically driven AI specialist with strong foundations in robotics, generative AI, and applied machine learning. His hackathon achievements and research work demonstrate deep technical curiosity and real-world impact.",
+            "author": "AI Specialist Intern",
+            "date": "2026-02-27"
+        }
     }
 ]

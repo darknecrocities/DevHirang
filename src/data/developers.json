@@ -479,7 +479,6 @@
                 "year": 2024
             }
         ],
-        "points": 204100,
         "isAdmin": true,
         "featured": "yearly",
         "testimonial": {
@@ -559,7 +558,6 @@
                 "issued": "February 2026"
             }
         ],
-        "points": 74520,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -644,7 +642,6 @@
                 "credential_url": "https://www.freecodecamp.org/certification/c7078j/python-v9"
             }
         ],
-        "points": 79790,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -804,7 +801,6 @@
             "projects_contributed": 29,
             "github_contributions": 686
         },
-        "points": 50130,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -856,7 +852,6 @@
             "projects_contributed": 3,
             "github_contributions": 12
         },
-        "points": 1360,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -1030,7 +1025,6 @@
             "projects_contributed": 15,
             "github_contributions": 154
         },
-        "points": 15450,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -1201,7 +1195,6 @@
             "projects_contributed": 11,
             "github_contributions": 858
         },
-        "points": 57720,
         "isAdmin": false,
         "featured": false,
         "testimonial": {
@@ -1377,7 +1370,6 @@
             "projects_contributed": 43,
             "github_contributions": 1353
         },
-        "points": 83510,
         "isAdmin": false,
         "featured": "monthly",
         "testimonial": {
@@ -1501,7 +1493,6 @@
             "projects_contributed": 71,
             "github_contributions": 1099
         },
-        "points": 95070,
         "isAdmin": false,
         "featured": "monthly",
         "testimonial": {
@@ -1650,12 +1641,188 @@
             "projects_contributed": 46,
             "github_contributions": 2154
         },
-        "points": 122420,
         "isAdmin": false,
         "featured": "monthly",
         "testimonial": {
             "text": "Kervin Clyde Padilla bridges technical depth and strategic leadership. His experience leading engineering teams and managing complex projects demonstrates a strong ability to turn architecture into business value.",
             "author": "Project Manager & Lead Engineer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Masato Martin",
+        "role": [
+            "UI/UX Designer",
+            "Full-Stack Developer",
+            "Game Developer",
+            "Student"
+        ],
+        "location": "Angeles City",
+        "email": "masatomartin0@gmail.com",
+        "github": "https://github.com/shokomori",
+        "linkedin": "https://www.linkedin.com/in/masatomartin/",
+        "website": "",
+        "avatar": "https://i.ibb.co/7dRpshYV/MOSHED-2024-6-16-20-14-7.jpg",
+        "bio": "Computer Science student and aspiring full-stack developer driven by curiosity and creativity. Enjoys transforming ideas into functional, user-friendly digital experiences while continuously expanding technical skills. Passionate about clean design, efficient systems, and thoughtful problem-solving that blends logic, innovation, and user experience.",
+        "achievements": [
+            {
+                "type": "academic",
+                "title": "Academic Distinction – President’s & Dean’s Lister",
+                "year": 2024,
+                "description": "Recognized for consistent academic excellence as President’s Lister and Dean’s Lister across multiple semesters.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion – GDG-UPM Build with AI",
+                "year": 2025,
+                "description": "Champion of the GDG-UPM Build with AI Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Finalist – Create and Conquer 2025 Hackathon",
+                "year": 2025,
+                "description": "Finalist in the Create and Conquer 2025 Hackathon.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "AWS Learning Club Co-Lead",
+                "year": 2025,
+                "description": "Co-leads AWS Learning Club initiatives, supporting peer learning and cloud skills development.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Finish Undergraduate Thesis",
+                "type": "academic",
+                "status": "In Progress"
+            },
+            {
+                "year": 2025,
+                "title": "Build Startup Project",
+                "type": "startup",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Foundations of User Experience (UX) Design",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Start the UX Design Process: Empathize, Define, and Ideate",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Build Wireframes and Low-Fidelity Prototypes",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Conduct UX Research and Test Early Concepts",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Build Dynamic User Interfaces (UI) for Websites",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Foundations of Project Management",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Developing AI Applications with Python and Flask",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Python for Data Science, AI & Development",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "AWS Services Overview for IT Professionals",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Developing Front-End Apps with React",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Developing Back-End Apps with Node.js and Express",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Software Engineering",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Cloud Computing",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Getting Started with Git and GitHub",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Relational Database",
+                "issuer": "freeCodeCamp",
+                "year": 2025,
+                "issued": "February 2025"
+            },
+            {
+                "title": "Responsive Web Design",
+                "issuer": "freeCodeCamp",
+                "year": 2024,
+                "issued": "September 2024"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "November 2023"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 19,
+            "github_contributions": 76
+        },
+        "isAdmin": false,
+        "featured": "monthly",
+        "testimonial": {
+            "text": "Masato Martin is a creative and driven developer with a strong foundation in UI/UX and full-stack development. His hackathon success and continuous learning mindset highlight his potential to build meaningful, user-centered technology.",
+            "author": "Student Developer",
             "date": "2026-02-27"
         }
     }

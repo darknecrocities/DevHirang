@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
-const FeatureCarousel = ({ developers, onSelect }) => {
+const FeatureCarousel = ({ developers, onSelect, variant = 'monthly' }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
 
     const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
@@ -19,7 +19,12 @@ const FeatureCarousel = ({ developers, onSelect }) => {
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
                                 onClick={() => onSelect(dev)}
-                                className="relative h-[400px] rounded-3xl overflow-hidden cursor-pointer group/card border border-white/10"
+                                className={cn(
+                                    "relative h-[400px] rounded-3xl overflow-hidden cursor-pointer group/card border transition-all duration-500",
+                                    variant === 'yearly'
+                                        ? "border-secondary/50 shadow-[0_0_30px_rgba(212,175,55,0.15)] hover:shadow-[0_0_40px_rgba(212,175,55,0.3)]"
+                                        : "border-white/10 hover:border-white/20"
+                                )}
                             >
                                 <img
                                     src={dev.avatar}
@@ -28,14 +33,22 @@ const FeatureCarousel = ({ developers, onSelect }) => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
 
-                                <div className="absolute top-4 left-4 p-3 bg-secondary/90 backdrop-blur-md rounded-2xl text-background">
+                                <div className={cn(
+                                    "absolute top-4 left-4 p-3 backdrop-blur-md rounded-2xl text-background shadow-lg",
+                                    variant === 'yearly' ? "bg-secondary text-background" : "bg-blue-400 text-background"
+                                )}>
                                     <Trophy className="w-5 h-5 font-bold" />
                                 </div>
 
-                                <div className="absolute bottom-6 left-6 right-6 space-y-2">
-                                    <div className="flex items-center gap-2">
-                                        <span className="px-3 py-1 bg-primary/40 backdrop-blur-md border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                                            Featured Talent
+                                <div className="absolute bottom-6 left-6 right-6 space-y-2 z-10">
+                                    <div className="flex items-center gap-2 flex-wrap">
+                                        <span className={cn(
+                                            "px-3 py-1 backdrop-blur-md border rounded-full text-[10px] font-bold uppercase tracking-wider",
+                                            variant === 'yearly'
+                                                ? "bg-secondary/20 border-secondary/50 text-secondary"
+                                                : "bg-blue-400/20 border-blue-400/50 text-blue-400"
+                                        )}>
+                                            {variant === 'yearly' ? 'Yearly Elite Talent' : 'Monthly Featured'}
                                         </span>
                                         <span className="px-3 py-1 bg-white/10 backdrop-blur-md border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-wider text-white">
                                             {dev.role.join(' • ')}

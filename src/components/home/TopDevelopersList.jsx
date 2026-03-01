@@ -220,7 +220,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                 <div className="space-y-12">
                     <div className="px-2">
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 border-b border-white/10 pb-6">
-                            <h3 className="text-sm font-black uppercase tracking-[0.3em] text-white/40">Contributors Section</h3>
+                            <h3 className="text-sm font-black uppercase tracking-[0.3em] text-white/40">100 Hinirang</h3>
 
                             {/* Filter Bar */}
                             <div className="flex flex-wrap gap-2">

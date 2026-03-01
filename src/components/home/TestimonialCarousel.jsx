@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { motion } from 'framer-motion';
-import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Quote, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const TestimonialCarousel = ({ developers, onSelect }) => {
@@ -17,6 +17,7 @@ const TestimonialCarousel = ({ developers, onSelect }) => {
         }));
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
+    const [selectedTestimonial, setSelectedTestimonial] = useState(null);
 
     const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
     const scrollNext = () => emblaApi && emblaApi.scrollNext();
@@ -40,11 +41,11 @@ const TestimonialCarousel = ({ developers, onSelect }) => {
                                     <motion.div
                                         whileHover={{ scale: 1.02 }}
                                         className="w-full flex flex-col justify-between space-y-6 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-xl hover:border-white/20 transition-colors cursor-pointer group/card"
-                                        onClick={() => onSelect(current.originalDev)}
+                                        onClick={() => setSelectedTestimonial(current)}
                                     >
                                         <Quote className="w-8 h-8 text-secondary opacity-50 absolute top-6 right-6" />
 
-                                        <p className="text-sm xl:text-base leading-relaxed font-mono italic text-white/90 flex-grow pt-4">
+                                        <p className="text-sm xl:text-base leading-relaxed font-mono italic text-white/90 flex-grow pt-4 line-clamp-4">
                                             "{current.text}"
                                         </p>
 
@@ -66,6 +67,66 @@ const TestimonialCarousel = ({ developers, onSelect }) => {
                     {/* Embla scrolling controls omitted as per user request */}
                 </div>
             </div>
+
+            {/* Expanded Testimonial Modal */}
+            <AnimatePresence>
+                {selectedTestimonial && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setSelectedTestimonial(null)}
+                            className="absolute inset-0 bg-background/80 backdrop-blur-sm"
+                        />
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                            className="relative w-full max-w-2xl bg-background border border-white/10 p-8 md:p-12 rounded-3xl shadow-2xl overflow-y-auto max-h-[90vh]"
+                        >
+                            <button
+                                onClick={() => setSelectedTestimonial(null)}
+                                className="absolute top-6 right-6 p-2 rounded-full hover:bg-white/10 transition-colors text-text-muted hover:text-white"
+                            >
+                                <X className="w-6 h-6" />
+                            </button>
+
+                            <Quote className="w-12 h-12 text-secondary opacity-30 absolute top-8 left-8" />
+
+                            <div className="relative z-10 pt-8">
+                                <p className="text-lg md:text-xl lg:text-2xl leading-relaxed font-mono italic text-white/90 mb-10">
+                                    "{selectedTestimonial.text}"
+                                </p>
+
+                                <div className="flex items-center gap-6 pt-8 border-t border-white/10">
+                                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-secondary shadow-[0_0_15px_rgba(212,175,55,0.3)] shrink-0 cursor-pointer" onClick={() => {
+                                        setSelectedTestimonial(null);
+                                        onSelect(selectedTestimonial.originalDev);
+                                    }}>
+                                        <img src={selectedTestimonial.devAvatar} alt={selectedTestimonial.devName} className="w-full h-full object-cover" />
+                                    </div>
+                                    <div className="text-left">
+                                        <p
+                                            className="font-bold text-lg md:text-xl text-white hover:text-secondary transition-colors cursor-pointer"
+                                            onClick={() => {
+                                                setSelectedTestimonial(null);
+                                                onSelect(selectedTestimonial.originalDev);
+                                            }}
+                                        >
+                                            {selectedTestimonial.devName}
+                                        </p>
+                                        <p className="text-sm md:text-base text-secondary font-mono mt-1">{selectedTestimonial.devRole}</p>
+                                        {selectedTestimonial.author && selectedTestimonial.author !== selectedTestimonial.devRole && (
+                                            <p className="text-xs text-text-muted mt-1">{selectedTestimonial.author}</p>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
         </section>
     );
 };

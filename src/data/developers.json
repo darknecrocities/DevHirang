@@ -2026,5 +2026,288 @@
             "author": "Software Engineer",
             "date": "2026-02-27"
         }
+    },
+    {
+        "id": 14,
+        "name": "Marcel Angelo Navarro",
+        "role": [
+            "Lead Web Developer",
+            "Software Engineer"
+        ],
+        "location": "Tarlac City, Angeles City",
+        "email": "marcelxangelo@gmail.com",
+        "github": "https://github.com/navarroangelo",
+        "linkedin": "https://www.linkedin.com/in/marcelanghelo/",
+        "website": "https://marcelangelodev.netlify.app/",
+        "avatar": "/src/assets/dev_img/marcel.jpeg",
+        "bio": "Lead Web Developer and Software Engineer specializing in modern frontend, backend, and AI-driven technologies. Cloudstaff AI Hackathon 2025 Champion with 5 years of industry experience, focused on building high-performance, user-centric digital experiences and transforming complex challenges into elegant, accessible solutions.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Champion – Cloudstaff AI Hackathon 2025",
+                "year": 2025,
+                "description": "Champion of the Cloudstaff AI Hackathon 2025, delivering an intelligent, high-impact solution.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "Chief Operations Officer – GDSC Holy Angel University (Pioneer)",
+                "year": 2021,
+                "description": "Served as Chief Operations Officer and founding pioneer of GDSC Holy Angel University.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "President’s & Dean’s Lister (Multiple Semesters)",
+                "year": 2024,
+                "description": "Consistent academic excellence as President’s Lister and Dean’s Lister across multiple semesters.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2021,
+                "title": "GDSC HAU Pioneer & Chief Operations Officer",
+                "type": "community",
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Champion – Cloudstaff AI Hackathon",
+                "type": "hackathon",
+                "status": "Done"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "The Ultimate Design Patterns Series",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Mastering JavaScript Unit Testing",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "The Complete Node.js Course",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "Angular: Beginner to Pro",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "The Ultimate TypeScript Course",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "The Ultimate Git Course",
+                "issuer": "Code With Mosh",
+                "year": 2025,
+                "issued": "May 2025"
+            },
+            {
+                "title": "AWS Academy Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Legacy JavaScript Algorithms and Data Structures",
+                "issuer": "freeCodeCamp",
+                "year": 2024,
+                "issued": "March 2024"
+            },
+            {
+                "title": "CCNA: Introduction to Networks",
+                "issuer": "Cisco Networking Academy",
+                "year": 2024,
+                "issued": "June 2024"
+            },
+            {
+                "title": "Leadership Essentials – Driving Quality Projects",
+                "issuer": "Alison",
+                "year": 2025,
+                "issued": "September 2025"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 1,
+            "projects_contributed": 34,
+            "github_contributions": 156
+        },
+        "isAdmin": false,
+        "featured": "monthly",
+        "testimonial": {
+            "text": "Marcel Angelo Navarro is a results-driven lead developer with strong technical depth and leadership presence. His hackathon win and industry experience reflect a consistent ability to deliver intelligent, scalable, and user-focused solutions.",
+            "author": "Lead Web Developer",
+            "date": "2026-02-27"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Jimwel Valdez",
+        "role": [
+            "Full-Stack Developer"
+        ],
+        "location": "Angeles City",
+        "email": "valdezjimwel@gmail.com",
+        "github": "https://github.com/jimvdz",
+        "linkedin": "https://www.linkedin.com/in/jimwel-valdez/",
+        "website": "https://jimvdz.dev/",
+        "avatar": "https://jimvdz.dev/jimvdz.webp",
+        "bio": "Full-stack developer and UI/UX specialist blending high-performance engineering with intuitive design. An award-winning competitor in coding and web design events, Jimwel actively contributes to the GDG on Campus HAU community. He specializes in modern stacks such as React, Next.js, and PostgreSQL to build scalable, user-centric applications.",
+        "achievements": [
+            {
+                "type": "hackathon",
+                "title": "Champion – Code Geeks Web Design Competition",
+                "year": 2024,
+                "description": "Champion of the Code Geeks Web Design Competition 2024.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "1st Runner Up – Cloudstaff AI Hackathon",
+                "year": 2025,
+                "description": "Placed 1st Runner Up in the Cloudstaff AI Hackathon 2025.",
+                "link": "#"
+            },
+            {
+                "type": "hackathon",
+                "title": "Champion – DevCon Pampanga Code in the Dark",
+                "year": 2025,
+                "description": "Champion of DevCon Pampanga Code in the Dark 2025.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "UI/UX & Web Development Staff – GDG Holy Angel University",
+                "year": 2025,
+                "description": "Active UI/UX and Web Development staff member supporting GDG HAU initiatives and events.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "Consistent President’s Lister (1st–4th Year)",
+                "year": 2025,
+                "description": "Recognized as a consistent President’s Lister throughout college.",
+                "link": "#"
+            }
+        ],
+        "roadmap": [
+            {
+                "year": 2025,
+                "title": "Full-Stack Developer Intern – IT Squarehub",
+                "type": "career",
+                "status": "Done"
+            },
+            {
+                "year": 2026,
+                "title": "UI/UX & Web Dev Staff – GDG Holy Angel University",
+                "type": "community",
+                "status": "In Progress"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Gemini Certified Educator",
+                "issuer": "Google",
+                "year": 2026,
+                "issued": "January 2026"
+            },
+            {
+                "title": "Develop GenAI Apps with Gemini and Streamlit (Skill Badge)",
+                "issuer": "Google Cloud",
+                "year": 2025,
+                "issued": "September 2025"
+            },
+            {
+                "title": "Foundations of Project Management",
+                "issuer": "Google",
+                "year": 2025,
+                "issued": "September 2025"
+            },
+            {
+                "title": "English for IT 1",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "March 2025"
+            },
+            {
+                "title": "AWS Academy Graduate – Cloud Foundations",
+                "issuer": "Amazon Web Services (AWS)",
+                "year": 2025,
+                "issued": "March 2025"
+            },
+            {
+                "title": "Google UX Design Professional Certificate",
+                "issuer": "Google",
+                "year": 2024,
+                "issued": "November 2024"
+            },
+            {
+                "title": "Cyber Threat Management",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "CCNA: Introduction to Networks",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "June 2024"
+            },
+            {
+                "title": "Google AI Essentials",
+                "issuer": "Google",
+                "year": 2024,
+                "issued": "June 2024"
+            },
+            {
+                "title": "Introduction to Cybersecurity",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "May 2024"
+            },
+            {
+                "title": "JavaScript Algorithms and Data Structures",
+                "issuer": "freeCodeCamp",
+                "year": 2024,
+                "issued": "March 2024"
+            },
+            {
+                "title": "Responsive Web Design",
+                "issuer": "freeCodeCamp",
+                "year": 2024,
+                "issued": "January 2024"
+            },
+            {
+                "title": "CompTIA IT Fundamentals+ (ITF+)",
+                "issuer": "CompTIA",
+                "year": 2023,
+                "issued": "May 2023"
+            }
+        ],
+        "stats": {
+            "hackathons_won": 2,
+            "projects_contributed": 7,
+            "github_contributions": 949
+        },
+        "isAdmin": false,
+        "featured": "monthly",
+        "testimonial": {
+            "text": "Jimwel Valdez is a highly skilled full-stack developer with a strong eye for UI/UX. His competitive wins and consistent academic excellence highlight both technical mastery and a deep commitment to the local developer community.",
+            "author": "Full-Stack Developer",
+            "date": "2026-02-27"
+        }
     }
 ]

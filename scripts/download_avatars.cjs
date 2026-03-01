@@ -4,7 +4,7 @@ const path = require('path');
 const { URL } = require('url');
 
 const developersPath = path.join(__dirname, '../src/data/developers.json');
-const assetsDir = path.join(__dirname, '../src/assets/dev_img');
+const assetsDir = path.join(__dirname, '../public/dev_img');
 
 // Ensure assets directory exists
 if (!fs.existsSync(assetsDir)) {
@@ -91,7 +91,7 @@ async function run() {
                 // Use absolute path from src for Vite to handle correctly if needed, 
                 // but usually relative to the JSON file or root is better.
                 // Given the requirement, I'll store it as /src/assets/dev_img/filename
-                dev.avatar = `/src/assets/dev_img/${filename}`;
+                dev.avatar = `/dev_img/${filename}`;
                 updatedCount++;
             } catch (err) {
                 console.error(`Failed to download avatar for ${dev.name}: ${err.message}`);

@@ -13,6 +13,17 @@ export const BADGE_CRITERIA = [
         check: (dev) => dev.isAdmin
     },
     {
+        id: 'featured_dev',
+        label: 'Featured Developer',
+        description: 'Recognized as an outstanding contributor to the community',
+        icon: Star,
+        points: 10000,
+        color: 'text-secondary',
+        bgColor: 'bg-secondary/10',
+        borderColor: 'border-secondary/20',
+        check: (dev) => dev.featured === 'monthly' || dev.featured === 'yearly' || dev.featured === true
+    },
+    {
         id: 'hackathon_heroes',
         label: 'Hackathons Heroes',
         description: 'Proven track record in national/international hackathons or CTFs',

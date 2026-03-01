@@ -481,7 +481,7 @@
         ],
         "points": 204100,
         "isAdmin": true,
-        "featured": true,
+        "featured": "yearly",
         "testimonial": {
             "text": "Arron is a visionary leader who doesn't just build code; he builds communities. His work with DevHirang is a testament to his dedication to the local/International tech scene.",
             "author": "Founder & Developer",
@@ -1379,7 +1379,7 @@
         },
         "points": 83510,
         "isAdmin": false,
-        "featured": false,
+        "featured": "monthly",
         "testimonial": {
             "text": "Kirsten Dwayne Dizon is a highly driven software engineer with strong full-stack expertise, leadership experience, and a passion for building scalable, data-driven systems.",
             "author": "Software Engineer",
@@ -1503,7 +1503,7 @@
         },
         "points": 95070,
         "isAdmin": false,
-        "featured": true,
+        "featured": "monthly",
         "testimonial": {
             "text": "Jansen C. Cruz is a disciplined and impact-driven AI engineer with strong foundations in machine learning, automation, and backend systems. His hackathon success and community contributions reflect both technical excellence and leadership potential.",
             "author": "AI/ML Engineer",
@@ -1652,7 +1652,7 @@
         },
         "points": 122420,
         "isAdmin": false,
-        "featured": true,
+        "featured": "monthly",
         "testimonial": {
             "text": "Kervin Clyde Padilla bridges technical depth and strategic leadership. His experience leading engineering teams and managing complex projects demonstrates a strong ability to turn architecture into business value.",
             "author": "Project Manager & Lead Engineer",

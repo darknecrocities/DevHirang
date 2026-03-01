@@ -50,7 +50,8 @@ function App() {
     return matchesFilter && matchesSearch;
   });
 
-  const featuredDevs = developers.filter(dev => dev.featured);
+  const yearlyFeaturedDevs = developers.filter(dev => dev.featured === 'yearly' || dev.featured === true);
+  const monthlyFeaturedDevs = developers.filter(dev => dev.featured === 'monthly');
 
   return (
     <div className="min-h-screen bg-background text-text-main">
@@ -69,14 +70,33 @@ function App() {
           <>
             <Hero />
 
+            <section className="text-center max-w-4xl mx-auto py-12 px-6 md:px-12 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-3xl backdrop-blur-sm relative overflow-hidden group">
+              <div className="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-wide">What is DevHirang?</h2>
+              <p className="text-lg md:text-xl text-text-muted leading-relaxed font-mono">
+                DevHirang is a community-driven platform that brings together developers, innovators, and students across Pampanga and the Philippines. It's a space where ideas turn into real-world solutions, collaboration is encouraged, and growth is nurtured.
+              </p>
+            </section>
+
             <AnalyticsSpotlight developers={developers} />
 
-            <section id="featured">
-              <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
-                <span className="text-secondary">✦</span> Monthly Featured
-              </h2>
-              <FeatureCarousel developers={featuredDevs} onSelect={setSelectedDev} />
-            </section>
+            {yearlyFeaturedDevs.length > 0 && (
+              <section id="yearly-featured">
+                <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
+                  <span className="text-secondary">✦</span> Yearly Featured
+                </h2>
+                <FeatureCarousel developers={yearlyFeaturedDevs} onSelect={setSelectedDev} />
+              </section>
+            )}
+
+            {monthlyFeaturedDevs.length > 0 && (
+              <section id="monthly-featured">
+                <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
+                  <span className="text-blue-400">✦</span> Monthly Featured
+                </h2>
+                <FeatureCarousel developers={monthlyFeaturedDevs} onSelect={setSelectedDev} />
+              </section>
+            )}
 
             <TestimonialCarousel developers={developers} onSelect={setSelectedDev} />
 

@@ -82,19 +82,27 @@ function App() {
             <AnalyticsSpotlight developers={developers} />
 
             {yearlyFeaturedDevs.length > 0 && (
-              <section id="yearly-featured">
-                <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
-                  <span className="text-secondary">✦</span> Yearly Featured
-                </h2>
+              <section id="yearly-featured" className="pt-8">
+                <div className="flex items-center gap-4 mb-10">
+                  <div className="h-px flex-grow bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+                  <h2 className="text-4xl font-black text-center px-8 text-transparent bg-clip-text bg-gradient-to-b from-white to-gold tracking-tighter uppercase">
+                    Yearly Hall of Fame
+                  </h2>
+                  <div className="h-px flex-grow bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+                </div>
                 <FeatureCarousel developers={yearlyFeaturedDevs} onSelect={setSelectedDev} variant="yearly" />
               </section>
             )}
 
             {monthlyFeaturedDevs.length > 0 && (
-              <section id="monthly-featured">
-                <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
-                  <span className="text-blue-400">✦</span> Monthly Featured
-                </h2>
+              <section id="monthly-featured" className="pt-8">
+                <div className="flex items-center gap-4 mb-10">
+                  <div className="h-px flex-grow bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
+                  <h2 className="text-4xl font-black text-center px-8 text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-400 tracking-tighter uppercase">
+                    Monthly Spotlights
+                  </h2>
+                  <div className="h-px flex-grow bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
+                </div>
                 <FeatureCarousel developers={monthlyFeaturedDevs} onSelect={setSelectedDev} />
               </section>
             )}

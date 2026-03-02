@@ -2,11 +2,26 @@ import React, { useState } from 'react';
 import { Trophy, Github, Linkedin, MessageSquare, Mail, Facebook } from 'lucide-react';
 import FooterModal from './FooterModal';
 
-const Footer = () => {
+const Footer = ({ setActiveTab }) => {
     const [modalConfig, setModalConfig] = useState({ isOpen: false, type: '' });
 
     const openModal = (type) => setModalConfig({ isOpen: true, type });
     const closeModal = () => setModalConfig({ isOpen: false, type: '' });
+
+    const handleNavigation = (tab, sectionId = null) => {
+        setActiveTab(tab);
+        if (sectionId) {
+            // Small delay to ensure tab has switched if necessary
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
 
     return (
         <footer className="mt-20 border-t border-white/10 bg-white/[0.02] py-20 relative overflow-hidden">
@@ -53,10 +68,38 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-6">Explore</h4>
                         <ul className="space-y-4 text-sm text-text-muted">
-                            <li><a href="#ranking" className="hover:text-secondary transition-colors">Hall of Fame</a></li>
-                            <li><a href="#featured" className="hover:text-secondary transition-colors">Featured Talents</a></li>
-                            <li><a href="#events" className="hover:text-secondary transition-colors">Upcoming Events</a></li>
-                            <li><a href="#analytics" className="hover:text-secondary transition-colors">Community Leaderboard</a></li>
+                            <li>
+                                <button
+                                    onClick={() => handleNavigation('Bale', 'achievements')}
+                                    className="hover:text-secondary transition-colors text-left"
+                                >
+                                    Contributors
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => handleNavigation('Hinirang')}
+                                    className="hover:text-secondary transition-colors text-left"
+                                >
+                                    Hinirang Section
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => openModal('Upcoming Events')}
+                                    className="hover:text-secondary transition-colors text-left"
+                                >
+                                    Upcoming Events
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => handleNavigation('Stories')}
+                                    className="hover:text-secondary transition-colors text-left"
+                                >
+                                    Stories Section
+                                </button>
+                            </li>
                         </ul>
                     </div>
 

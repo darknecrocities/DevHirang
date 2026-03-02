@@ -7,45 +7,56 @@ const FooterModal = ({ isOpen, onClose, type }) => {
         'Submit Achievement': {
             icon: <Send className="w-6 h-6 text-secondary" />,
             title: "Submit Your Achievement",
-            description: "Ready to join the Hall of Fame? Follow these steps to submit your milestone.",
+            description: "Go beyond numbers—tell the story of your impact and innovation.",
             details: [
-                "Ensure your achievement falls under our recognized categories (Hackathons, Open Source, etc.).",
-                "Prepare links to your proof of work (GitHub repo, Certificate, or Event page).",
-                "Submit via our GitHub repository by opening a PR on developers.json.",
-                "Or reach out to our community moderators on Discord for manual verification."
+                "Open Contribution Model: Our platform thrives on community input. You are encouraged to openly contribute your milestones through our public repository system.",
+                "Narrative Impact: Provide a detailed account of your achievement, focusing on the technical challenges overcome and the project's broader significance to the ecosystem.",
+                "Public Verification: Include links to public repositories, official event result pages, or verifiable digital certificates for peer review and community trust.",
+                "Curated Selection: Submissions undergo a qualitative review by community leads to ensure they align with our standards of excellence and inspirational value."
             ]
         },
         'Member FAQ': {
             icon: <HelpCircle className="w-6 h-6 text-secondary" />,
             title: "Frequently Asked Questions",
-            description: "Find answers to the most common questions about the DevHirang platform.",
+            description: "Understanding the DevHirang philosophy and qualitative framework.",
             details: [
-                "How are points calculated? Points are based on Impact (Projects/Wins) and Trust (Certifications).",
-                "How often do rankings update? Rankings update instantly upon data synchronization.",
-                "Can I lose my Elite status? Yes, if other developers surpass your score, you may move to the Professional Division.",
-                "Is the platform free? Absolutely. It is a community initiative for Pampanga's developers."
+                "What makes a developer 'Elite'? Excellence is gauged by consistent community involvement, technical leadership, and the qualitative depth of their contributions.",
+                "How do I improve my visibility? Focus on high-impact projects, mentoring others, and sharing your authentic journey through the Hinirang Stories section.",
+                "Why the focus on qualitative growth? We believe that a developer's worth is more than just points; it's about the unique value and perspective they bring to the ecosystem.",
+                "Who manages the platform? DevHirang is a community-owned initiative driven by volunteers dedicated to showcasing and elevating Pampanga's technical talent."
             ]
         },
         'Terms of Service': {
             icon: <FileText className="w-6 h-6 text-secondary" />,
             title: "Terms of Service",
-            description: "Please read our community guidelines to ensure a fair and respectful platform.",
+            description: "Community standards and shared responsibilities for a thriving ecosystem.",
             details: [
-                "All submitted achievements must be genuine and verifiable.",
-                "Plagiarism or false claims will lead to a permanent ban from the leaderboard.",
-                "DevHirang reserves the right to adjust scoring algorithms for fairness.",
-                "Users remain owners of their data but grant public display rights on this platform."
+                "Professional Code of Conduct: Members are expected to maintain the highest level of professional integrity. Misrepresentation of skills or achievements is strictly prohibited.",
+                "Collaborative Participation: By contributing, you agree to engage respectfully with the community and uphold the values of open-source collaboration and transparency.",
+                "Content Usage Rights: While you retain ownership of your professional data, by submitting it, you grant the platform a non-exclusive right to display and feature your profile.",
+                "Platform Moderation: We reserve the right to curate, edit, or remove profiles that do not meet our community standards or contain demonstrably inaccurate information."
             ]
         },
         'Privacy Policy': {
             icon: <Shield className="w-6 h-6 text-secondary" />,
             title: "Privacy Policy",
-            description: "We value your privacy. Here is how we handle your developer data.",
+            description: "Transparent data handling for an open developer community.",
             details: [
-                "We only collect data you provide: name, bio, social links, and achievements.",
-                "Data is stored in a public developers.json file to maintain transparency.",
-                "We do not sell or share your personal data with third-party advertisers.",
-                "You can request data removal at any time via a GitHub Pull Request."
+                "Transparency by Design: As an open community initiative, we operate with maximum transparency. Your professional profile is part of an open-access public repository.",
+                "Data Purpose & Utility: We only process data that is essential for showcasing your professional journey—such as your name, bio, accomplishments, and social links.",
+                "Community Sovereignty: You have full control over your information. Since the system is open, you can contribute, update, or remove your data through standard open workflows.",
+                "Security & Integrity: We do not track users or sell data. We rely on the security of our hosting infrastructure and the shared integrity of our community-driven process."
+            ]
+        },
+        'Upcoming Events': {
+            icon: <HelpCircle className="w-6 h-6 text-secondary" />,
+            title: "Upcoming Events",
+            description: "Exciting community gatherings and tech events are on the horizon.",
+            details: [
+                "Coming Soon: We are currently curating a series of hackathons, workshops, and meetups for the Pampanga developer community.",
+                "Community Meetups: Stay tuned for our first in-person gathering to network, share ideas, and build lasting connections.",
+                "Hackathons & Competitions: Get ready to showcase your skills in upcoming challenges designed to spark innovation and problem-solving.",
+                "Workshops & Seminars: Learn from industry experts and community leaders through our upcoming educational sessions and lightning talks."
             ]
         }
     }[type] || {};

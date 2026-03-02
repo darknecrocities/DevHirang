@@ -133,7 +133,7 @@ function App() {
         )}
       </main>
 
-      <Footer />
+      <Footer setActiveTab={setActiveTab} />
 
       {selectedDev && (
         <ProfileModal

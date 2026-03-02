@@ -148,7 +148,7 @@
                 "link": "#"
             },
             {
-                "type": "work",
+                "type": "intern",
                 "title": "Prompt Engineer - NVIDIA",
                 "year": 2025,
                 "description": "Worked as a Prompt Engineer, focusing on AI integration and optimization.",
@@ -180,13 +180,6 @@
                 "title": "Devcon Contributors Hub",
                 "year": 2023,
                 "description": "Developed the central repo for local community projects.",
-                "link": "#"
-            },
-            {
-                "type": "community",
-                "title": "Google Developer Group on Campus - Chapter Leader",
-                "year": 2025,
-                "description": "Recognized for community impact in the Google Community.",
                 "link": "#"
             },
             {
@@ -1064,9 +1057,16 @@
             },
             {
                 "type": "work",
-                "title": "Software Engineer \u2013 Lakbay v2",
-                "year": 2024,
-                "description": "Worked as a Software Engineer for Lakbay v2.",
+                "title": "Special Mentions - AlgoExpert SWE Project Contest Summer-Fall 2020",
+                "year": 2020,
+                "description": "Received special mentions for outstanding project submissions in the AlgoExpert SWE Project Contest.",
+                "link": "#"
+            },
+            {
+                "type": "academic",
+                "title": "Special Science Class - Pampanga High School 2016",
+                "year": 2016,
+                "description": "Selected as one of the part of the Special Science Class of Pampanga High School.",
                 "link": "#"
             },
             {

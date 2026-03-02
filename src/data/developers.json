@@ -2430,51 +2430,44 @@
         "achievements": [
             {
                 "type": "hackathon",
-                "title": "Champion \u2013 AUF x HexCore Labs PH Capture The Flag Competition",
+                "title": "Champion – AUF x HexCore Labs PH Capture The Flag Competition",
                 "year": 2025,
                 "description": "Secured 1st place in the AUF x HexCore Labs PH Capture The Flag Competition.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Best Technical Execution \u2013 The AI Hack (GDG Holy Angel University)",
+                "title": "2nd Runner Up – The AI Hack (GDG Holy Angel University)",
                 "year": 2025,
-                "description": "Awarded Best Technical Execution for outstanding system design and implementation.",
+                "description": "Placed 2nd Runner Up for our project 'BantayBayan' at The AI Hack. Recognitions include Best Technical Execution and People’s Choice Award.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "People\u2019s Choice Award \u2013 The AI Hack (GDG Holy Angel University)",
-                "year": 2025,
-                "description": "Received the People\u2019s Choice Award at The AI Hack.",
-                "link": "#"
-            },
-            {
-                "type": "hackathon",
-                "title": "3rd Place \u2013 The AI Hack (GDG Holy Angel University)",
-                "year": 2025,
-                "description": "Placed 3rd overall in The AI Hack competition.",
-                "link": "#"
-            },
-            {
-                "type": "hackathon",
-                "title": "2nd Runner Up \u2013 Philippine Typhoon Survival Beacon (Regional AI Hackathon)",
+                "title": "2nd Runner Up – Philippine Typhoon Survival Beacon (Regional AI Hackathon)",
                 "year": 2025,
                 "description": "2nd Runner Up for an AI-driven disaster response solution.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "3rd Place \u2013 AUF JPCS Digital Solution Hackathon",
+                "title": "3rd Place – AUF JPCS Digital Solution Hackathon",
                 "year": 2025,
                 "description": "3rd place winner in the AUF JPCS Digital Solution Hackathon 2025.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Speaker \u2013 Youth Ethics Empowerment Seminar",
+                "title": "Speaker – Youth Ethics Empowerment Seminar",
                 "year": 2025,
                 "description": "Spoke on promoting digital ethics and social responsibility through AI-driven solutions for senior high school students.",
+                "link": "#"
+            },
+            {
+                "type": "startup",
+                "title": "As Foretold Research Labs",
+                "year": 2025,
+                "description": "Co-founder of As Foretold Research Labs, a startup focused on AI-driven solutions for real-world problems.",
                 "link": "#"
             }
         ],
@@ -2487,7 +2480,7 @@
             },
             {
                 "year": 2026,
-                "title": "AI Specialist Intern \u2013 As Foretold Research Labs",
+                "title": "AI Specialist Intern at Kaizenaire",
                 "type": "career",
                 "status": "In Progress"
             }

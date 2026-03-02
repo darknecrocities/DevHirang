@@ -91,14 +91,14 @@
                 "link": "#"
             },
             {
-                "type": "community",
-                "title": "Machine Learning - Computer Vision Intern",
+                "type": "intern",
+                "title": "Machine Learning Engineer Intern – Intuition Machines",
                 "year": 2026,
-                "description": "Worked on computer vision projects applying machine learning techniques at Intuition Machines.",
+                "description": "Engaged in machine learning engineering internship at Intuition Machines.",
                 "link": "#"
             },
             {
-                "type": "community",
+                "type": "work",
                 "title": "Software Engineer - Lakbay PH",
                 "year": 2025,
                 "description": "Contributed to a travel platform, implementing frontend/backend solutions and enhancing UI/UX for Filipino tourism.",
@@ -140,21 +140,21 @@
                 "link": "#"
             },
             {
-                "type": "community",
+                "type": "work",
                 "title": "Freelance Software Developer - Wiggies Ice Cream",
                 "year": 2024,
                 "description": "Developed management software systems for Wiggies Ice Cream and Mr. Yogurt stores.",
                 "link": "#"
             },
             {
-                "type": "community",
+                "type": "work",
                 "title": "Prompt Engineer - NVIDIA",
                 "year": 2025,
                 "description": "Worked as a Prompt Engineer, focusing on AI integration and optimization.",
                 "link": "https://www.nvidia.com"
             },
             {
-                "type": "community",
+                "type": "intern",
                 "title": "Junior Software Engineer - Microsoft",
                 "year": 2025,
                 "description": "Interned as a Junior Software Engineer, contributing to Microsoft projects remotely.",
@@ -1062,14 +1062,21 @@
                 "link": "#"
             },
             {
-                "type": "career",
+                "type": "work",
+                "title": "Software Engineer – Lakbay v2",
+                "year": 2024,
+                "description": "Worked as a Software Engineer for Lakbay v2.",
+                "link": "#"
+            },
+            {
+                "type": "work",
                 "title": "Software Engineer – Cinelaya Corporation",
                 "year": 2023,
                 "description": "Worked as a Software Engineer at Cinelaya Corporation.",
                 "link": "#"
             },
             {
-                "type": "career",
+                "type": "work",
                 "title": "CTO & Co-founder – Cinelaya Corporation",
                 "year": 2025,
                 "description": "Officially named Chief Technology Officer and Co-founder of Cinelaya Corporation.",
@@ -1777,7 +1784,13 @@
                 "issued": "April 2025"
             },
             {
-                "title": "Introduction to Software Engineering",
+                "title": "Getting Started with Git and GitHub",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to HTML, CSS, & JavaScript",
                 "issuer": "IBM",
                 "year": 2025,
                 "issued": "April 2025"
@@ -1789,7 +1802,79 @@
                 "issued": "April 2025"
             },
             {
-                "title": "Getting Started with Git and GitHub",
+                "title": "Introduction to Software Engineering",
+                "issuer": "IBM",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Innovating with Google Cloud AI",
+                "issuer": "Google Cloud Training Online",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Project Management 101",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Flutter Course Online",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Blockchain Certification Training",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Getting Python Interview Ready",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Generative AI for Beginners",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Data Science",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "March 2025"
+            },
+            {
+                "title": "Introduction to Figma",
+                "issuer": "Simplilearn",
+                "year": 2025,
+                "issued": "2025"
+            },
+            {
+                "title": "Computer Hardware Basics",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "Introduction to Data Science",
+                "issuer": "Cisco",
+                "year": 2025,
+                "issued": "April 2025"
+            },
+            {
+                "title": "JavaScript Essentials 1",
+                "issuer": "Cisco",
+                "year": 2024,
+                "issued": "October 2024"
+            },
+            {
+                "title": "AI Fundamentals with IBM SkillsBuild",
                 "issuer": "IBM",
                 "year": 2025,
                 "issued": "April 2025"
@@ -2031,8 +2116,7 @@
         "id": 14,
         "name": "Marcel Angelo Navarro",
         "role": [
-            "Lead Web Developer",
-            "Software Engineer"
+            " Lead Web Developer at Brave Adventures PH"
         ],
         "location": "Tarlac City, Angeles City",
         "email": "marcelxangelo@gmail.com",
@@ -2047,6 +2131,27 @@
                 "title": "Champion – Cloudstaff AI Hackathon 2025",
                 "year": 2025,
                 "description": "Champion of the Cloudstaff AI Hackathon 2025, delivering an intelligent, high-impact solution.",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "2025 Lead Web Developer at Brave Adventures PH (Current)",
+                "year": 2025,
+                "description": "working as a Lead Web Developer at Brave Adventures PH",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "2025 Software Engineer Intern at Hooli Software (2025 to 2025)",
+                "year": 2025,
+                "description": "working as a Software Engineer Intern at Hooli Software",
+                "link": "#"
+            },
+            {
+                "type": "community",
+                "title": "2022 Freelance Web Developer (2022 to 2024",
+                "year": 2022,
+                "description": "working as a Freelance Web Developer",
                 "link": "#"
             },
             {

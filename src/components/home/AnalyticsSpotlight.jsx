@@ -13,7 +13,8 @@ const AnalyticsSpotlight = ({ developers }) => {
                 orgs.add(dev.community_affiliation.organization);
             }
             dev.achievements?.forEach(ach => {
-                if (ach.type === 'community' && ach.title.includes('-')) {
+                const type = ach.type?.toLowerCase();
+                if ((type === 'community' || type === 'work' || type === 'intern') && ach.title.includes('-')) {
                     const orgName = ach.title.split('-')[0].trim();
                     if (orgName.length > 2) orgs.add(orgName);
                 }

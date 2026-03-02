@@ -231,7 +231,8 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                     { id: 'Mentors', label: 'Mentors' },
                                     { id: 'Academic', label: 'Academe' },
                                     { id: 'Community Leader', label: 'Community Leader' },
-                                    { id: 'Open Source Master', label: 'Open Source' }
+                                    { id: 'Open Source Master', label: 'Open Source' },
+                                    { id: 'Professional', label: 'Professional' }
                                 ].map((tab) => (
                                     <button
                                         key={tab.id}
@@ -300,7 +301,7 @@ const TopDevelopersList = ({ developers, onSelect }) => {
                                 ))}
                             </motion.div>
                         ) : (
-                            ['Knight Lead', 'Hackathons Heroes', 'Startups Tycoons', 'Open Source Master', 'Community Leader', 'Academic', 'Mentors']
+                            ['Knight Lead', 'Hackathons Heroes', 'Startups Tycoons', 'Open Source Master', 'Community Leader', 'Academic', 'Mentors', 'Professional']
                                 .filter(category => activeFilter === category)
                                 .map((category) => {
                                     const devsInCategory = sortedDevs.filter(dev =>

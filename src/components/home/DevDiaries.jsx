@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, User, ArrowUpRight, Trophy, Code, Users, Rocket, ChevronDown } from 'lucide-react';
+import { Calendar, User, ArrowUpRight, Trophy, Code, Users, Rocket, ChevronDown, Briefcase } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const DevDiaries = ({ developers }) => {
@@ -22,6 +22,8 @@ const DevDiaries = ({ developers }) => {
             case 'opensource': return <Code className="w-4 h-4 text-blue-500" />;
             case 'community': return <Users className="w-4 h-4 text-green-500" />;
             case 'startup': return <Rocket className="w-4 h-4 text-purple-500" />;
+            case 'work': return <Briefcase className="w-4 h-4 text-orange-500" />;
+            case 'intern': return <Briefcase className="w-4 h-4 text-orange-400" />;
             default: return <Trophy className="w-4 h-4 text-secondary" />;
         }
     };
@@ -32,6 +34,8 @@ const DevDiaries = ({ developers }) => {
             case 'opensource': return 'from-blue-500/10 to-transparent border-blue-500/20';
             case 'community': return 'from-green-500/10 to-transparent border-green-500/20';
             case 'startup': return 'from-purple-500/10 to-transparent border-purple-500/20';
+            case 'work': return 'from-orange-500/10 to-transparent border-orange-500/20';
+            case 'intern': return 'from-orange-400/10 to-transparent border-orange-400/20';
             default: return 'from-white/5 to-transparent border-white/10';
         }
     };

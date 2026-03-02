@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp, ShieldCheck } from 'lucide-react';
+import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, ChevronDown, ChevronUp, ShieldCheck, Rocket } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
 
@@ -9,6 +9,20 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
     const [showAllCerts, setShowAllCerts] = useState(false);
     const [showAllAchievements, setShowAllAchievements] = useState(false);
     if (!developer) return null;
+
+    const getAchievementIcon = (type) => {
+        switch (type?.toLowerCase()) {
+            case 'hackathon': return <Trophy className="w-3.5 h-3.5 text-yellow-500" />;
+            case 'opensource': return <Code className="w-3.5 h-3.5 text-blue-500" />;
+            case 'community': return <Users className="w-3.5 h-3.5 text-green-500" />;
+            case 'startup': return <Rocket className="w-3.5 h-3.5 text-purple-500" />;
+            case 'work': return <Briefcase className="w-3.5 h-3.5 text-orange-500" />;
+            case 'intern': return <Briefcase className="w-3.5 h-3.5 text-orange-400" />;
+            case 'academic': return <Award className="w-3.5 h-3.5 text-indigo-400" />;
+            case 'ctf': return <ShieldCheck className="w-3.5 h-3.5 text-red-500" />;
+            default: return <Award className="w-3.5 h-3.5 text-secondary" />;
+        }
+    };
 
     const statItems = [
         { label: 'Wins', value: developer.stats.hackathons_won, icon: Award },
@@ -153,7 +167,10 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                 </div>
                                                 <div className="flex-1">
                                                     <div className="flex items-center justify-between mb-2 sm:mb-1">
-                                                        <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{ach.title}</h4>
+                                                        <div className="flex items-center gap-2">
+                                                            {getAchievementIcon(ach.type)}
+                                                            <h4 className="font-bold text-white group-hover:text-secondary transition-colors text-sm sm:text-base">{ach.title}</h4>
+                                                        </div>
                                                         <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-text-muted px-2 py-0.5 bg-white/5 rounded-full whitespace-nowrap border border-white/5">
                                                             {ach.type}
                                                         </span>

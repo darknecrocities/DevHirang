@@ -2553,7 +2553,7 @@
             "github_contributions": 322
         },
         "isAdmin": false,
-        "featured": false,
+        "featured": "monthly",
         "testimonial": {
             "text": "Marc Victor Velasquez is a technically driven AI specialist with strong foundations in robotics, generative AI, and applied machine learning. His hackathon achievements and research work demonstrate deep technical curiosity and real-world impact.",
             "author": "AI Specialist Intern",

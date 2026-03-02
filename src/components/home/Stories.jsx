@@ -203,6 +203,24 @@ const Stories = ({ developers }) => {
                 >
                     Journeys of persistence, innovation, and community impact from Pampanga's brightest minds.
                 </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="pt-4"
+                >
+                    <a
+                        href="https://forms.gle/v938hmFvbB9aV2Fy6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-background hover:bg-white rounded-2xl font-bold transition-all glow-secondary group"
+                    >
+                        <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                        Submit Your Story
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                </motion.div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 px-4">

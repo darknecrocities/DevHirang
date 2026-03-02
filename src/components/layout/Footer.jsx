@@ -56,11 +56,11 @@ const Footer = ({ setActiveTab }) => {
                             >
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-secondary hover:text-background transition-all">
-                                <Linkedin className="w-5 h-5" />
+                            <a href="mailto:devhirang@gmail.com" className="p-2 bg-white/5 rounded-full hover:bg-secondary hover:text-background transition-all" title="Email Us">
+                                <Mail className="w-5 h-5" />
                             </a>
                             <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-secondary hover:text-background transition-all">
-                                <MessageSquare className="w-5 h-5" />
+                                <Linkedin className="w-5 h-5" />
                             </a>
                         </div>
                     </div>

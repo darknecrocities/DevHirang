@@ -4,7 +4,7 @@ import { X, Award, Briefcase, Code, Users, ExternalLink, Github, Route, Trophy, 
 import { cn } from '../../lib/utils';
 import { getDeveloperBadges, BADGE_CRITERIA } from '../../utils/badgeUtils';
 
-const ProfileModal = ({ developer, isOpen, onClose }) => {
+const ProfileModal = ({ developer, isOpen, onClose, setActiveTab }) => {
     const [showBadgeGuide, setShowBadgeGuide] = useState(false);
     const [showAllCerts, setShowAllCerts] = useState(false);
     const [showAllAchievements, setShowAllAchievements] = useState(false);
@@ -87,6 +87,18 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                 <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                                                 Website
                                             </a>
+                                        )}
+                                        {developer.stories && (
+                                            <button
+                                                onClick={() => {
+                                                    setActiveTab('Stories');
+                                                    onClose();
+                                                }}
+                                                className="flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3 bg-white/5 hover:bg-secondary hover:text-background rounded-2xl font-bold transition-all border border-white/10 text-sm group"
+                                            >
+                                                <Rocket className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
+                                                Read Story
+                                            </button>
                                         )}
                                     </div>
                                 </div>
@@ -203,7 +215,8 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                     <div className={cn(
                                                         "w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-background flex items-center justify-center z-10 shrink-0 transition-colors",
                                                         step.status === 'Completed' ? "bg-secondary text-background" :
-                                                            step.status === 'In Progress' ? "bg-primary border-secondary/50" : "bg-white/10"
+                                                            step.status === 'Current Focus' ? "bg-white/20 border-white/30" :
+                                                                step.status === 'In Progress' ? "bg-primary border-secondary/50" : "bg-white/10"
                                                     )}>
                                                         <span className="text-[9px] sm:text-[10px] font-bold">
                                                             {step.status === 'Completed' ? '✓' : step.year}
@@ -224,7 +237,8 @@ const ProfileModal = ({ developer, isOpen, onClose }) => {
                                                                 <span className={cn(
                                                                     "text-[8px] sm:text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded-full whitespace-nowrap shrink-0",
                                                                     step.status === 'Completed' ? "bg-secondary/20 text-secondary" :
-                                                                        step.status === 'In Progress' ? "bg-primary/50 text-white" : "bg-white/10 text-text-muted"
+                                                                        step.status === 'Current Focus' ? "bg-white/10 text-white border border-white/10" :
+                                                                            step.status === 'In Progress' ? "bg-primary/50 text-white" : "bg-white/10 text-text-muted"
                                                                 )}>
                                                                     {step.status}
                                                                 </span>

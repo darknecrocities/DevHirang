@@ -7,6 +7,7 @@
             "Full-stack Developer",
             "Student"
         ],
+        "stories": "On October 19\u201320, 2025, I stood alongside four fellow students from the School of Computing of Holy Angel University as we competed in the SkyDev Hack Play and Learn Hackathon. What started as an intense two-day challenge quickly became one of the most meaningful experiences of my journey as a developer.\n\nOur project, Lumo, was born from empathy. Inside our university\u2014specifically the SJH Building\u2014I had repeatedly seen a visually impaired professor navigating daily obstacles that most of us never think twice about. Those moments stayed with me. I kept asking myself: If we have AI, computer vision, and smartphones in our pockets, why can\u2019t we use them to give independence back to someone who needs it most?\n\nThat question became the foundation of Lumo. I proposed the idea of combining AI-driven object detection with real-time voice guidance to help visually impaired individuals navigate safely and independently. After brainstorming as a team, we unanimously chose Lumo\u2014because it wasn\u2019t just technically challenging, it mattered.\n\nI took responsibility for the AI models, backend logic, and cloud integration, while my teammates\u2014Francoise Gurango, Graciella Jimenez, Kalel Marquez, and Prince Laxamana\u2014focused on crafting an intuitive, accessible UI/UX. Within the first hour, we already had a working design direction. From there, it was a race against time.\n\nThe first night pushed me to my limits. I stayed up refining the backend and AI pipeline until around 4:30 a.m., ensuring the system could work offline with high accuracy. Exhaustion was real\u2014but giving up was never an option. On the second day, just 30 minutes before submission, disaster struck: our Google Maps integration failed during Docker deployment. In that moment, everything we worked for was on the line. I dropped everything, isolated the issue, and fixed it just in time. When the app finally ran, the relief was indescribable.\n\nDuring the final presentation, I confidently defended Lumo in front of industry professionals\u2014explaining not just how it worked, but why it needed to exist. I spoke about scalability, feasibility, and impact, but more importantly, I spoke about people. About dignity. About independence.\n\nWhen Holy Angel University was announced as Champion, it felt surreal. The judges recognized Lumo for its technical excellence, creativity, and social relevance\u2014but for me, the real victory was knowing we built something with purpose.\n\nI\u2019m deeply grateful to our coaches, Professor Ulysses Raymond Monsale and Mr. Tjakoen Stolk, whose mentorship and guidance shaped our approach and mindset throughout the competition. I\u2019m also thankful to the School of Computing administration for continuously fostering an environment where innovation and compassion can thrive.\n\nAbove all, I thank the Lord\u2014for the strength to push through exhaustion, the clarity to solve problems under pressure, and the wisdom to use technology for something greater than myself.\n\nThis experience reaffirmed what I believe as a developer: technology becomes truly powerful when guided by empathy and purpose. Lumo wasn\u2019t just a hackathon project\u2014it was proof that when we listen, observe, and care, we can build solutions that genuinely change lives.\n\nAnd this is only the beginning.",
         "email": "parejasarronkian@gmail.com",
         "github": "https://github.com/darknecrocities",
         "website": "https://arron-portfolio-delta.vercel.app/",
@@ -92,7 +93,7 @@
             },
             {
                 "type": "intern",
-                "title": "Machine Learning Engineer Intern – Intuition Machines",
+                "title": "Machine Learning Engineer Intern \u2013 Intuition Machines",
                 "year": 2026,
                 "description": "Engaged in machine learning engineering internship at Intuition Machines.",
                 "link": "#"
@@ -206,37 +207,37 @@
         "roadmap": [
             {
                 "year": 2025,
-                "title": "Champion – GDG-UPM Build with AI",
+                "title": "Champion \u2013 GDG-UPM Build with AI",
                 "type": "hackathon",
                 "status": "Completed"
             },
             {
                 "year": 2025,
-                "title": "Champion – SkyDev Hackathon",
+                "title": "Champion \u2013 SkyDev Hackathon",
                 "type": "hackathon",
                 "status": "Completed"
             },
             {
                 "year": 2025,
-                "title": "Champion – Caffeine.ai Manila",
+                "title": "Champion \u2013 Caffeine.ai Manila",
                 "type": "hackathon",
                 "status": "Completed"
             },
             {
                 "year": 2025,
-                "title": "Champion – 2025UNity Hackathon",
+                "title": "Champion \u2013 2025UNity Hackathon",
                 "type": "hackathon",
                 "status": "Completed"
             },
             {
                 "year": 2025,
-                "title": "Champion – Sparkhub",
+                "title": "Champion \u2013 Sparkhub",
                 "type": "hackathon",
                 "status": "Completed"
             },
             {
                 "year": 2025,
-                "title": "Finalist – Appcon 2024",
+                "title": "Finalist \u2013 Appcon 2024",
                 "type": "hackathon",
                 "status": "Completed"
             },
@@ -838,12 +839,12 @@
             },
             {
                 "title": "The Origins I: HTML",
-                "issuer": "Codédex",
+                "issuer": "Cod\u00e9dex",
                 "year": 2025
             },
             {
                 "title": "The Origins III: JavaScript",
-                "issuer": "Codédex",
+                "issuer": "Cod\u00e9dex",
                 "year": 2025
             }
         ],
@@ -1045,39 +1046,39 @@
         "linkedin": "https://www.linkedin.com/in/ralphlouisgopez/",
         "website": "https://ralphlouisgopez.com",
         "avatar": "/dev_img/7_ralph_louis_gopez.jpg",
-        "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation—a serial programmer.",
+        "bio": "An entire IT department immersed in software, web development, and cloud engineering. Explores hardware and electronics while experimenting with cutting-edge technologies. Short on sanity but fueled by endless motivation\u2014a serial programmer.",
         "achievements": [
             {
                 "type": "community",
-                "title": "GDSC – Web Development Lead",
+                "title": "GDSC \u2013 Web Development Lead",
                 "year": 2023,
                 "description": "Served as Web Development Lead for GDSC from 2023 to 2024.",
                 "link": "#"
             },
             {
                 "type": "academic",
-                "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
+                "title": "President\u2019s Lister & Dean\u2019s Lister (Multiple Semesters)",
                 "year": 2022,
-                "description": "Consistent academic excellence as President’s Lister and Dean’s Lister from 2022 to 2026.",
+                "description": "Consistent academic excellence as President\u2019s Lister and Dean\u2019s Lister from 2022 to 2026.",
                 "link": "#"
             },
             {
                 "type": "work",
-                "title": "Software Engineer – Lakbay v2",
+                "title": "Software Engineer \u2013 Lakbay v2",
                 "year": 2024,
                 "description": "Worked as a Software Engineer for Lakbay v2.",
                 "link": "#"
             },
             {
                 "type": "work",
-                "title": "Software Engineer – Cinelaya Corporation",
+                "title": "Software Engineer \u2013 Cinelaya Corporation",
                 "year": 2023,
                 "description": "Worked as a Software Engineer at Cinelaya Corporation.",
                 "link": "#"
             },
             {
                 "type": "work",
-                "title": "CTO & Co-founder – Cinelaya Corporation",
+                "title": "CTO & Co-founder \u2013 Cinelaya Corporation",
                 "year": 2025,
                 "description": "Officially named Chief Technology Officer and Co-founder of Cinelaya Corporation.",
                 "link": "#"
@@ -1086,13 +1087,13 @@
         "roadmap": [
             {
                 "year": 2023,
-                "title": "Software Engineer Role – Cinelaya",
+                "title": "Software Engineer Role \u2013 Cinelaya",
                 "type": "career",
                 "status": "Done"
             },
             {
                 "year": 2025,
-                "title": "CTO & Co-founder – Cinelaya Corporation",
+                "title": "CTO & Co-founder \u2013 Cinelaya Corporation",
                 "type": "startup",
                 "status": "Done"
             }
@@ -1161,7 +1162,7 @@
                 "issued": "April 2025"
             },
             {
-                "title": "AWS Academy Graduate – Cloud Foundations",
+                "title": "AWS Academy Graduate \u2013 Cloud Foundations",
                 "issuer": "Amazon Web Services (AWS)",
                 "year": 2025,
                 "issued": "March 2025"
@@ -1225,42 +1226,42 @@
         "achievements": [
             {
                 "type": "career",
-                "title": "Software Engineer – Homes, Farms and Land LLC",
+                "title": "Software Engineer \u2013 Homes, Farms and Land LLC",
                 "year": 2025,
                 "description": "Worked as a Software Engineer handling full-stack development in a remote setup based in New York, USA.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Web Development Lead – Google Developer Student Clubs HAU",
+                "title": "Web Development Lead \u2013 Google Developer Student Clubs HAU",
                 "year": 2024,
                 "description": "Led and spearheaded web development projects for GDSC Holy Angel University.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "President – League of Outstanding Programmers",
+                "title": "President \u2013 League of Outstanding Programmers",
                 "year": 2023,
                 "description": "Served as President, leading organizational initiatives and programming-related activities.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Champion – GDG-UPM Build with AI",
+                "title": "Champion \u2013 GDG-UPM Build with AI",
                 "year": 2025,
                 "description": "Champion of the Build with AI Hackathon.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Finalist – Appcon 2024",
+                "title": "Finalist \u2013 Appcon 2024",
                 "year": 2025,
                 "description": "Finalist in Appcon 2024 Hackathon.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "APAC Google Solution Challenge 2025 – Top Entries",
+                "title": "APAC Google Solution Challenge 2025 \u2013 Top Entries",
                 "year": 2025,
                 "description": "Top entry participant in the Google Solution Challenge APAC 2025.",
                 "link": "#"
@@ -1269,13 +1270,13 @@
         "roadmap": [
             {
                 "year": 2024,
-                "title": "Web Development Lead – GDSC HAU",
+                "title": "Web Development Lead \u2013 GDSC HAU",
                 "type": "community",
                 "status": "Done"
             },
             {
                 "year": 2025,
-                "title": "Software Engineer – Homes, Farms and Land LLC",
+                "title": "Software Engineer \u2013 Homes, Farms and Land LLC",
                 "type": "career",
                 "status": "In Progress"
             }
@@ -1401,49 +1402,49 @@
         "achievements": [
             {
                 "type": "academic",
-                "title": "President’s Lister & Dean’s Lister (Multiple Semesters)",
+                "title": "President\u2019s Lister & Dean\u2019s Lister (Multiple Semesters)",
                 "year": 2022,
-                "description": "Consistent academic excellence from 1st year to 4th year with multiple President’s Lister and Dean’s Lister recognitions.",
+                "description": "Consistent academic excellence from 1st year to 4th year with multiple President\u2019s Lister and Dean\u2019s Lister recognitions.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "GDG Holy Angel AI Hack 2025 – 1st Place & Best Use of Gemini API",
+                "title": "GDG Holy Angel AI Hack 2025 \u2013 1st Place & Best Use of Gemini API",
                 "year": 2025,
                 "description": "Secured 1st place and Best Use of Gemini API award.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "JPCS Hackathon 2025 – 1st Place",
+                "title": "JPCS Hackathon 2025 \u2013 1st Place",
                 "year": 2025,
                 "description": "Champion of JPCS Hackathon 2025.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "JPCS Hackathon 2025 – 2nd Place",
+                "title": "JPCS Hackathon 2025 \u2013 2nd Place",
                 "year": 2025,
                 "description": "2nd place winner at JPCS Hackathon 2025.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "JPCS Hackathon 2024 – 3rd Place",
+                "title": "JPCS Hackathon 2024 \u2013 3rd Place",
                 "year": 2024,
                 "description": "3rd place finisher at JPCS Hackathon 2024.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "iCode STI Hackathon 2022 – 2nd Place",
+                "title": "iCode STI Hackathon 2022 \u2013 2nd Place",
                 "year": 2022,
                 "description": "2nd place winner at iCode STI Hackathon 2022.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "iCode STI Hackathon 2021 – 2nd Place",
+                "title": "iCode STI Hackathon 2021 \u2013 2nd Place",
                 "year": 2021,
                 "description": "2nd place winner at iCode STI Hackathon 2021.",
                 "link": "#"
@@ -1525,49 +1526,49 @@
         "achievements": [
             {
                 "type": "career",
-                "title": "Project Manager – HomesFarmsAndLand LLC",
+                "title": "Project Manager \u2013 HomesFarmsAndLand LLC",
                 "year": 2025,
                 "description": "Leads project execution and strategic delivery for HomesFarmsAndLand LLC, ensuring alignment between technical implementation and business objectives.",
                 "link": "#"
             },
             {
                 "type": "career",
-                "title": "Lead Software Engineer – HomesFarmsAndLand LLC",
+                "title": "Lead Software Engineer \u2013 HomesFarmsAndLand LLC",
                 "year": 2025,
                 "description": "Architects and engineers core systems while guiding development standards and technical direction.",
                 "link": "#"
             },
             {
                 "type": "career",
-                "title": "Software Engineer – QuakesLegacy.com",
+                "title": "Software Engineer \u2013 QuakesLegacy.com",
                 "year": 2025,
                 "description": "Contributed to production software systems and feature development.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Finalist – Appcon 2024",
+                "title": "Finalist \u2013 Appcon 2024",
                 "year": 2024,
                 "description": "Finalist in the Appcon 2024 hackathon.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Most Intellectual Councilor – SINAG Awarding",
+                "title": "Most Intellectual Councilor \u2013 SINAG Awarding",
                 "year": 2024,
                 "description": "Recognized for intellectual leadership and contribution as Councilor for Financial Management.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Most Innovative Councilor – SINAG Awarding",
+                "title": "Most Innovative Councilor \u2013 SINAG Awarding",
                 "year": 2024,
                 "description": "Awarded for innovation and impactful initiatives in student governance.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Sumo-Robotics – National Science Quest (2nd Place)",
+                "title": "Sumo-Robotics \u2013 National Science Quest (2nd Place)",
                 "year": 2020,
                 "description": "Placed 2nd in the National Science Quest Sumo-Robotics competition.",
                 "link": "#"
@@ -1576,32 +1577,32 @@
         "roadmap": [
             {
                 "year": 2023,
-                "title": "Chief Technology Officer – GDG Holy Angel University",
+                "title": "Chief Technology Officer \u2013 GDG Holy Angel University",
                 "type": "community",
                 "status": "Done"
             },
             {
                 "year": 2024,
-                "title": "Chief Financial Officer – GDG Holy Angel University",
+                "title": "Chief Financial Officer \u2013 GDG Holy Angel University",
                 "type": "community",
                 "status": "Done"
             },
             {
                 "year": 2025,
-                "title": "Cloud Developer – GDG Holy Angel University",
+                "title": "Cloud Developer \u2013 GDG Holy Angel University",
                 "type": "community",
                 "status": "Done"
             },
             {
                 "year": 2025,
-                "title": "Project Manager & Lead Software Engineer – HomesFarmsAndLand LLC",
+                "title": "Project Manager & Lead Software Engineer \u2013 HomesFarmsAndLand LLC",
                 "type": "career",
                 "status": "In Progress"
             }
         ],
         "certifications": [
             {
-                "title": "AWS Academy Graduate – Cloud Foundations",
+                "title": "AWS Academy Graduate \u2013 Cloud Foundations",
                 "issuer": "Amazon Web Services (AWS)",
                 "year": 2025,
                 "issued": "April 2025"
@@ -1675,21 +1676,21 @@
         "achievements": [
             {
                 "type": "academic",
-                "title": "Academic Distinction – President’s & Dean’s Lister",
+                "title": "Academic Distinction \u2013 President\u2019s & Dean\u2019s Lister",
                 "year": 2024,
-                "description": "Recognized for consistent academic excellence as President’s Lister and Dean’s Lister across multiple semesters.",
+                "description": "Recognized for consistent academic excellence as President\u2019s Lister and Dean\u2019s Lister across multiple semesters.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Champion – GDG-UPM Build with AI",
+                "title": "Champion \u2013 GDG-UPM Build with AI",
                 "year": 2025,
                 "description": "Champion of the GDG-UPM Build with AI Hackathon.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Finalist – Create and Conquer 2025 Hackathon",
+                "title": "Finalist \u2013 Create and Conquer 2025 Hackathon",
                 "year": 2025,
                 "description": "Finalist in the Create and Conquer 2025 Hackathon.",
                 "link": "#"
@@ -1927,28 +1928,28 @@
         "achievements": [
             {
                 "type": "hackathon",
-                "title": "Google Solutions Challenge 2025 – Winner",
+                "title": "Google Solutions Challenge 2025 \u2013 Winner",
                 "year": 2025,
                 "description": "Winner of the Google Solutions Challenge 2025, building impactful technology aligned with real-world problems.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Web Development Lead – GDG on Campus Holy Angel University",
+                "title": "Web Development Lead \u2013 GDG on Campus Holy Angel University",
                 "year": 2025,
                 "description": "Currently serving as Web Development Lead, overseeing web initiatives and project execution.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Mobile Development Lead – GDSC Holy Angel University",
+                "title": "Mobile Development Lead \u2013 GDSC Holy Angel University",
                 "year": 2024,
                 "description": "Led mobile development initiatives and supported community-led technical events.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Vice President External – League of Outstanding Programmers",
+                "title": "Vice President External \u2013 League of Outstanding Programmers",
                 "year": 2023,
                 "description": "Organized and facilitated workshops, seminars, and tutorials for the Computer Science community.",
                 "link": "#"
@@ -1957,13 +1958,13 @@
         "roadmap": [
             {
                 "year": 2024,
-                "title": "Mobile Development Lead – GDSC HAU",
+                "title": "Mobile Development Lead \u2013 GDSC HAU",
                 "type": "community",
                 "status": "Done"
             },
             {
                 "year": 2025,
-                "title": "Software Development Intern – Symph",
+                "title": "Software Development Intern \u2013 Symph",
                 "type": "career",
                 "status": "In Progress"
             }
@@ -1977,7 +1978,7 @@
                 "credential_id": "AIF0024068519439"
             },
             {
-                "title": "AWS Academy Graduate – Cloud Foundations",
+                "title": "AWS Academy Graduate \u2013 Cloud Foundations",
                 "issuer": "Amazon Web Services (AWS)",
                 "year": 2025,
                 "issued": "April 2025"
@@ -2116,7 +2117,8 @@
         "id": 14,
         "name": "Marcel Angelo Navarro",
         "role": [
-            " Lead Web Developer at Brave Adventures PH"
+            " Lead Web Developer ",
+            "Software Engineer"
         ],
         "location": "Tarlac City, Angeles City",
         "email": "marcelxangelo@gmail.com",
@@ -2128,44 +2130,23 @@
         "achievements": [
             {
                 "type": "hackathon",
-                "title": "Champion – Cloudstaff AI Hackathon 2025",
+                "title": "Champion \u2013 Cloudstaff AI Hackathon 2025",
                 "year": 2025,
                 "description": "Champion of the Cloudstaff AI Hackathon 2025, delivering an intelligent, high-impact solution.",
                 "link": "#"
             },
             {
-                "type": "work",
-                "title": "2025 Lead Web Developer at Brave Adventures PH (Current)",
-                "year": 2025,
-                "description": "working as a Lead Web Developer at Brave Adventures PH",
-                "link": "#"
-            },
-            {
-                "type": "intern",
-                "title": "2025 Software Engineer Intern at Hooli Software (2025 to 2025)",
-                "year": 2025,
-                "description": "working as a Software Engineer Intern at Hooli Software",
-                "link": "#"
-            },
-            {
-                "type": "work",
-                "title": "2022 Freelance Web Developer (2022 to 2024",
-                "year": 2022,
-                "description": "working as a Freelance Web Developer",
+                "type": "academic",
+                "title": "President\u2019s Lister (Multiple Semesters)",
+                "year": 2024,
+                "description": "Consistent academic excellence as President\u2019s Lister across multiple semesters.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Chief Operations Officer – GDSC Holy Angel University (Pioneer)",
+                "title": "Chief Operations Officer \u2013 GDSC Holy Angel University (Pioneer)",
                 "year": 2021,
                 "description": "Served as Chief Operations Officer and founding pioneer of GDSC Holy Angel University.",
-                "link": "#"
-            },
-            {
-                "type": "academic",
-                "title": "President’s & Dean’s Lister (Multiple Semesters)",
-                "year": 2024,
-                "description": "Consistent academic excellence as President’s Lister and Dean’s Lister across multiple semesters.",
                 "link": "#"
             }
         ],
@@ -2177,8 +2158,26 @@
                 "status": "Done"
             },
             {
+                "title": "Lead Web Developer at Brave Adventures PH (Current)",
                 "year": 2025,
-                "title": "Champion – Cloudstaff AI Hackathon",
+                "type": "work",
+                "status": "Current Focus"
+            },
+            {
+                "title": "Software Engineer Intern at Hooli Software (2025 to 2025)",
+                "year": 2025,
+                "type": "intern",
+                "status": "Done"
+            },
+            {
+                "type": "work",
+                "title": "Freelance Web Developer (2022 to 2024)",
+                "year": 2022,
+                "status": "Done"
+            },
+            {
+                "year": 2025,
+                "title": "Champion \u2013 Cloudstaff AI Hackathon",
                 "type": "hackathon",
                 "status": "Done"
             }
@@ -2239,7 +2238,7 @@
                 "issued": "June 2024"
             },
             {
-                "title": "Leadership Essentials – Driving Quality Projects",
+                "title": "Leadership Essentials \u2013 Driving Quality Projects",
                 "issuer": "Alison",
                 "year": 2025,
                 "issued": "September 2025"
@@ -2274,50 +2273,50 @@
         "achievements": [
             {
                 "type": "hackathon",
-                "title": "Champion – Code Geeks Web Design Competition",
+                "title": "Champion \u2013 Code Geeks Web Design Competition",
                 "year": 2024,
                 "description": "Champion of the Code Geeks Web Design Competition 2024.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "1st Runner Up – Cloudstaff AI Hackathon",
+                "title": "1st Runner Up \u2013 Cloudstaff AI Hackathon",
                 "year": 2025,
                 "description": "Placed 1st Runner Up in the Cloudstaff AI Hackathon 2025.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Champion – DevCon Pampanga Code in the Dark",
+                "title": "Champion \u2013 DevCon Pampanga Code in the Dark",
                 "year": 2025,
                 "description": "Champion of DevCon Pampanga Code in the Dark 2025.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "UI/UX & Web Development Staff – GDG Holy Angel University",
+                "title": "UI/UX & Web Development Staff \u2013 GDG Holy Angel University",
                 "year": 2025,
                 "description": "Active UI/UX and Web Development staff member supporting GDG HAU initiatives and events.",
                 "link": "#"
             },
             {
                 "type": "academic",
-                "title": "Consistent President’s Lister (1st–4th Year)",
+                "title": "Consistent President\u2019s Lister (1st\u20134th Year)",
                 "year": 2025,
-                "description": "Recognized as a consistent President’s Lister throughout college.",
+                "description": "Recognized as a consistent President\u2019s Lister throughout college.",
                 "link": "#"
             }
         ],
         "roadmap": [
             {
                 "year": 2025,
-                "title": "Full-Stack Developer Intern – IT Squarehub",
+                "title": "Full-Stack Developer Intern \u2013 IT Squarehub",
                 "type": "career",
                 "status": "Done"
             },
             {
                 "year": 2026,
-                "title": "UI/UX & Web Dev Staff – GDG Holy Angel University",
+                "title": "UI/UX & Web Dev Staff \u2013 GDG Holy Angel University",
                 "type": "community",
                 "status": "In Progress"
             }
@@ -2348,7 +2347,7 @@
                 "issued": "March 2025"
             },
             {
-                "title": "AWS Academy Graduate – Cloud Foundations",
+                "title": "AWS Academy Graduate \u2013 Cloud Foundations",
                 "issuer": "Amazon Web Services (AWS)",
                 "year": 2025,
                 "issued": "March 2025"
@@ -2431,49 +2430,49 @@
         "achievements": [
             {
                 "type": "hackathon",
-                "title": "Champion – AUF x HexCore Labs PH Capture The Flag Competition",
+                "title": "Champion \u2013 AUF x HexCore Labs PH Capture The Flag Competition",
                 "year": 2025,
                 "description": "Secured 1st place in the AUF x HexCore Labs PH Capture The Flag Competition.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "Best Technical Execution – The AI Hack (GDG Holy Angel University)",
+                "title": "Best Technical Execution \u2013 The AI Hack (GDG Holy Angel University)",
                 "year": 2025,
                 "description": "Awarded Best Technical Execution for outstanding system design and implementation.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "People’s Choice Award – The AI Hack (GDG Holy Angel University)",
+                "title": "People\u2019s Choice Award \u2013 The AI Hack (GDG Holy Angel University)",
                 "year": 2025,
-                "description": "Received the People’s Choice Award at The AI Hack.",
+                "description": "Received the People\u2019s Choice Award at The AI Hack.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "3rd Place – The AI Hack (GDG Holy Angel University)",
+                "title": "3rd Place \u2013 The AI Hack (GDG Holy Angel University)",
                 "year": 2025,
                 "description": "Placed 3rd overall in The AI Hack competition.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "2nd Runner Up – Philippine Typhoon Survival Beacon (Regional AI Hackathon)",
+                "title": "2nd Runner Up \u2013 Philippine Typhoon Survival Beacon (Regional AI Hackathon)",
                 "year": 2025,
                 "description": "2nd Runner Up for an AI-driven disaster response solution.",
                 "link": "#"
             },
             {
                 "type": "hackathon",
-                "title": "3rd Place – AUF JPCS Digital Solution Hackathon",
+                "title": "3rd Place \u2013 AUF JPCS Digital Solution Hackathon",
                 "year": 2025,
                 "description": "3rd place winner in the AUF JPCS Digital Solution Hackathon 2025.",
                 "link": "#"
             },
             {
                 "type": "community",
-                "title": "Speaker – Youth Ethics Empowerment Seminar",
+                "title": "Speaker \u2013 Youth Ethics Empowerment Seminar",
                 "year": 2025,
                 "description": "Spoke on promoting digital ethics and social responsibility through AI-driven solutions for senior high school students.",
                 "link": "#"
@@ -2482,13 +2481,13 @@
         "roadmap": [
             {
                 "year": 2025,
-                "title": "Undergraduate Thesis – Knee MRI Injury Detection",
+                "title": "Undergraduate Thesis \u2013 Knee MRI Injury Detection",
                 "type": "academic",
                 "status": "Done"
             },
             {
                 "year": 2026,
-                "title": "AI Specialist Intern – As Foretold Research Labs",
+                "title": "AI Specialist Intern \u2013 As Foretold Research Labs",
                 "type": "career",
                 "status": "In Progress"
             }

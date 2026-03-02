@@ -11,6 +11,7 @@ import Footer from './components/layout/Footer';
 import ProfileModal from './components/home/ProfileModal';
 import TestimonialCarousel from './components/home/TestimonialCarousel';
 import AnalyticsSpotlight from './components/home/AnalyticsSpotlight';
+import Stories from './components/home/Stories';
 import SplashScreen from './components/layout/SplashScreen';
 import { useEffect } from 'react';
 
@@ -125,6 +126,8 @@ function App() {
               <DevDiaries developers={developers} />
             </section>
           </>
+        ) : activeTab === 'Stories' ? (
+          <Stories developers={developers} />
         ) : (
           <TopDevelopersList developers={developers} onSelect={setSelectedDev} />
         )}
@@ -137,6 +140,7 @@ function App() {
           developer={selectedDev}
           isOpen={!!selectedDev}
           onClose={() => setSelectedDev(null)}
+          setActiveTab={setActiveTab}
         />
       )}
     </div>

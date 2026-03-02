@@ -93,7 +93,9 @@ const DevCard = ({ developer, onClick }) => {
                     <div className="pt-3 border-t border-white/5">
                         <p className="text-xs font-bold text-secondary mb-1 uppercase tracking-wider">Current Focus</p>
                         <p className="text-sm text-text-muted line-clamp-1">
-                            {developer.roadmap.find(r => r.status === 'In Progress')?.title || developer.roadmap[0].title}
+                            {developer.roadmap.find(r => r.status === 'Current Focus')?.title ||
+                                developer.roadmap.find(r => r.status === 'In Progress')?.title ||
+                                developer.roadmap[0].title}
                         </p>
                     </div>
                 )}
